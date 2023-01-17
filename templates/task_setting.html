@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/task_setting.css') }}">
+</head>
+<body>
+    <h1>タスク進行状況</h1>
+    <form action="" method="post">
+        <h1>prapor</h1>
+        <div>
+         <label for="checkbox1">Debut</label>
+         <input type="checkbox" id="checkbox1" name="check[]" value="0">
+        </div>
+        <div>
+         <label for="checkbox2">選択肢2</label>
+         <input type="checkbox" id="checkbox2" name="check[]" value="1">
+        </div>
+        <div>
+         <label for="checkbox3">選択肢3</label>
+         <input type="checkbox" id="checkbox3" name="check[]" value="2">
+        </div>
+        <button type="submit">送信する</button>
+       </form>
+</body>
+</html>
