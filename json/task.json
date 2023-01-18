@@ -2,11 +2,14 @@
     "prapor":{
         "Debut":[
             {
-                "wiki_url":"https://wikiwiki.jp/eft/Prapor/Debut",
-                "full_name":"MP-133 12ga pump-action shotgun",
-                "name":"MP-133",
-                "inRaid":false,
-                "img":"https://cdn.wikiwiki.jp/to/w/eft/img/::ref/MR-133_icon_2.png"
+                "wiki_url":"https://wikiwiki.jp/eft/Prapor/Debut",  
+                "item":{
+                    "full_name":"MP-133 12ga pump-action shotgun",
+                    "name":"MP-133",
+                    "num":2,
+                    "inRaid":false,
+                    "img":"https://cdn.wikiwiki.jp/to/w/eft/img/::ref/MR-133_icon_2.png"
+                }
             }
         ],
         "Search mission":[
@@ -17,10 +20,13 @@
         "Checking":[
             {
                 "wiki_url":"https://wikiwiki.jp/eft/Prapor/Checking",
-                "full_name":"Machinery key",
-                "name":"Key",
-                "inRaid":false,
-                "img":"https://cdn.wikiwiki.jp/to/w/eft/img/::ref/Machinery-key-Icon.png"
+                "item":{
+                    "full_name":"Machinery key",
+                    "name":"Key",
+                    "num":-1,
+                    "inRaid":false,
+                    "img":"https://cdn.wikiwiki.jp/to/w/eft/img/::ref/Machinery-key-Icon.png"
+                }
             }
         ],
         "Shootout picnic":[
@@ -31,10 +37,12 @@
         "Delivery from the past":[
             {
                 "wiki_url":"https://wikiwiki.jp/eft/Prapor/Delivery%20from%20the%20past",
-                "full_name":"Tarcone Director's office key",
-                "name":"Customs",
-                "inRaid":false,
-                "img":"https://cdn.wikiwiki.jp/to/w/eft/img/::ref/Customs-office-key-Icon.png"
+                "item":{
+                    "full_name":"Tarcone Director's office key",
+                    "name":"Customs",
+                    "inRaid":false,
+                    "img":"https://cdn.wikiwiki.jp/to/w/eft/img/::ref/Customs-office-key-Icon.png"
+                }
             }
         ],
         "BP depot":[
@@ -55,19 +63,24 @@
         "Bad rep evidence":[
             {
                 "wiki_url":"https://wikiwiki.jp/eft/Prapor/Bad%20rep%20evidence",
-                "full_name":"Portable bunkhouse key",
-                "name":"Key",
-                "inRaid":false,
-                "img":"https://cdn.wikiwiki.jp/to/w/eft/img/::ref/Cabinet-key-Icon.png"
+                "item":{
+                   "full_name":"Portable bunkhouse key",
+                    "name":"Key",
+                    "inRaid":false,
+                    "img":"https://cdn.wikiwiki.jp/to/w/eft/img/::ref/Cabinet-key-Icon.png" 
+                }
+                
             }
         ],
         "Ice cream cones":[
             {
                 "wiki_url":"https://wikiwiki.jp/eft/Prapor/Ice%20cream%20cones",
-                "full_name":"AK-74 5.45x39 6L31 60-round magazine",
-                "name":"6L31",
-                "inRaid":true,
-                "img":"https://cdn.wikiwiki.jp/to/w/eft/img/::ref/6L31-60-mag_icon.png"
+                "item":{
+                    "full_name":"AK-74 5.45x39 6L31 60-round magazine",
+                    "name":"6L31",
+                    "inRaid":true,
+                    "img":"https://cdn.wikiwiki.jp/to/w/eft/img/::ref/6L31-60-mag_icon.png"
+                }
             }
         ],
         "The Punisher - Part 6":[
