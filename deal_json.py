@@ -7,7 +7,8 @@ class load_json:
         self.jsn = json.load(json_open)
 
     def get_dealer_task_name(self, dealer):
-        print(self.jsn[dealer])
+        for key in self.jsn[dealer]:
+            print(key)
     # 最初のkeyを取る
     # for key in jsn:
     #     print(key)
