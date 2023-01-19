@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Items</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/task_setting.css') }}">
+</head>
+<body>
+    <h1>タスクで使用するアイテム</h1>
+    {% for item in tasks_item %}
+    <div id="bigBox">
+    <div id="box1">
+        <p id="fullname">{{item[1]}}</p>
+    </div>
+    {% if item[2] != -1 %}
+    <div id="box2">
+        {% if item[2] != -1 %}
+        <p id="num">x{{item[2]}}</p>
+        {% endif %}
+        {% if item[3] %}
+        <p id="inRaid">inRaid</p>
+        {% endif %}
+    </div>
+    {% endif %}
+    <div id="box3">
+        <img src={{item[4]}} id="item_img">
+    </div>
+    </div>
+    {% endfor %}
+</body>
+</html>
