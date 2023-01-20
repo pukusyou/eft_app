@@ -10,13 +10,69 @@
 <body>
     <h1>タスク進行状況</h1>
     <form action="/task/item/" method="post", enctype="multipart/form-data">
-        <h1>prapor</h1>
-        {% for task in tasks %}
-        <div>
+        <div id="prapor">
+        <h1>Prapor</h1>
+        {% for task in prapor_tasks %}
+        <div id="task">
          <label for={{task[1]}}>{{task[0]}}</label>
          <input type="checkbox" id={{task[1]}} name="task" value={{task[1]}}>
         </div>
         {% endfor %}
+        </div>
+        <div id="therapist">
+            <h1>Therapist</h1>
+            {% for task in therapist_tasks %}
+            <div id="task">
+             <label for={{task[1]}}>{{task[0]}}</label>
+             <input type="checkbox" id={{task[1]}} name="task" value={{task[1]}}>
+            </div>
+            {% endfor %}
+        </div>
+        <div id="skier">
+            <h1>Skier</h1>
+            {% for task in skier_tasks %}
+            <div id="task">
+             <label for={{task[1]}}>{{task[0]}}</label>
+             <input type="checkbox" id={{task[1]}} name="task" value={{task[1]}}>
+            </div>
+            {% endfor %}
+        </div>
+        <div id="peacekeeper">
+            <h1>Peacekeeper</h1>
+            {% for task in peacekeeper_tasks %}
+            <div id="task">
+             <label for={{task[1]}}>{{task[0]}}</label>
+             <input type="checkbox" id={{task[1]}} name="task" value={{task[1]}}>
+            </div>
+            {% endfor %}
+        </div>
+        <div id="mechanic">
+            <h1>Mechanic</h1>
+            {% for task in mechanic_tasks %}
+            <div id="task">
+             <label for={{task[1]}}>{{task[0]}}</label>
+             <input type="checkbox" id={{task[1]}} name="task" value={{task[1]}}>
+            </div>
+            {% endfor %}
+        </div>
+        <div id="ragman">
+            <h1>Ragman</h1>
+            {% for task in ragman_tasks %}
+            <div id="task">
+             <label for={{task[1]}}>{{task[0]}}</label>
+             <input type="checkbox" id={{task[1]}} name="task" value={{task[1]}}>
+            </div>
+            {% endfor %}
+        </div>
+        <div id="jaeger">
+            <h1>Jaeger</h1>
+            {% for task in jaeger_tasks %}
+            <div id="task">
+             <label for={{task[1]}}>{{task[0]}}</label>
+             <input type="checkbox" id={{task[1]}} name="task" value={{task[1]}}>
+            </div>
+            {% endfor %}
+        </div>
         <div>
 			<input type="submit" value="送信">
 		</div>

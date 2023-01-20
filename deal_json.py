@@ -3,8 +3,8 @@ import json
 class load_json:
 
     def __init__(self):        
-        json_open = open('json/task.json', 'r')
-        self.dealer_list = ['prapor']
+        json_open = open('json/task.json', 'r', encoding='utf-8')
+        self.dealer_list = ['prapor','Therapist','Skier','Peacekeeper','Mechanic', 'Ragman','Jaeger']
         self.jsn = json.load(json_open)
 
     # dealerの持っているすべてのタスク名を返す。(空白を'_'に置き換えたものも返す)
@@ -24,11 +24,23 @@ class load_json:
             task_list.append(key)
         return task_list
 
+    # すべてのタスク名を返す。
+    def get_all_task_name_plain(self):
+        task_list = []
+        for dealer in self.dealer_list:
+            task_list = task_list + self.get_dealer_task_name_plain(dealer)
+        return task_list
+
     # 残っているタスクを返す
     def get_remaining_tasks(self, dealer, tasks):
         tasks_name_list = [i for i in self.get_dealer_task_name_plain(dealer) if i not in tasks]
         return tasks_name_list
 
+    # 全ての中から残っているタスクを返す
+    def get_sa_tasks(self, tasks):
+        tasks_name_list = [i for i in self.get_all_task_name_plain() if i not in tasks]
+        return tasks_name_list
+        
     # 引数のタスクのwikiURLを返す。
     def get_task_url(self, dealer, task_name):
         return self.jsn[dealer][task_name]["wiki_url"]
@@ -96,8 +108,6 @@ class load_json:
     def get_task_item_sum(self,dealer, tasks_name):
         lists = []
         lists = self.get_task_item_all(dealer, tasks_name)
-        print(lists[11])
-        print(lists[16])
         length = len(lists)
         for num in range(length):
             next = num + 1
@@ -109,6 +119,8 @@ class load_json:
                 next = next + 1
         return lists
 
+dj = load_json()
+print(dj.get_all_task_name_plain())
     # 最初のkeyを取る
     # for key in jsn:
     #     print(key)
