@@ -26,7 +26,7 @@ def task_item():
         for task in tasks:
             tasks_no_symbol.append(task.replace('_',' '))
         remain_tasks = json.get_sa_tasks(tasks_no_symbol)
-        tasks_item = json.get_task_item_sum('prapor',remain_tasks)
+        tasks_item = json.get_task_item_sum(remain_tasks)
         return render_template('task_item.html', tasks_item=tasks_item)
 
 if __name__ == "__main__":

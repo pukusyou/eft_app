@@ -10,7 +10,7 @@
 <body>
     <h1>タスク進行状況</h1>
     <form action="/task/item/" method="post", enctype="multipart/form-data">
-        <div id="prapor">
+        <div id="prapor" class="task">
         <h1>Prapor</h1>
         {% for task in prapor_tasks %}
         <div id="task">
@@ -19,7 +19,7 @@
         </div>
         {% endfor %}
         </div>
-        <div id="therapist">
+        <div id="therapist" class="task">
             <h1>Therapist</h1>
             {% for task in therapist_tasks %}
             <div id="task">
@@ -28,7 +28,7 @@
             </div>
             {% endfor %}
         </div>
-        <div id="skier">
+        <div id="skier" class="task">
             <h1>Skier</h1>
             {% for task in skier_tasks %}
             <div id="task">
@@ -37,7 +37,7 @@
             </div>
             {% endfor %}
         </div>
-        <div id="peacekeeper">
+        <div id="peacekeeper" class="task">
             <h1>Peacekeeper</h1>
             {% for task in peacekeeper_tasks %}
             <div id="task">
@@ -46,7 +46,7 @@
             </div>
             {% endfor %}
         </div>
-        <div id="mechanic">
+        <div id="mechanic" class="task">
             <h1>Mechanic</h1>
             {% for task in mechanic_tasks %}
             <div id="task">
@@ -55,7 +55,7 @@
             </div>
             {% endfor %}
         </div>
-        <div id="ragman">
+        <div id="ragman" class="task">
             <h1>Ragman</h1>
             {% for task in ragman_tasks %}
             <div id="task">
@@ -64,7 +64,7 @@
             </div>
             {% endfor %}
         </div>
-        <div id="jaeger">
+        <div id="jaeger" class="task">
             <h1>Jaeger</h1>
             {% for task in jaeger_tasks %}
             <div id="task">
