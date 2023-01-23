@@ -1,8 +1,6 @@
-$(function () {
-    $('.btn1').click(function () {
-        $('.key').toggle();
-    });
-});
+function toggle_element(classname) {
+        $(classname).toggle();
+}
 
 $(function(){
 	// 変数に要素を入れる
@@ -18,7 +16,8 @@ $(function(){
 
     $("#loot").on("click", function() {
         $("#loot").toggleClass("checked");
-        if(!$('input[name="check"]').prop("checked")) {
+        toggle_element('.loot');
+        if(!$('#loot_in').prop("checked")) {
           $("#loot input").prop("checked", true);
         } else {
           $("#loot input").prop("checked", false);
@@ -26,10 +25,20 @@ $(function(){
       });
       $("#key").on("click", function() {
         $("#key").toggleClass("checked");
-        if(!$('input[name="check"]').prop("checked")) {
+        toggle_element('.key');
+        if(!$('#key_in').prop("checked")) {
           $("#key input").prop("checked", true);
         } else {
           $("#key input").prop("checked", false);
+        }
+      });
+      $("#wepon").on("click", function() {
+        $("#wepon").toggleClass("checked");
+        toggle_element('.wepon');
+        if(!$('#wepon_in').prop("checked")) {
+          $("#wepon input").prop("checked", true);
+        } else {
+          $("#wepon input").prop("checked", false);
         }
       });
 
@@ -44,8 +53,4 @@ $(function(){
 			container.removeClass('active');
 		}
 	});
-
-    $('#loot').change(function() {
-        console.log("Ok");
-    });
 });

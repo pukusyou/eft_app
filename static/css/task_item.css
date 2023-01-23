@@ -66,14 +66,19 @@ input[type="checkbox"] {
     border: 1px solid #ccc;
 }
 
-@media screen and (min-width: 980px) {
+@media screen and (min-width: 700px) {
 .bigBox{
     width: 200px;
-    height: 350px;
+    height: 300px;
     float:left;
     flex-wrap: wrap;
     }
 }
+@media screen and (max-width: 699px) {
+    .bigBox{
+        padding-bottom: 20px;
+        }
+    }
 
 .item_img {
     max-width: 100%;
@@ -164,7 +169,7 @@ p{
 @media screen and (min-width: 601px) {
 .toggle {
     position: relative;
-    left: auto;
+    /* left: auto; */
     width: 78px;
     height: 48px;
     margin: 40px 60px;
@@ -179,7 +184,7 @@ p{
 @media screen and (max-width: 600px) {
     .toggle {
         position: relative;
-        left: 100px;
+        left: auto;
         width: 78px;
         height: 48px;
         margin: 40px 60px;
@@ -187,7 +192,12 @@ p{
         overflow: hidden;
         cursor: pointer;
       }
+      th{
+        padding-right: 0px;
+      }
     }
+
+
 
   .toggle input[type=checkbox] {
     display: none;
