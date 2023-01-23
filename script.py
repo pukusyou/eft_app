@@ -65,4 +65,16 @@ def download_img(dealer):
             print(img[n] + ' >>> ' + save_path)
             time.sleep(2)
 
-download_img('Jaeger')
+def add_str(path, yoso, yoso2, sinyoso):
+    with open(path, "r",encoding="utf-8") as file:
+        lines = file.readlines()
+
+    with open(path, "w", encoding="utf-8") as file:
+        for line in lines:
+            if yoso in line and (yoso2 not in line and 'Key' not in line):
+                file.write(line+',')
+                file.write(sinyoso+'\n')
+            else:
+                file.write(line)
+
+add_str('task.json','img','key','"category":"loot"')

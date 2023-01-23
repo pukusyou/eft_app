@@ -104,9 +104,19 @@ class load_json:
                 fullnameList.append(self.jsn[dealer][task_name]["items"][i]["img"])
         return fullnameList
 
+    def get_task_item_category(self, dealer, task_name):
+        fullnameList = []
+        list = []
+        if('items' in self.jsn[dealer][task_name]):
+            for item in self.jsn[dealer][task_name]["items"]:
+                list.append(item)
+            for i in list:
+                fullnameList.append(self.jsn[dealer][task_name]["items"][i]["category"])
+        return fullnameList
+
     def get_task_item_all(self, dealer, task_name):
         return [list(e) for e in zip(self.get_task_item_fullname(dealer,task_name), self.get_task_item_name(dealer,task_name),
-        self.get_task_item_num(dealer,task_name), self.get_task_item_inRaid(dealer,task_name), self.get_task_item_img(dealer,task_name))]
+        self.get_task_item_num(dealer,task_name), self.get_task_item_inRaid(dealer,task_name), self.get_task_item_img(dealer,task_name),self.get_task_item_category(dealer,task_name))]
 
     # def get_task_item_all(self, tasks_name):
     #     for dealer in self.dealer_list:
@@ -119,14 +129,11 @@ class load_json:
         for task_name in tasks_name:
             for item in self.get_task_item_all(task_name[1], task_name[0]):
                 lists.append(item)
-        # self.get_task_item_fullname(tasks_name[1][1], task_name[1][0])
-        # print(tasks_name[1][0])
-        # print(tasks_name[1][1])
         length = len(lists)
         for num in range(length):
             next = num + 1
             while(next<length):
-                if(lists[num][0]==lists[next][0] and lists[num][2]<0 and lists[next][2]<0):
+                if(lists[num][0]==lists[next][0] and lists[num][2]>0 and lists[next][2]>0):
                     lists[num][2] = lists[num][2] + lists.pop(next)[2]
                     length = length - 1
                 next = next + 1

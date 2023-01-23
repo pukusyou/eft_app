@@ -30,4 +30,4 @@ def task_item():
         return render_template('task_item.html', tasks_item=tasks_item)
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run(debug=True, host='0.0.0.0')

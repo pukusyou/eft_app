@@ -5,28 +5,63 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Items</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='css/task_item.css') }}">
+    <script type="text/javascript" src="{{ url_for('static', filename='../static/js/jquery-3.6.3.min.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='../static/js/task_item.js') }}"></script>
 </head>
 <body>
     <h1>タスクで使用するアイテム</h1>
+    <!-- モーダルを開くボタン -->
+    <div class="modal-open">表示設定</div>
+
+        <!-- モーダル本体 -->
+    <div class="modal-container">
+            <div class="modal-body">
+                <!-- 閉じるボタン -->
+                <div class="modal-close">×</div>
+                <!-- モーダル内のコンテンツ -->
+                <div class="modal-content">
+                    <h2>表示設定</h2>
+                    <table>
+                    <th><p class="loot_p">ルート品の表示</p></th>
+                    <th><div class="toggle checked" id="loot">  
+                        <input type="checkbox" name="check" id="loot"/>
+                    </div></th>
+                </table>
+                <table>
+                    <th><p class="key_p">鍵の表示　　　</p></td>
+                    <th><div class="toggle checked" id="key">
+                        <input type="checkbox" name="check" />
+                    </div></th>
+                </table>
+                <table>
+                    <th><p class="wepon_p">装備系の表示　</p></td>
+                    <th><div class="toggle checked" id="wepon">
+                        <input type="checkbox" name="check" />
+                    </div></th>
+                </table>
+                </div>
+            </div>
+    </div>
     {% for item in tasks_item %}
-    <div id="bigBox">
-    <div id="box1">
+    <div class="bigBox {{item[5]}}">
+    <div class="box1">
         <p id="fullname">{{item[1]}}</p>
     </div>
-    <div id="box2">
+    <div class="box2">
         {% if item[2] > 0 %}
-        <p id="num">x{{item[2]}}</p>
+        <p class="num">x{{item[2]}}</p>
         {% else %}
-        <p id="num">タスクで使用</p>
+        <p class="num">タスクで使用</p>
         {% endif %}
         {% if item[3] %}
-        <p id="inRaid">inRaid</p>
+        <p class="inRaid">inRaid</p>
         {% endif %}
     </div>
-    <div id="box3">
-        <img src={{item[4]}} id="item_img">
+    <div class="box3">
+        <img src="{{item[4]}}" class="item_img">
     </div>
     </div>
     {% endfor %}
 </body>
+
 </html>
