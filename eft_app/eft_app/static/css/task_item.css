@@ -54,10 +54,9 @@ input[type="checkbox"] {
     background-color: #212020;
     display: flex;
     justify-content: space-between;
-    /* border-right:1px solid #ccc;
+    border-right:1px solid #ccc;
 	border-bottom:1px solid #ccc;
-	border-left:1px solid #ccc; */
-    border: 1px solid #ccc;
+	border-left:1px solid #ccc;
 }
 .box3 {
     width: 100%;
@@ -69,12 +68,17 @@ input[type="checkbox"] {
 
 @media screen and (min-width: 700px) {
 .bigBox{
-    width: 180px;
-    /* height: 300px; */
+    width: 200px;
+    height: 300px;
     float:left;
     flex-wrap: wrap;
     }
 }
+@media screen and (max-width: 699px) {
+    .bigBox{
+        padding-bottom: 20px;
+        }
+    }
 
 .item_img {
     max-width: 100%;
@@ -231,15 +235,3 @@ p{
     left: 33px;
     box-shadow: 0 9px 28px -6px rgba(0, 0, 0, 0.5);
   }
-
-  img {
-    object-fit: contain;
-    overflow: hidden;
-    width: 120px;
-    height: 120px;
-}
-.bigBox {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
