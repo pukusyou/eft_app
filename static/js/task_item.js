@@ -1,3 +1,24 @@
+var driver = new Driver({
+  stageBackground: '#3d648a',
+  nextBtnText: '次へ',
+  prevBtnText: '戻る',
+  closeBtnText: '閉じる',
+  doneBtnText: '完了',
+  padding: 5, 
+});
+
+
+driver.defineSteps([
+  {
+    element: '.modal-open', // ハイライトさせる要素
+    popover: {
+      title: '1.表示設定',
+      description: 'アイテムの表示・非表示のオプションを選択できます',
+      position: 'right',
+      }
+   }
+   ]);
+
 function toggle_element(classname) {
         $(classname).toggle();
 }
@@ -8,6 +29,9 @@ $(function(){
 		close = $('.modal-close'),
 		container = $('.modal-container');
 
+    if ($("#fullname").text()=='MP-133') {
+      driver.start();
+    }
 	//開くボタンをクリックしたらモーダルを表示する
 	open.on('click',function(){	
 		container.addClass('active');
