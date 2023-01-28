@@ -305,7 +305,8 @@
 					"name": "Dorm 206",
 					"num": -1,
 					"inRaid": false,
-					"img": "../../static/img/Therapist/Dorm_room_206_Key.png"
+					"img": "../../static/img/Therapist/Dorm_room_206_Key.png",
+					"category": "key"
 				}
 			}
 		},
@@ -359,7 +360,8 @@
 					"name": "114 Key",
 					"num": -1,
 					"inRaid": false,
-					"img": "../../static/img/Therapist/Dorm_room_114_Key.png"
+					"img": "../../static/img/Therapist/Dorm_room_114_Key.png",
+					"category": "key"
 				}
 			}
 		},
@@ -679,7 +681,8 @@
 					"name": "Unk. key",
 					"num": -1,
 					"inRaid": false,
-					"img": "../../static/img/Skier/Unknown_Key.png"
+					"img": "../../static/img/Skier/Unknown_Key.png",
+					"category": "key"
 				}
 			}
 		},
@@ -728,7 +731,8 @@
 					"name": "Dorm 220",
 					"num": -1,
 					"inRaid": false,
-					"img": "../../static/img/Skier/Dorm_room_220_Key.png"
+					"img": "../../static/img/Skier/Dorm_room_220_Key.png",
+					"category": "key"
 				}
 			}
 		},
@@ -740,7 +744,8 @@
 					"name": "Dorm 220",
 					"num": -1,
 					"inRaid": false,
-					"img": "../../static/img/Skier/Dorm_room_220_Key.png"
+					"img": "../../static/img/Skier/Dorm_room_220_Key.png",
+					"category": "key"
 				}
 			}
 		},
@@ -1258,7 +1263,8 @@
 					"name": "Key card",
 					"num": -1,
 					"inRaid": false,
-					"img": "../../static/img/Peacekeeper/Key_card_with_a_blue_marking.png"
+					"img": "../../static/img/Peacekeeper/Key_card_with_a_blue_marking.png",
+					"category": "key"
 				}
 			}
 		},
@@ -1733,7 +1739,7 @@
 					"category": "loot"
 				},
 				"item2": {
-					"full_name": "Military COFDM Wireless Signal Transmitters",
+					"full_name": "Military COFDM Wireless Signal Transmitter",
 					"name": "SG-C10",
 					"num": 4,
 					"inRaid": true,
@@ -1741,7 +1747,7 @@
 					"category": "loot"
 				},
 				"item3": {
-					"full_name": "Gas analyzers",
+					"full_name": "Gas analyzer",
 					"name": "GasAn",
 					"num": 4,
 					"inRaid": true,
@@ -1749,7 +1755,7 @@
 					"category": "loot"
 				},
 				"item4": {
-					"full_name": "Broken GPhone smartphones",
+					"full_name": "Broken GPhone smartphone",
 					"name": "GPhone",
 					"num": 4,
 					"inRaid": true,
@@ -2034,19 +2040,11 @@
 			"wiki_url": "https://wikiwiki.jp/eft/Ragman/Sew%20it%20good%20-%20Part%202",
 			"items": {
 				"item1": {
-					"full_name": "BNTI Gzhel-K armor(残り耐久値0-50%)",
-					"name": "GZHEL-K(耐久値0-50%)",
-					"num": 1,
+					"full_name": "BNTI Gzhel-K armor",
+					"name": "GZHEL-K",
+					"num": 2,
 					"inRaid": false,
-					"img": "../../static/img/Ragman/BNTI_Gzhel-K_armor(残り耐久値0-50%).png",
-					"category": "wepon"
-				},
-				"item2": {
-					"full_name": "BNTI Gzhel-K armor(残り耐久値0-50%)",
-					"name": "GZHEL-K(耐久値50-100%)",
-					"num": 1,
-					"inRaid": false,
-					"img": "../../static/img/Ragman/BNTI_Gzhel-K_armor(残り耐久値0-50%).png",
+					"img": "../../static/img/Ragman/BNTI_Gzhel-K_armor.png",
 					"category": "wepon"
 				}
 			}
@@ -2077,19 +2075,11 @@
 			"wiki_url": "https://wikiwiki.jp/eft/Ragman/Sew%20it%20good%20-%20Part%203",
 			"items": {
 				"item1": {
-					"full_name": "6B43 armor(残り耐久値0-50%)",
-					"name": "6B43 6A(耐久値0-50%)",
-					"num": 1,
+					"full_name": "6B43 armor",
+					"name": "6B43 6A",
+					"num": 2,
 					"inRaid": false,
-					"img": "../../static/img/Ragman/6B43_armor(残り耐久値0-50%).png",
-					"category": "wepon"
-				},
-				"item2": {
-					"full_name": "6B43 armor(残り耐久値0-50%)",
-					"name": "6B43 6A(耐久値50-100%)",
-					"num": 1,
-					"inRaid": false,
-					"img": "../../static/img/Ragman/6B43_armor(残り耐久値0-50%).png",
+					"img": "../../static/img/Ragman/6B43_armor.png",
 					"category": "wepon"
 				}
 			}

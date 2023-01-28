@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1577082847733195"
+     crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Items</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/task_item.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/lightbox.css') }}">
+    <script type="text/javascript" src="{{ url_for('static', filename='../static/js/jquery-3.6.3.min.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='../static/js/lightbox.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='../static/js/task_item.js') }}"></script>
+</head>
+<body>
+    <h1>タスクで使用するアイテム</h1>
+    <!-- モーダルを開くボタン -->
+    <div class="modal-open">表示設定</div>
+
+        <!-- モーダル本体 -->
+    <div class="modal-container">
+            <div class="modal-body">
+                <!-- 閉じるボタン -->
+                <div class="modal-close">×</div>
+                <!-- モーダル内のコンテンツ -->
+                <div class="modal-content">
+                    <h2>表示設定</h2>
+                    <table>
+                    <th><p class="loot_p">ルート品の表示</p></th>
+                    <th><div class="toggle checked" id="loot">  
+                        <input type="checkbox" name="check" id="loot_in" class="on_off_box"/>
+                    </div></th>
+                </table>
+                <table>
+                    <th><p class="key_p">鍵の表示　　　</p></td>
+                    <th><div class="toggle checked" id="key">
+                        <input type="checkbox" name="check" id="key_in" class="on_off_box"/>
+                    </div></th>
+                </table>
+                <table>
+                    <th><p class="wepon_p">装備系の表示　</p></td>
+                    <th><div class="toggle checked" id="wepon">
+                        <input type="checkbox" name="check" id="wepon_in"/>
+                    </div></th>
+                </table>
+                </div>
+            </div>
+    </div>
+    {% for item in tasks_item %}
+    <div class="bigBox {{item[5]}}">
+    <div class="box1">
+        <p id="fullname">{{item[1]}}</p>
+    </div>
+    <div class="box2">
+        {% if item[2] > 0 %}
+        <p class="num">x{{item[2]}}</p>
+        {% else %}
+        <p class="num">タスクで使用</p>
+        {% endif %}
+        {% if item[3] %}
+        <p class="inRaid">inRaid</p>
+        {% endif %}
+    </div>
+    <div class="box3">
+        <a href="{{item[4]}}" data-lightbox="group-name"><img src="{{item[4]}}" class="item_img" loading="lazy"></a>
+    </div>
+    </div>
+    {% endfor %}
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1577082847733195"
+    crossorigin="anonymous"></script>
+<!-- eft_test -->
+<ins class="adsbygoogle"
+    style="display:block"
+    data-ad-client="ca-pub-1577082847733195"
+    data-ad-slot="5022456881"
+    data-ad-format="auto"
+    data-full-width-responsive="true"></ins>
+<script>
+    (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</body>
+
+</html>

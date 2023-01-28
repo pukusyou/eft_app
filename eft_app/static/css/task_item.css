@@ -178,9 +178,6 @@ p{
   }
 }
 @media screen and (max-width: 600px) {
-    body{
-        font-size: 50%;
-    }
     .toggle {
         position: relative;
         left: auto;
