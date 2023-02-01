@@ -3,8 +3,11 @@ import json
 class load_json:
 
     def __init__(self):        
-        json_open = open('json/task.json', 'r', encoding='utf-8')
+        json_open = open('json/hideout.json', 'r', encoding='utf-8')
         self.dealer_list = ['prapor','Therapist','Skier','Peacekeeper','Mechanic', 'Ragman','Jaeger']
+        self.hideout_list = ['Bitcoin Farm','Booze Generator','Intelligence Center','Lavatory','Medstation','Nutrition Unit','Scav case','Water collector','Workbench'
+        ,'Air Filtering Unit','Generator','Heating','Illumination','Library','Rest Space','Security','Shooting range','Solar power',
+        'Stash','Vents']
         self.jsn = json.load(json_open)
 
     # dealerの持っているすべてのタスク名を返す。(空白を'_'に置き換えたものも返す)
@@ -25,17 +28,17 @@ class load_json:
         return task_list
 
     # すべてのタスク名を返す。
-    def get_all_task_name_plain(self):
+    def get_all_task_name_plain(self, list):
         task_list = []
-        for dealer in self.dealer_list:
+        for dealer in list:
             task_list = task_list + self.get_dealer_task_name_plain(dealer)
         return task_list
 
     # 引数のタスクを持っているdealerを返す
-    def get_task_dealer(self, tasks):
+    def get_task_dealer(self, tasks, list):
         dealer_list = []
         for task in tasks:
-            for dealer in self.dealer_list:
+            for dealer in list:
                 for dealer_task in self.get_dealer_task_name_plain(dealer):
                     if(task==dealer_task):
                             dealer_list.append(dealer)
@@ -44,8 +47,12 @@ class load_json:
 
     # 全ての中から残っているタスクを返す
     def get_sa_tasks(self, tasks):
-        tasks_name_list = [i for i in self.get_all_task_name_plain() if i not in tasks]
-        return [list(e) for e in zip(tasks_name_list, self.get_task_dealer(tasks_name_list))]
+        tasks_name_list = [i for i in self.get_all_task_name_plain(self.dealer_list) if i not in tasks]
+        return [list(e) for e in zip(tasks_name_list, self.get_task_dealer(tasks_name_list, self.dealer_list))]
+
+    def get_sa_hideout(self, tasks):
+        tasks_name_list = [i for i in self.get_all_task_name_plain(self.hideout_list) if i not in tasks]
+        return [list(e) for e in zip(tasks_name_list, self.get_task_dealer(tasks_name_list, self.hideout_list))]   
         
     # 引数のタスクのwikiURLを返す。
     def get_task_url(self, dealer, task_name):

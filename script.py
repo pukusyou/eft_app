@@ -2,6 +2,7 @@ import bs4
 import deal_json
 import urllib.request
 import time
+import deal_json as js
 class script:
 
     def __init__(self, path): 
@@ -77,4 +78,15 @@ def add_str(path, yoso, yoso2, sinyoso):
             else:
                 file.write(line)
 
-add_str('task.json','img','key','"category":"loot"')
+def write_txt(list):
+    f = open('item.txt', 'w')
+    for txt in list:
+        f.write(txt + '\n')
+    f.close
+
+json = js.load_json()
+remain_tasks = json.get_sa_hideout([])
+name = []
+for a in remain_tasks:
+    name = name + json.get_task_item_fullname(a[1], a[0])
+write_txt(name)

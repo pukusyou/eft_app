@@ -1,0 +1,1268 @@
+{
+    "Bitcoin Farm": {
+		"Bitcoin Farm Lv1": {
+			"items": {
+				"item1": {
+					"full_name": "T-Shaped Plug",
+					"name": "T-Plug",
+					"num": 5,
+					"img": "https://cdn.wikiwiki.jp/to/w/eft/img/::ref/T-plug_cell.png"
+				},
+                "item2": {
+					"full_name": "VPX Flash Storage Module",
+					"name": "VPX",
+					"num": 1,
+					"img": "https://cdn.wikiwiki.jp/to/w/eft/img/::ref/VPX_cell.png"
+				},
+                "item3": {
+					"full_name": "Powercord",
+					"name": "Cord",
+					"num": 10,
+					"img": "https://cdn.wikiwiki.jp/to/w/eft/img/::ref/powercode_cell.png"
+				},
+                "item4": {
+					"full_name": "Power supply unit",
+					"name": "PSU",
+					"num": 10,
+					"img": "https://cdn.wikiwiki.jp/to/w/eft/img/::ref/PSU_cell2.png"
+				},
+                "item5": {
+					"full_name": "CPU Fan",
+					"name": "CPU Fan",
+					"num": 15,
+					"img": "https://cdn.wikiwiki.jp/to/w/eft/img/::ref/cpu-fan_cell.png"
+				}
+			}
+		},
+        "Bitcoin Farm Lv2":{
+            "items": {
+				"item1": {
+					"full_name": "CPU Fan",
+					"name": "CPU Fan",
+					"num": 15,
+					"img": "https://cdn.wikiwiki.jp/to/w/eft/img/::ref/cpu-fan_cell.png"
+				},
+                "item2": {
+					"full_name": "Power supply unit",
+					"name": "PSU",
+					"num": 10,
+					"img": "https://cdn.wikiwiki.jp/to/w/eft/img/::ref/PSU_cell2.png"
+				},
+                "item3": {
+					"full_name": "dPrinted circuit boar",
+					"name": "Circuit",
+					"num": 15,
+					"img": "https://cdn.wikiwiki.jp/to/w/eft/img/::ref/circuit_cell.png"
+				},
+                "item4": {
+					"full_name": "Phase control relay",
+					"name": "Relay",
+					"num": 5,
+					"img": "https://cdn.wikiwiki.jp/to/w/eft/img/::ref/phase-control-relay_cell.png"
+				},
+                "item5": {
+					"full_name": "Military power filter",
+					"name": "Filter",
+					"num": 2,
+					"img": "https://cdn.wikiwiki.jp/to/w/eft/img/::ref/military-power-filter_cell.png"
+				}
+			}
+        },
+        "Bitcoin Farm Lv3":{
+            "items": {
+				"item1": {
+					"full_name": "CPU Fan",
+					"name": "CPU Fan",
+					"num": 25,
+					"img": "https://cdn.wikiwiki.jp/to/w/eft/img/::ref/cpu-fan_cell.png"
+				},
+                "item2": {
+					"full_name": "Silicone tube",
+					"name": "Tube",
+					"num": 15,
+					"img": "https://cdn.wikiwiki.jp/to/w/eft/img/::ref/silicone-tube_cell.png"
+				},
+                "item3": {
+					"full_name": "Electric motor",
+					"name": "Motor",
+					"num": 10,
+					"img": "https://cdn.wikiwiki.jp/to/w/eft/img/::ref/electric-motor_cell.png"
+				},
+                "item4": {
+					"full_name": "Pressure gauge",
+					"name": "Gauge",
+					"num": 10,
+					"img": "https://cdn.wikiwiki.jp/to/w/eft/img/::ref/Pressure-gauge_cell.png"
+				},
+                "item5": {
+					"full_name": "6-STEN-140-M military battery",
+					"name": "Tank battery",
+					"num": 1,
+					"img": "https://cdn.wikiwiki.jp/to/w/eft/img/::ref/6-sten-140-m-military-battery_cell.png"
+				}
+			}
+        }
+    },
+    "Booze Generator":{
+        "Booze Generator Lv1": {
+			"items": {
+				"item1": {
+					"full_name": "Metal spare parts",
+					"name": "M.parts",
+					"num": 2,
+					"img": "https://cdn.wikiwiki.jp/to/w/eft/img/::ref/metal_spare_parts_icon.png"
+				},
+                "item2": {
+					"full_name": "Pressure gauge",
+					"name": "Gauge",
+					"num": 2,
+					"img": "https://cdn.wikiwiki.jp/to/w/eft/img/::ref/Pressure-gauge_cell.png"
+				},
+                "item3": {
+					"full_name": "Radiator helix",
+					"name": "Helix",
+					"num": 3,
+					"img": "https://cdn.wikiwiki.jp/to/w/eft/img/::ref/radiator-helix_cell.png"
+				},
+                "item4": {
+					"full_name": "Silicone tube",
+					"name": "Tube",
+					"num": 4,
+					"img": "https://cdn.wikiwiki.jp/to/w/eft/img/::ref/silicone-tube_cell.png"
+				},
+                "item5": {
+					"full_name": "Pipe grip wrench",
+					"name": "PGW",
+					"num": 1,
+					"img": "https://cdn.wikiwiki.jp/to/w/eft/img/::ref/pipe_grip_wrench_icon.png"
+				},
+                "item6": {
+					"full_name": "Analog thermometer",
+					"name": "Therm.",
+					"num": 2,
+					"img": "https://cdn.wikiwiki.jp/to/w/eft/img/::ref/analog-thermometer_cell.png"
+				},
+                "item7": {
+					"full_name": "Corrugated hose",
+					"name": "Hose",
+					"num": 5,
+					"img": "https://cdn.wikiwiki.jp/to/w/eft/img/::ref/corrugated-hose_cell.png"
+				}
+			}
+		}
+    },
+	"Intelligence Center":{
+		"Intelligence Center Lv1": {
+			"items": {
+				"item1": {
+					"full_name": "Factory plan map",
+					"name": "Factory",
+					"num": 1,
+					"img": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/6/66/Factory_Map_Icon.png"
+				},
+                "item2": {
+					"full_name": "Folder with intelligence",
+					"name": "Intelligence",
+					"num": 1,
+					"img": "https://cdn.wikiwiki.jp/to/w/eft/img/::ref/folder-with-intelligence_cell.png"
+				},
+                "item3": {
+					"full_name": "Topographic survey map",
+					"name": "Helix",
+					"num": 1,
+					"img": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/3/3c/MapsIcon.png"
+				}
+			}
+		},
+		"Intelligence Center Lv2":{
+			"items": {
+				"item1": {
+					"full_name": "Folder with intelligence",
+					"name": "Intelligence",
+					"num": 3,
+					"img": "https://cdn.wikiwiki.jp/to/w/eft/img/::ref/folder-with-intelligence_cell.png"
+				},
+                "item2": {
+					"full_name": "Secure Flash drive",
+					"name": "Flash",
+					"num": 3,
+					"img": "https://cdn.wikiwiki.jp/to/w/eft/img/::ref/flashdrive_cell.png"
+				},
+				"item3": {
+					"full_name": "Powercord",
+					"name": "Cord",
+					"num": 7,
+					"img": "https://cdn.wikiwiki.jp/to/w/eft/img/::ref/powercode_cell.png"
+				},
+				"item4": {
+					"full_name": "Damaged hard drive",
+					"name": "HDD",
+					"num": 4,
+					"img": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/4/44/Damaged_Hard_Drive_Icon.png"
+				}
+			}
+		},
+		"Intelligence Center Lv3":{
+			"items": {
+				"item1": {
+					"full_name": "Military cable",
+					"name": "M.Cable",
+					"num": 3,
+					"img": "https://cdn.wikiwiki.jp/to/w/eft/img/::ref/MCable_cell.png"
+				},
+                "item2": {
+					"full_name": "Military COFDM wireless Signal Transmitter",
+					"name": "SG-C10",
+					"num": 2,
+					"img": "../../static/img/Peacekeeper/Military_COFDM_wireless_Signal_Transmitter.png"
+				},
+				"item3": {
+					"full_name": "Far-forward GPS Signal Amplifier Unit",
+					"name": "GPSA",
+					"num": 1,
+					"img": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/d/d4/GPSamplifier_icon.png"
+				},
+				"item4": {
+					"full_name": "VPX Flash Storage Module",
+					"name": "VPX",
+					"num": 2,
+					"img": "https://cdn.wikiwiki.jp/to/w/eft/img/::ref/VPX_cell.png"
+				},
+				"item5": {
+					"full_name": "Military flash drive",
+					"name": "MFD",
+					"num": 5,
+					"img": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/3/35/MFD_icon.png"
+				},
+				"item6": {
+					"full_name": "Secured magnetic tape cassette",
+					"name": "SMT",
+					"num": 2,
+					"img": "https://cdn.wikiwiki.jp/to/w/eft/img/::ref/secured_magnetic_tape_cassette_icon.png"
+				}
+			}
+		}
+	},
+	"Lavatory":{
+		"Lavatory Lv1": {
+			"items": {
+				"item1": {
+					"full_name": "Toilet paper",
+					"name": "TP",
+					"num": 1,
+					"img": "https://cdn.wikiwiki.jp/to/w/eft/img/::ref/toilet-paper_cell.png"
+				},
+                "item2": {
+					"full_name": "Toothpaste",
+					"name": "Toothpaste",
+					"num": 1,
+					"img": "https://cdn.wikiwiki.jp/to/w/eft/img/::ref/toothpaste_cell2.png"
+				},
+                "item3": {
+					"full_name": "Soap",
+					"name": "Soap",
+					"num": 1,
+					"img": "https://cdn.wikiwiki.jp/to/w/eft/img/::ref/soap_cell.png"
+				},
+				"item4": {
+					"full_name": "Awl",
+					"name": "Awl",
+					"num": 1,
+					"img": "https://cdn.wikiwiki.jp/to/w/eft/img/::ref/Awl_cell.png"
+				}
+			}
+		},
+		"Lavatory Lv2":{
+			"items": {
+				"item1": {
+					"full_name": "KEKTAPE duct tape",
+					"name": "KEK",
+					"num": 1,
+					"img": "https://cdn.wikiwiki.jp/to/w/eft/img/::ref/folder-with-intelligence_cell.png"
+				},
+                "item2": {
+					"full_name": "Corrugated hose",
+					"name": "Hose",
+					"num": 3,
+					"img": "https://cdn.wikiwiki.jp/to/w/eft/img/::ref/flashdrive_cell.png"
+				},
+				"item3": {
+					"full_name": "A pack of screws",
+					"name": "Screws",
+					"num": 5,
+					"img": "https://cdn.wikiwiki.jp/to/w/eft/img/::ref/powercode_cell.png"
+				},
+				"item4": {
+					"full_name": "Electric drill",
+					"name": "Drill",
+					"num": 1,
+					"img": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/4/44/Damaged_Hard_Drive_Icon.png"
+				},
+				"item5": {
+					"full_name": "Sewing kit",
+					"name": "Krasavch.",
+					"num": 2,
+					"img": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/4/44/Damaged_Hard_Drive_Icon.png"
+				}
+			}
+		},
+		"Lavatory Lv3":{
+			"items": {
+				"item1": {
+					"full_name": "Corrugated hose",
+					"name": "Hose",
+					"num": 6,
+					"img": "https://cdn.wikiwiki.jp/to/w/eft/img/::ref/MCable_cell.png"
+				},
+                "item2": {
+					"full_name": "Pressure gauge",
+					"name": "Gauge",
+					"num": 2,
+					"img": "../../static/img/Peacekeeper/Military_COFDM_wireless_Signal_Transmitter.png"
+				},
+				"item3": {
+					"full_name": "A set of tools",
+					"name": "Set",
+					"num": 1,
+					"img": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/d/d4/GPSamplifier_icon.png"
+				},
+				"item4": {
+					"full_name": "Xenomorph sealing foam",
+					"name": "Xeno",
+					"num": 3,
+					"img": "https://cdn.wikiwiki.jp/to/w/eft/img/::ref/VPX_cell.png"
+				}
+			}
+		}
+	},
+	"Medstation":{
+		"Medstation Lv1": {
+			"items": {
+				"item1": {
+					"full_name": "Disposable syringe",
+					"name": "Syringe",
+					"num": 1,
+					"img": "https://cdn.wikiwiki.jp/to/w/eft/img/::ref/toilet-paper_cell.png"
+				},
+                "item2": {
+					"full_name": "Pile of meds",
+					"name": "Meds",
+					"num": 1,
+					"img": "https://cdn.wikiwiki.jp/to/w/eft/img/::ref/toothpaste_cell2.png"
+				},
+                "item3": {
+					"full_name": "Aseptic bandage",
+					"name": "Bandage",
+					"num": 2,
+					"img": "https://cdn.wikiwiki.jp/to/w/eft/img/::ref/soap_cell.png"
+				},
+				"item4": {
+					"full_name": "Bottle of OLOLO Multivitamins",
+					"name": "Vitam.",
+					"num": 1,
+					"img": "https://cdn.wikiwiki.jp/to/w/eft/img/::ref/Awl_cell.png"
+				}
+			}
+		},
+		"Medstation Lv2":{
+			"items": {
+				"item1": {
+					"full_name": "Medical tools",
+					"name": "MedTools",
+					"num": 3,
+					"img": "https://cdn.wikiwiki.jp/to/w/eft/img/::ref/folder-with-intelligence_cell.png"
+				},
+                "item2": {
+					"full_name": "Medical bloodset",
+					"name": "Bloodset",
+					"num": 2,
+					"img": "https://cdn.wikiwiki.jp/to/w/eft/img/::ref/flashdrive_cell.png"
+				},
+				"item3": {
+					"full_name": "Esmarch tourniquet",
+					"name": "Esmarch",
+					"num": 5,
+					"img": "https://cdn.wikiwiki.jp/to/w/eft/img/::ref/powercode_cell.png"
+				},
+				"item4": {
+					"full_name": "Saline solution",
+					"name": "NaCl",
+					"num": 3,
+					"img": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/4/44/Damaged_Hard_Drive_Icon.png"
+				}
+			}
+		},
+		"Medstation Lv3":{
+			"items": {
+				"item1": {
+					"full_name": "Ophthalmoscope",
+					"name": "OScope",
+					"num": 1,
+					"img": "https://cdn.wikiwiki.jp/to/w/eft/img/::ref/MCable_cell.png"
+				},
+                "item2": {
+					"full_name": "Saline solution",
+					"name": "NaCl",
+					"num": 4,
+					"img": "../../static/img/Peacekeeper/Military_COFDM_wireless_Signal_Transmitter.png"
+				},
+				"item3": {
+					"full_name": "LEDX Skin Transilluminator",
+					"name": "LEDX",
+					"num": 1,
+					"img": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/d/d4/GPSamplifier_icon.png"
+				}
+			}
+		}
+	},
+	"Nutrition Unit":{
+		"Nutrition Unit Lv1": {
+			"items": {
+				"item1": {
+					"full_name": "Can of white salt",
+					"name": "Salt",
+					"num": 1,
+					"img": "https://cdn.wikiwiki.jp/to/w/eft/img/::ref/toilet-paper_cell.png"
+				},
+                "item2": {
+					"full_name": "Powercord",
+					"name": "Cord",
+					"num": 1,
+					"img": "https://cdn.wikiwiki.jp/to/w/eft/img/::ref/toothpaste_cell2.png"
+				},
+                "item3": {
+					"full_name": "Phase control relay",
+					"name": "Relay",
+					"num": 2,
+					"img": "https://cdn.wikiwiki.jp/to/w/eft/img/::ref/soap_cell.png"
+				}
+			}
+		},
+		"Nutrition Unit Lv2":{
+			"items": {
+				"item1": {
+					"full_name": "Heat-exchange alkali surface washer",
+					"name": "Alkali",
+					"num": 2,
+					"img": "https://cdn.wikiwiki.jp/to/w/eft/img/::ref/folder-with-intelligence_cell.png"
+				},
+                "item2": {
+					"full_name": "Wrench",
+					"name": "Wrench",
+					"num": 4,
+					"img": "https://cdn.wikiwiki.jp/to/w/eft/img/::ref/flashdrive_cell.png"
+				},
+				"item3": {
+					"full_name": "Corrugated hose",
+					"name": "Hose",
+					"num": 2,
+					"img": "https://cdn.wikiwiki.jp/to/w/eft/img/::ref/powercode_cell.png"
+				},
+				"item4": {
+					"full_name": "Phase control relay",
+					"name": "Relay",
+					"num": 1,
+					"img": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/4/44/Damaged_Hard_Drive_Icon.png"
+				}
+			}
+		},
+		"Nutrition Unit Lv3":{
+			"items": {
+				"item1": {
+					"full_name": "Coffee Majaica",
+					"name": "Coffee",
+					"num": 3,
+					"img": "https://cdn.wikiwiki.jp/to/w/eft/img/::ref/MCable_cell.png"
+				},
+                "item2": {
+					"full_name": "Sodium bicarbonate",
+					"name": "Sodium",
+					"num": 3,
+					"img": "../../static/img/Peacekeeper/Military_COFDM_wireless_Signal_Transmitter.png"
+				},
+				"item3": {
+					"full_name": "Smoked Chimney drain Cleaner",
+					"name": "Cleaner",
+					"num": 2,
+					"img": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/d/d4/GPSamplifier_icon.png"
+				}
+			}
+		}
+	},
+	"Scav case":{
+		"Scav case Lv1": {
+			"items": {
+				"item1": {
+					"full_name": "Golden rooster",
+					"name": "Rooster",
+					"num": 1,
+					"img": "https://cdn.wikiwiki.jp/to/w/eft/img/::ref/toilet-paper_cell.png"
+				},
+                "item2": {
+					"full_name": "Lucky Scav Junkbox",
+					"name": "Junkbox",
+					"num": 1,
+					"img": "https://cdn.wikiwiki.jp/to/w/eft/img/::ref/toothpaste_cell2.png"
+				},
+                "item3": {
+					"full_name": "Fierce Hatchling moonshine",
+					"name": "Moonshine",
+					"num": 3,
+					"img": "https://cdn.wikiwiki.jp/to/w/eft/img/::ref/soap_cell.png"
+				},
+				"item4": {
+					"full_name": "Bronze lion",
+					"name": "Lion",
+					"num": 3,
+					"img": "https://cdn.wikiwiki.jp/to/w/eft/img/::ref/soap_cell.png"
+				},
+				"item5": {
+					"full_name": "Gold skull ring",
+					"name": "Skull",
+					"num": 6,
+					"img": "https://cdn.wikiwiki.jp/to/w/eft/img/::ref/soap_cell.png"
+				},
+				"item6": {
+					"full_name": "Golden neck chain",
+					"name": "GoldChain",
+					"num": 8,
+					"img": "https://cdn.wikiwiki.jp/to/w/eft/img/::ref/soap_cell.png"
+				},
+				"item7": {
+					"full_name": "Roler submariner gold wrist watch",
+					"name": "Roler",
+					"num": 4,
+					"img": "https://cdn.wikiwiki.jp/to/w/eft/img/::ref/soap_cell.png"
+				}
+			}
+		}
+	},
+	"Water collector":{
+		"Water collector Lv1": {
+			"items": {
+				"item1": {
+					"full_name": "Duct tape",
+					"name": "Duct tape",
+					"num": 3,
+					"img": "https://cdn.wikiwiki.jp/to/w/eft/img/::ref/toilet-paper_cell.png"
+				},
+                "item2": {
+					"full_name": "Screw nut",
+					"name": "Screw nut",
+					"num": 5,
+					"img": "https://cdn.wikiwiki.jp/to/w/eft/img/::ref/toothpaste_cell2.png"
+				},
+                "item3": {
+					"full_name": "Bolts",
+					"name": "Bolts",
+					"num": 5,
+					"img": "https://cdn.wikiwiki.jp/to/w/eft/img/::ref/soap_cell.png"
+				},
+				"item4": {
+					"full_name": "Corrugated hose",
+					"name": "Hose",
+					"num": 4,
+					"img": "https://cdn.wikiwiki.jp/to/w/eft/img/::ref/soap_cell.png"
+				}
+			}
+		},
+		"Water collector Lv2":{
+			"items": {
+				"item1": {
+					"full_name": "Corrugated hose",
+					"name": "Hose",
+					"num": 6,
+					"img": "https://cdn.wikiwiki.jp/to/w/eft/img/::ref/folder-with-intelligence_cell.png"
+				},
+                "item2": {
+					"full_name": "Electric motor",
+					"name": "Motor",
+					"num": 2,
+					"img": "https://cdn.wikiwiki.jp/to/w/eft/img/::ref/flashdrive_cell.png"
+				},
+				"item3": {
+					"full_name": "A set of tools",
+					"name": "Set",
+					"num": 2,
+					"img": "https://cdn.wikiwiki.jp/to/w/eft/img/::ref/powercode_cell.png"
+				},
+				"item4": {
+					"full_name": "KEKTAPE duct tape",
+					"name": "KEK",
+					"num": 1,
+					"img": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/4/44/Damaged_Hard_Drive_Icon.png"
+				}
+			}
+		},
+		"Water collector Lv3":{
+			"items": {
+				"item1": {
+					"full_name": "Pliers Elite",
+					"name": "Pliers",
+					"num": 2,
+					"img": "https://cdn.wikiwiki.jp/to/w/eft/img/::ref/MCable_cell.png"
+				},
+                "item2": {
+					"full_name": "Shustrilo sealing foam",
+					"name": "Shus",
+					"num": 5,
+					"img": "../../static/img/Peacekeeper/Military_COFDM_wireless_Signal_Transmitter.png"
+				}
+			}
+		}
+	},
+	"Workbench":{
+		"Workbench Lv1": {
+			"items": {
+				"item1": {
+					"full_name": "Screw nut",
+					"name": "Screw nut",
+					"num": 2,
+					"img": "https://cdn.wikiwiki.jp/to/w/eft/img/::ref/toilet-paper_cell.png"
+				},
+                "item2": {
+					"full_name": "Bolts",
+					"name": "Bolts",
+					"num": 2,
+					"img": "https://cdn.wikiwiki.jp/to/w/eft/img/::ref/toothpaste_cell2.png"
+				},
+                "item3": {
+					"full_name": "Leatherman Multitool",
+					"name": "tools",
+					"num": 1,
+					"img": "https://cdn.wikiwiki.jp/to/w/eft/img/::ref/soap_cell.png"
+				}
+			}
+		},
+		"Workbench Lv2":{
+			"items": {
+				"item1": {
+					"full_name": "Bolts",
+					"name": "Bolts",
+					"num": 6,
+					"img": "https://cdn.wikiwiki.jp/to/w/eft/img/::ref/folder-with-intelligence_cell.png"
+				},
+				"item2": {
+					"full_name": "A set of tools",
+					"name": "Set",
+					"num": 3,
+					"img": "https://cdn.wikiwiki.jp/to/w/eft/img/::ref/powercode_cell.png"
+				},
+				"item3": {
+					"full_name": "Set of files Master",
+					"name": "Master",
+					"num": 1,
+					"img": "https://cdn.wikiwiki.jp/to/w/eft/img/::ref/powercode_cell.png"
+				},
+				"item4": {
+					"full_name": "Electric drill",
+					"name": "Drill",
+					"num": 2,
+					"img": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/4/44/Damaged_Hard_Drive_Icon.png"
+				},
+				"item5": {
+					"full_name": "Weapon parts",
+					"name": "W.parts",
+					"num": 3,
+					"img": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/4/44/Damaged_Hard_Drive_Icon.png"
+				}
+			}
+		},
+		"Workbench Lv3":{
+			"items": {
+				"item1": {
+					"full_name": "Pliers Elite",
+					"name": "Pliers",
+					"num": 2,
+					"img": "https://cdn.wikiwiki.jp/to/w/eft/img/::ref/MCable_cell.png"
+				},
+                "item2": {
+					"full_name": "FireKlean gun lube",
+					"name": "#FireKlean",
+					"num": 1,
+					"img": "../../static/img/Peacekeeper/Military_COFDM_wireless_Signal_Transmitter.png"
+				}
+			}
+		}
+	},
+	"Air Filtering Unit":{
+		"Air Filtering Unit Lv1": {
+			"items": {
+				"item1": {
+					"full_name": "Military power filter",
+					"name": "PFilter",
+					"num": 5,
+					"img": "https://cdn.wikiwiki.jp/to/w/eft/img/::ref/toilet-paper_cell.png"
+				},
+                "item2": {
+					"full_name": "Air filter for gas mask",
+					"name": "Filter",
+					"num": 5,
+					"img": "https://cdn.wikiwiki.jp/to/w/eft/img/::ref/toothpaste_cell2.png"
+				},
+                "item3": {
+					"full_name": "Military corrugated tube",
+					"name": "MTube",
+					"num": 3,
+					"img": "https://cdn.wikiwiki.jp/to/w/eft/img/::ref/soap_cell.png"
+				}
+			}
+		}
+	},
+	"Generator":{
+		"Generator Lv1": {
+			"items": {
+				"item1": {
+					"full_name": "Spark plug",
+					"name": "Plug",
+					"num": 1,
+					"img": "https://cdn.wikiwiki.jp/to/w/eft/img/::ref/toilet-paper_cell.png"
+				}
+			}
+		},
+		"Generator Lv2":{
+			"items": {
+				"item1": {
+					"full_name": "Bulbex cable cutter",
+					"name": "Bulbex",
+					"num": 1,
+					"img": "https://cdn.wikiwiki.jp/to/w/eft/img/::ref/folder-with-intelligence_cell.png"
+				},
+				"item2": {
+					"full_name": "Phase control relay",
+					"name": "Relay",
+					"num": 5,
+					"img": "https://cdn.wikiwiki.jp/to/w/eft/img/::ref/powercode_cell.png"
+				},
+				"item3": {
+					"full_name": "Electric motor",
+					"name": "Motor",
+					"num": 1,
+					"img": "https://cdn.wikiwiki.jp/to/w/eft/img/::ref/powercode_cell.png"
+				},
+				"item4": {
+					"full_name": "Wires",
+					"name": "Wires",
+					"num": 15,
+					"img": "https://static.wikia.nocookie.net/escapefromtarkov_gamepedia/images/4/44/Damaged_Hard_Drive_Icon.png"
+				}
+			}
+		},
+		"Generator Lv3":{
+			"items": {
+				"item1": {
+					"full_name": "Phase control relay",
+					"name": "Relay",
+					"num": 6,
+					"img": "https://cdn.wikiwiki.jp/to/w/eft/img/::ref/MCable_cell.png"
+				},
+                "item2": {
+					"full_name": "Electric motor",
+					"name": "Motor",
+					"num": 3,
+					"img": "../../static/img/Peacekeeper/Military_COFDM_wireless_Signal_Transmitter.png"
+				},
+				"item3": {
+					"full_name": "Spark plug",
+					"name": "Plug",
+					"num": 10,
+					"img": "../../static/img/Peacekeeper/Military_COFDM_wireless_Signal_Transmitter.png"
+				},
+				"item4": {
+					"full_name": "Power supply unit",
+					"name": "PSU",
+					"num": 5,
+					"img": "../../static/img/Peacekeeper/Military_COFDM_wireless_Signal_Transmitter.png"
+				}
+			}
+		}
+	},
+	"Heating":{
+		"Heating Lv1": {
+			"items": {
+				"item1": {
+					"full_name": "Matches",
+					"name": "Matches",
+					"num": 2,
+					"img": "https://cdn.wikiwiki.jp/to/w/eft/img/::ref/toilet-paper_cell.png"
+				}
+			}
+		},
+		"Heating Lv2":{
+			"items": {
+				"item1": {
+					"full_name": "Dry fuel",
+					"name": "Dry fuel",
+					"num": 3,
+					"img": "https://cdn.wikiwiki.jp/to/w/eft/img/::ref/folder-with-intelligence_cell.png"
+				},
+				"item2": {
+					"full_name": "Hunter matches",
+					"name": "Matches",
+					"num": 2,
+					"img": "https://cdn.wikiwiki.jp/to/w/eft/img/::ref/powercode_cell.png"
+				},
+				"item3": {
+					"full_name": "Crickent lighter",
+					"name": "Crickent",
+					"num": 3,
+					"img": "https://cdn.wikiwiki.jp/to/w/eft/img/::ref/powercode_cell.png"
+				}
+			}
+		},
+		"Heating Lv3":{
+			"items": {
+				"item1": {
+					"full_name": "Radiator helix",
+					"name": "Helix",
+					"num": 8,
+					"img": "https://cdn.wikiwiki.jp/to/w/eft/img/::ref/MCable_cell.png"
+				},
+                "item2": {
+					"full_name": "Wires",
+					"name": "Wires",
+					"num": 8,
+					"img": "../../static/img/Peacekeeper/Military_COFDM_wireless_Signal_Transmitter.png"
+				},
+				"item3": {
+					"full_name": "Phase control relay",
+					"name": "Relay",
+					"num": 4,
+					"img": "../../static/img/Peacekeeper/Military_COFDM_wireless_Signal_Transmitter.png"
+				},
+				"item4": {
+					"full_name": "Military corrugated tube",
+					"name": "MTube",
+					"num": 2,
+					"img": "../../static/img/Peacekeeper/Military_COFDM_wireless_Signal_Transmitter.png"
+				}
+			}
+		}
+	},
+	"Illumination":{
+		"Illumination Lv1": {
+			"items": {
+				"item1": {
+					"full_name": "Crickent lighter",
+					"name": "Crickent",
+					"num": 1,
+					"img": "https://cdn.wikiwiki.jp/to/w/eft/img/::ref/toilet-paper_cell.png"
+				}
+			}
+		},
+		"Illumination Lv2":{
+			"items": {
+				"item1": {
+					"full_name": "Light bulb",
+					"name": "Bulb",
+					"num": 14,
+					"img": "https://cdn.wikiwiki.jp/to/w/eft/img/::ref/folder-with-intelligence_cell.png"
+				},
+				"item2": {
+					"full_name": "Wires",
+					"name": "Wires",
+					"num": 10,
+					"img": "https://cdn.wikiwiki.jp/to/w/eft/img/::ref/powercode_cell.png"
+				}
+			}
+		},
+		"Illumination Lv3":{
+			"items": {
+				"item1": {
+					"full_name": "Capacitors",
+					"name": "Cap.",
+					"num": 7,
+					"img": "https://cdn.wikiwiki.jp/to/w/eft/img/::ref/MCable_cell.png"
+				},
+                "item2": {
+					"full_name": "Wires",
+					"name": "Wires",
+					"num": 6,
+					"img": "../../static/img/Peacekeeper/Military_COFDM_wireless_Signal_Transmitter.png"
+				},
+				"item3": {
+					"full_name": "Energy-saving lamp",
+					"name": "ES Lamp",
+					"num": 12,
+					"img": "../../static/img/Peacekeeper/Military_COFDM_wireless_Signal_Transmitter.png"
+				}
+			}
+		}
+	},
+	"Library":{
+		"Library Lv1": {
+			"items": {
+				"item1": {
+					"full_name": "Slim diary",
+					"name": "Slim diary",
+					"num": 2,
+					"img": "https://cdn.wikiwiki.jp/to/w/eft/img/::ref/toilet-paper_cell.png"
+				},
+				"item2": {
+					"full_name": "Diary",
+					"name": "Diary",
+					"num": 2,
+					"img": "https://cdn.wikiwiki.jp/to/w/eft/img/::ref/toilet-paper_cell.png"
+				},
+				"item3": {
+					"full_name": "Tech manual",
+					"name": "Manual",
+					"num": 5,
+					"img": "https://cdn.wikiwiki.jp/to/w/eft/img/::ref/toilet-paper_cell.png"
+				},
+				"item4": {
+					"full_name": "Chainlet",
+					"name": "Chainlet",
+					"num": 2,
+					"img": "https://cdn.wikiwiki.jp/to/w/eft/img/::ref/toilet-paper_cell.png"
+				},
+				"item5": {
+					"full_name": "Horse figurine",
+					"name": "Figurine",
+					"num": 1,
+					"img": "https://cdn.wikiwiki.jp/to/w/eft/img/::ref/toilet-paper_cell.png"
+				}
+			}
+		}
+	},
+	"Rest Space":{
+		"Rest Space Lv1": {
+			"items": {
+				"item1": {
+					"full_name": "Matches",
+					"name": "Matches",
+					"num": 1,
+					"img": "https://cdn.wikiwiki.jp/to/w/eft/img/::ref/toilet-paper_cell.png"
+				},
+				"item2": {
+					"full_name": "Duct tape",
+					"name": "Duct tape",
+					"num": 1,
+					"img": "https://cdn.wikiwiki.jp/to/w/eft/img/::ref/toilet-paper_cell.png"
+				}
+			}
+		},
+		"Rest Space Lv2":{
+			"items": {
+				"item1": {
+					"full_name": "Energy-saving lamp",
+					"name": "ES Lamp",
+					"num": 3,
+					"img": "https://cdn.wikiwiki.jp/to/w/eft/img/::ref/folder-with-intelligence_cell.png"
+				},
+				"item2": {
+					"full_name": "DVD drive",
+					"name": "DVD",
+					"num": 1,
+					"img": "https://cdn.wikiwiki.jp/to/w/eft/img/::ref/powercode_cell.png"
+				},
+				"item3": {
+					"full_name": "Magnet",
+					"name": "Magnet",
+					"num": 1,
+					"img": "https://cdn.wikiwiki.jp/to/w/eft/img/::ref/powercode_cell.png"
+				}
+			}
+		},
+		"Rest Space Lv3":{
+			"items": {
+				"item1": {
+					"full_name": "GreenBat lithium battery",
+					"name": "GreenBat",
+					"num": 5,
+					"img": "https://cdn.wikiwiki.jp/to/w/eft/img/::ref/MCable_cell.png"
+				},
+                "item2": {
+					"full_name": "Powercord",
+					"name": "Cord",
+					"num": 4,
+					"img": "../../static/img/Peacekeeper/Military_COFDM_wireless_Signal_Transmitter.png"
+				},
+				"item3": {
+					"full_name": "Capacitors",
+					"name": "Cap.",
+					"num": 5,
+					"img": "../../static/img/Peacekeeper/Military_COFDM_wireless_Signal_Transmitter.png"
+				},
+				"item4": {
+					"full_name": "Wires",
+					"name": "Wires",
+					"num": 7,
+					"img": "../../static/img/Peacekeeper/Military_COFDM_wireless_Signal_Transmitter.png"
+				}
+			}
+		}
+	},
+	"Security":{
+		"Security Lv1": {
+			"items": {
+				"item1": {
+					"full_name": "Construction measuring tape",
+					"name": "Mtape",
+					"num": 1,
+					"img": "https://cdn.wikiwiki.jp/to/w/eft/img/::ref/toilet-paper_cell.png"
+				}
+			}
+		},
+		"Security Lv2":{
+			"items": {
+				"item1": {
+					"full_name": "WD-40 100ml",
+					"name": "WD-40",
+					"num": 1,
+					"img": "https://cdn.wikiwiki.jp/to/w/eft/img/::ref/folder-with-intelligence_cell.png"
+				},
+				"item2": {
+					"full_name": "Pliers Elite",
+					"name": "Pliers",
+					"num": 1,
+					"img": "https://cdn.wikiwiki.jp/to/w/eft/img/::ref/powercode_cell.png"
+				},
+				"item3": {
+					"full_name": "TP-200 TNT brick",
+					"name": "TP-200",
+					"num": 1,
+					"img": "https://cdn.wikiwiki.jp/to/w/eft/img/::ref/powercode_cell.png"
+				}
+			}
+		},
+		"Security Lv3":{
+			"items": {
+				"item1": {
+					"full_name": "Working LCD",
+					"name": "LCD",
+					"num": 2,
+					"img": "https://cdn.wikiwiki.jp/to/w/eft/img/::ref/MCable_cell.png"
+				},
+                "item2": {
+					"full_name": "Wires",
+					"name": "Wires",
+					"num": 4,
+					"img": "../../static/img/Peacekeeper/Military_COFDM_wireless_Signal_Transmitter.png"
+				},
+				"item3": {
+					"full_name": "NIXXOR lens",
+					"name": "NIXXOR",
+					"num": 8,
+					"img": "../../static/img/Peacekeeper/Military_COFDM_wireless_Signal_Transmitter.png"
+				},
+				"item4": {
+					"full_name": "SSD drive",
+					"name": "SSD",
+					"num": 1,
+					"img": "../../static/img/Peacekeeper/Military_COFDM_wireless_Signal_Transmitter.png"
+				}
+			}
+		}
+	},
+	"Shooting range":{
+		"Shooting range Lv1": {
+			"items": {
+				"item1": {
+					"full_name": "Metal spare parts",
+					"name": "M.parts",
+					"num": 2,
+					"img": "https://cdn.wikiwiki.jp/to/w/eft/img/::ref/toilet-paper_cell.png"
+				},
+				"item2": {
+					"full_name": "A pack of screws",
+					"name": "Screws",
+					"num": 2,
+					"img": "https://cdn.wikiwiki.jp/to/w/eft/img/::ref/toilet-paper_cell.png"
+				},
+				"item3": {
+					"full_name": "Duct tape",
+					"name": "Duct tape",
+					"num": 3,
+					"img": "https://cdn.wikiwiki.jp/to/w/eft/img/::ref/toilet-paper_cell.png"
+				},
+				"item4": {
+					"full_name": "Bolts",
+					"name": "Bolts",
+					"num": 5,
+					"img": "https://cdn.wikiwiki.jp/to/w/eft/img/::ref/toilet-paper_cell.png"
+				},
+				"item5": {
+					"full_name": "Screw nut",
+					"name": "Screw nut",
+					"num": 5,
+					"img": "https://cdn.wikiwiki.jp/to/w/eft/img/::ref/toilet-paper_cell.png"
+				},
+				"item6": {
+					"full_name": "A pack of nails",
+					"name": "Nails",
+					"num": 4,
+					"img": "https://cdn.wikiwiki.jp/to/w/eft/img/::ref/toilet-paper_cell.png"
+				}
+			}
+		}
+	},
+	"Solar power":{
+		"Solar power Lv1": {
+			"items": {
+				"item1": {
+					"full_name": "Military cable",
+					"name": "M.Cable",
+					"num": 10,
+					"img": "https://cdn.wikiwiki.jp/to/w/eft/img/::ref/toilet-paper_cell.png"
+				},
+				"item2": {
+					"full_name": "Phased array element",
+					"name": "AESE",
+					"num": 4,
+					"img": "https://cdn.wikiwiki.jp/to/w/eft/img/::ref/toilet-paper_cell.png"
+				},
+				"item3": {
+					"full_name": "Military power filter",
+					"name": "Filter",
+					"num": 10,
+					"img": "https://cdn.wikiwiki.jp/to/w/eft/img/::ref/toilet-paper_cell.png"
+				}
+			}
+		}
+	},
+	"Stash":{
+		"Stash Lv2": {
+			"items": {
+				"item1": {
+					"full_name": "Handdrill",
+					"name": "Hand drill",
+					"num": 1,
+					"img": "https://cdn.wikiwiki.jp/to/w/eft/img/::ref/toilet-paper_cell.png"
+				},
+				"item2": {
+					"full_name": "A pack of screws",
+					"name": "Screws",
+					"num": 10,
+					"img": "https://cdn.wikiwiki.jp/to/w/eft/img/::ref/toilet-paper_cell.png"
+				},
+				"item3": {
+					"full_name": "A pack of nails",
+					"name": "Nails",
+					"num": 5,
+					"img": "https://cdn.wikiwiki.jp/to/w/eft/img/::ref/toilet-paper_cell.png"
+				},
+				"item4": {
+					"full_name": "WD-40 100ml",
+					"name": "WD-40",
+					"num": 4,
+					"img": "https://cdn.wikiwiki.jp/to/w/eft/img/::ref/toilet-paper_cell.png"
+				}
+			}
+		},
+		"Stash Lv3":{
+			"items": {
+				"item1": {
+					"full_name": "Electric drill",
+					"name": "Drill",
+					"num": 2,
+					"img": "https://cdn.wikiwiki.jp/to/w/eft/img/::ref/folder-with-intelligence_cell.png"
+				},
+				"item2": {
+					"full_name": "A pack of screws",
+					"name": "Screws",
+					"num": 15,
+					"img": "https://cdn.wikiwiki.jp/to/w/eft/img/::ref/powercode_cell.png"
+				},
+				"item3": {
+					"full_name": "A pack of nails",
+					"name": "Nails",
+					"num": 7,
+					"img": "https://cdn.wikiwiki.jp/to/w/eft/img/::ref/powercode_cell.png"
+				}
+			}
+		},
+		"Stash Lv4":{
+			"items": {
+				"item1": {
+					"full_name": "Screw nut",
+					"name": "Screw nut",
+					"num": 10,
+					"img": "https://cdn.wikiwiki.jp/to/w/eft/img/::ref/MCable_cell.png"
+				},
+                "item2": {
+					"full_name": "Bolts",
+					"name": "Bolts",
+					"num": 10,
+					"img": "../../static/img/Peacekeeper/Military_COFDM_wireless_Signal_Transmitter.png"
+				},
+				"item3": {
+					"full_name": "Shustrilo sealing foam",
+					"name": "Shus",
+					"num": 5,
+					"img": "../../static/img/Peacekeeper/Military_COFDM_wireless_Signal_Transmitter.png"
+				},
+				"item4": {
+					"full_name": "Ratchet wrench",
+					"name": "Ratch.",
+					"num": 2,
+					"img": "../../static/img/Peacekeeper/Military_COFDM_wireless_Signal_Transmitter.png"
+				}
+			}
+		}
+	},
+	"Vents":{
+		"Vents Lv2":{
+			"items": {
+				"item1": {
+					"full_name": "Metal spare parts",
+					"name": "M.parts",
+					"num": 2,
+					"img": "https://cdn.wikiwiki.jp/to/w/eft/img/::ref/folder-with-intelligence_cell.png"
+				},
+				"item2": {
+					"full_name": "CPU Fan",
+					"name": "CPU Fan",
+					"num": 3,
+					"img": "https://cdn.wikiwiki.jp/to/w/eft/img/::ref/powercode_cell.png"
+				},
+				"item3": {
+					"full_name": "Car battery",
+					"name": "Battery",
+					"num": 1,
+					"img": "https://cdn.wikiwiki.jp/to/w/eft/img/::ref/powercode_cell.png"
+				},
+				"item4": {
+					"full_name": "Electric motor",
+					"name": "Motor",
+					"num": 1,
+					"img": "https://cdn.wikiwiki.jp/to/w/eft/img/::ref/powercode_cell.png"
+				}
+			}
+		},
+		"Vents Lv3":{
+			"items": {
+				"item1": {
+					"full_name": "Electric motor",
+					"name": "Motor",
+					"num": 4,
+					"img": "https://cdn.wikiwiki.jp/to/w/eft/img/::ref/MCable_cell.png"
+				},
+                "item2": {
+					"full_name": "Wires",
+					"name": "Wires",
+					"num": 14,
+					"img": "../../static/img/Peacekeeper/Military_COFDM_wireless_Signal_Transmitter.png"
+				},
+				"item3": {
+					"full_name": "Printed circuit board",
+					"name": "Circuit",
+					"num": 5,
+					"img": "../../static/img/Peacekeeper/Military_COFDM_wireless_Signal_Transmitter.png"
+				},
+				"item4": {
+					"full_name": "Car battery",
+					"name": "Battery",
+					"num": 4,
+					"img": "../../static/img/Peacekeeper/Military_COFDM_wireless_Signal_Transmitter.png"
+				},
+				"item5": {
+					"full_name": "Metal spare parts",
+					"name": "M.parts",
+					"num": 5,
+					"img": "../../static/img/Peacekeeper/Military_COFDM_wireless_Signal_Transmitter.png"
+				}
+			}
+		}
+	}
+}
