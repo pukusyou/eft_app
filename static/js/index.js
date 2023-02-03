@@ -15,7 +15,6 @@ $(function(){
 
 //スムーススクロールのスクリプト
 $(function(){
-  push()
     $('a[href^="#"]').click(function(){
         var href = $(this).attr('href');
         var target = href == '#' ? 0 : $(href).offset().top;
@@ -64,14 +63,3 @@ $(function(){
       cc.classList.add('is-show');
     }
   }());
-
-function push() {
-  Push.create("Hideout機能追加にご協力ください！", {
-    body: "アイテムの画像をアップロードしていただきたいです。",
-    icon: '/icon.png',
-    timeout: 4000,
-    onClick: function () {
-      window.open('https://twitter.com/SYTd_pukusyou/status/1620788232991707136', '_blank'); //URLリンク先
-    }
-});
-}
