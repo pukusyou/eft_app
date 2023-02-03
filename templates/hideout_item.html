@@ -14,10 +14,10 @@
      crossorigin="anonymous"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Task Items</title>
+    <title>Items</title>
     <link rel="icon" type="image/png" href="../../static/img/logo.png">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/task_item.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/hideout_item.css') }}">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/lightbox.css') }}">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/driver.css') }}">
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1577082847733195"
@@ -33,7 +33,7 @@
         <div class="navbar-collapse collapse" id="navbar4">
             <ul class="navbar-nav">
                 <li class="nav-item active">
-                    <a class="nav-link" href="/task/">Task</a>
+                    <a class="nav-link h-100 w-100" href="/task/">Task</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="/hideout/">Hideout</a>
@@ -41,53 +41,19 @@
             </ul>
         </div>
     </nav>
-    <h1>タスクで使用するアイテム</h1>
-<!-- モーダルを開くボタン・リンク -->
+    <h1>ハイドアウトで使用するアイテム</h1>
 <div class="container">
     <div class="row mb-5">
         <div class="col-2">
-            <button type="button" class="btn btn-primary mb-12" id="setting" data-toggle="modal" data-target="#testModal">表示設定</button>
             <button type="button" class="btn btn-primary mb-12" id="select">選択</button>
         </div>
     </div>
 </div>
 
 <!-- ボタン・リンククリック後に表示される画面の内容 -->
-<div class="modal fade" id="testModal" tabindex="-1" role="dialog" aria-labelledby="basicModal" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h4>表示設定</h4>
-            </div>
-            <div class="modal-body">
-                <table>
-                    <th><p class="loot_p">ルート品の表示   </p></th>
-                    <th><div class="toggle checked" id="loot">  
-                        <input type="checkbox" name="check" id="loot_in" />
-                    </div></th>
-                </table>
-                <table>
-                    <th><p class="key_p">鍵の表示　　　</p></td>
-                    <th><div class="toggle checked" id="key">
-                        <input type="checkbox" name="check" id="key_in" />
-                    </div></th>
-                </table>
-                <table>
-                    <th><p class="wepon_p">装備系の表示　</p></td>
-                    <th><div class="toggle checked" id="wepon">
-                        <input type="checkbox" name="check" id="wepon_in" />
-                    </div></th>
-                </table>
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-default" data-dismiss="modal">閉じる</button>
-            </div>
-        </div>
-    </div>
-</div>
 <div id="only_img_area"></div>
     {% for item in tasks_item %}
-    <div class="bigBox {{item[5]}}">
+    <div class="bigBox">
     <div class="box1">
         <p id="fullname">{{item[1]}}</p>
     </div>
@@ -97,12 +63,9 @@
         {% else %}
         <p class="num">タスクで使用</p>
         {% endif %}
-        {% if item[3] %}
-        <p class="inRaid">inRaid</p>
-        {% endif %}
     </div>
     <div class="box3">
-        <img src="{{item[4]}}" class="item_img" loading="lazy">
+        <img src="{{item[3]}}" class="item_img" loading="lazy">
     </div>
     </div>
     {% endfor %}
@@ -119,7 +82,7 @@
     // (adsbygoogle = window.adsbygoogle || []).push({});
 </script>
 <div id="back_zone">
-    <button type="button" onclick="location.href='/task/'" class="btn btn-primary mb-12" id="back">戻る</button>
+    <button type="button" onclick="location.href='/hideout/'" class="btn btn-primary mb-12" id="back">戻る</button>
 </div>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
@@ -127,12 +90,12 @@
     <script type="text/javascript" src="{{ url_for('static', filename='../static/js/jquery-3.6.3.min.js') }}"></script>
     <script type="text/javascript" src="{{ url_for('static', filename='../static/js/driver.js') }}"></script>
     <script type="text/javascript" src="{{ url_for('static', filename='../static/js/lightbox.js') }}"></script>
-    <script type="text/javascript" src="{{ url_for('static', filename='../static/js/task_item.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='../static/js/hideout_item.js') }}"></script>
     <!-- admax -->
-    <script src="https://adm.shinobi.jp/s/68c661359bace86de845fa54f8e2b69e"></script>
+    <script src="https://adm.shinobi.jp/s/36715a8a1e9e411ab66ba042909ef0df"></script>
     <!-- admax -->
     <footer>
-        <small>このWebアプリは、<a href="https://wikiwiki.jp/eft/">Escape From Tarkov JPN Wiki</a> の「<a href="https://wikiwiki.jp/eft/%E3%82%BF%E3%82%B9%E3%82%AF#t9c50f18">タスクリスト</a>」記事の素材を使用しており、Creative Commons Attribution-NonCommercial-ShareAlike の下でライセンスされています。</small>
+        <small>このWebアプリは、<a href="https://wikiwiki.jp/eft/">Escape From Tarkov JPN Wiki</a> の「<a href="https://wikiwiki.jp/eft/%E9%9A%A0%E3%82%8C%E5%AE%B6">隠れ家</a>」記事の素材を使用しており、Creative Commons Attribution-NonCommercial-ShareAlike の下でライセンスされています。</small>
         <small>Game content and materials are trademarks and copyrights of Battlestate Games and its licensors. All rights reserved.</small>
     </footer>
 </body>

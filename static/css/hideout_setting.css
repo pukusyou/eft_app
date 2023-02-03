@@ -22,6 +22,8 @@ form {
     float:left;
     flex-wrap: wrap;
     padding-right: 15px;
+    width: 400px;
+    height: 180px;
 } 
 
 /* ラベル全体にクリックイベントを追加 */
@@ -52,7 +54,7 @@ button:hover {
 #submit{
     position: fixed;
     top: 10px;
-    right: 50px;
+    right: 10px;
     background-color: #333;
 }
 .dealer{
@@ -82,7 +84,7 @@ footer .pr {
     width: auto;
     height: auto;
     top: 10px;
-    right: 120px;
+    right: 80px;
     background-color: #333;
 }
 .modal-body{
@@ -113,7 +115,4 @@ button.btn.btn-default{
     margin: auto;
     text-align: center;
     border-radius: 5px;
-}
-.navbar-light .navbar-toggler {
-    border-color: rgba(0,0,0,0);
 }

@@ -2,9 +2,12 @@ import json
 
 class load_json:
 
-    def __init__(self):        
-        json_open = open('json/task.json', 'r', encoding='utf-8')
+    def __init__(self, filename):        
+        json_open = open('json/'+filename, 'r', encoding='utf-8')
         self.dealer_list = ['prapor','Therapist','Skier','Peacekeeper','Mechanic', 'Ragman','Jaeger']
+        self.hideout_list = ['Bitcoin Farm','Booze Generator','Intelligence Center','Lavatory','Medstation','Nutrition Unit','Scav case','Water collector','Workbench'
+        ,'Air Filtering Unit','Generator','Heating','Illumination','Library','Rest Space','Security','Shooting range','Solar power',
+        'Stash','Vents']
         self.jsn = json.load(json_open)
 
     # dealerの持っているすべてのタスク名を返す。(空白を'_'に置き換えたものも返す)
@@ -15,6 +18,7 @@ class load_json:
             task_list.append(key)
         for task in task_list:
             task_list_.append(task.replace(' ', '_'))
+        # print(list(zip(task_list,task_list_)))
         return list(zip(task_list,task_list_))
 
     # dealerの持っているすべてのタスク名を返す。
@@ -25,17 +29,17 @@ class load_json:
         return task_list
 
     # すべてのタスク名を返す。
-    def get_all_task_name_plain(self):
+    def get_all_task_name_plain(self, list):
         task_list = []
-        for dealer in self.dealer_list:
+        for dealer in list:
             task_list = task_list + self.get_dealer_task_name_plain(dealer)
         return task_list
 
     # 引数のタスクを持っているdealerを返す
-    def get_task_dealer(self, tasks):
+    def get_task_dealer(self, tasks, list):
         dealer_list = []
         for task in tasks:
-            for dealer in self.dealer_list:
+            for dealer in list:
                 for dealer_task in self.get_dealer_task_name_plain(dealer):
                     if(task==dealer_task):
                             dealer_list.append(dealer)
@@ -44,8 +48,12 @@ class load_json:
 
     # 全ての中から残っているタスクを返す
     def get_sa_tasks(self, tasks):
-        tasks_name_list = [i for i in self.get_all_task_name_plain() if i not in tasks]
-        return [list(e) for e in zip(tasks_name_list, self.get_task_dealer(tasks_name_list))]
+        tasks_name_list = [i for i in self.get_all_task_name_plain(self.dealer_list) if i not in tasks]
+        return [list(e) for e in zip(tasks_name_list, self.get_task_dealer(tasks_name_list, self.dealer_list))]
+
+    def get_sa_hideout(self, tasks):
+        tasks_name_list = [i for i in self.get_all_task_name_plain(self.hideout_list) if i not in tasks]
+        return [list(e) for e in zip(tasks_name_list, self.get_task_dealer(tasks_name_list, self.hideout_list))]   
         
     # 引数のタスクのwikiURLを返す。
     def get_task_url(self, dealer, task_name):
@@ -118,11 +126,9 @@ class load_json:
         return [list(e) for e in zip(self.get_task_item_fullname(dealer,task_name), self.get_task_item_name(dealer,task_name),
         self.get_task_item_num(dealer,task_name), self.get_task_item_inRaid(dealer,task_name), self.get_task_item_img(dealer,task_name),self.get_task_item_category(dealer,task_name))]
 
-    # def get_task_item_all(self, tasks_name):
-    #     for dealer in self.dealer_list:
-    #         all_list = all_list + [list(e) for e in zip(self.get_task_item_fullname(dealer,tasks_name), self.get_task_item_name(dealer,tasks_name),
-    #         self.get_task_item_num(dealer,tasks_name), self.get_task_item_inRaid(dealer,tasks_name), self.get_task_item_img(dealer,tasks_name))]
-    #     return all_list
+    def get_hideout_task_item_all(self, dealer, task_name):
+        return [list(e) for e in zip(self.get_task_item_fullname(dealer,task_name), self.get_task_item_name(dealer,task_name),
+        self.get_task_item_num(dealer,task_name), self.get_task_item_img(dealer,task_name))]
 
     def get_task_item_sum(self, tasks_name):
         lists = []
@@ -139,7 +145,23 @@ class load_json:
                 next = next + 1
         return lists
 
-dj = load_json()
+    def get_hideout_task_item_sum(self, tasks_name):
+        lists = []
+        for task_name in tasks_name:
+            for item in self.get_hideout_task_item_all(task_name[1], task_name[0]):
+                lists.append(item)
+        length = len(lists)
+        for num in range(length):
+            next = num + 1
+            while(next<length):
+                if(lists[num][0]==lists[next][0] and lists[num][2]>0 and lists[next][2]>0):
+                    lists[num][2] = lists[num][2] + lists.pop(next)[2]
+                    length = length - 1
+                next = next + 1
+        return lists
+
+dj = load_json("hideout.json")
+print(dj.get_dealer_task_name("Scav case"))
 # print(dj.get_task_item_all('prapor','Debut'))
     # 最初のkeyを取る
     # for key in jsn:

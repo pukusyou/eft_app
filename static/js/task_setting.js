@@ -8,80 +8,41 @@ var driver = new Driver({
 });
 
 jQuery(function(){
-    var load_values = $.cookie("tasks").split(",");
-    if (!load_values.includes("Debut")) {
-        driver.start();
-    }
-    for(var i = 0; i < load_values.length; ++i){
-        load_values[i] = decodeURIComponent(load_values[i]);
-    }
-
+  if (getParam("check")!=null) {
+    var load_values = getParam("check");
+  }else{
+    var load_values = $.cookie("tasks");
+  }
+    var load_values = decompressBinary(load_values)
+    var count = 0;
     $("input[type=checkbox][name=task]").each(function(){
-        this.checked = $.inArray(this.value, load_values) != -1;
+      if (load_values[count++]=='A') {
+        $(this).prop('checked', true);
+      }
+        
     });
   });
 
 $(document).on('click', 'input', function(){
-    var save_values = [];
-
-    $("input[type=checkbox][name=task]").each(function(){
-        this.checked && save_values.push(encodeURIComponent(this.value));
-    });
-
-    $.cookie("tasks", save_values.join(","));
+    // console.log(save_values)
+    $.cookie("tasks", compress());
   });
   
-  var p_bool, t_bool, s_bool, pe_bool, m_bool, r_bool, j_bool = false
+  // var p_bool, t_bool, s_bool, pe_bool, m_bool, r_bool, j_bool = false
   
   // 「全て選択」がクリックされたら
-$(document).on('click', '#prapor_button', function(){
-    p_bool = all_check('.prapor',p_bool);
+  $(document).on('click', '[id$="_button"]', function(){
+    var className = "." + this.id.replace("_button", "");
+    var bool = window[this.id.replace("_button", "_bool")];
+    window[this.id.replace("_button", "_bool")] = all_check(className, bool);
   });
-
-$(document).on('click', '#therapist_button', function(){
-    t_bool = all_check('.therapist',t_bool);
-});
-$(document).on('click', '#skier_button', function(){
-    s_bool = all_check('.skier',s_bool);
-  });
-
-$(document).on('click', '#peacekeeper_button', function(){
-    pe_bool = all_check('.peacekeeper',pe_bool);
-});
-$(document).on('click', '#mechanic_button', function(){
-    m_bool = all_check('.mechanic',m_bool);
-  });
-
-$(document).on('click', '#ragman_button', function(){
-    t_bool = all_check('.ragman',t_bool);
-});
-$(document).on('click', '#jaeger_button', function(){
-    t_bool = all_check('.jaeger',t_bool);
-});
-
-function all_check(checkbox_class, bool) {
-    if (!bool) {
-        // チェックされていたら全ての個別チェックボックスを選択状態に
-        $(checkbox_class).prop('checked', true);
-        var result = true
-      } else {
-        // チェックされていなければ全ての個別チェックボックスを選択解除
-        $(checkbox_class).prop('checked', false);
-        var result = false
-      }
-      var save_values = [];
-
-      $("input[type=checkbox][name=task]").each(function(){
-          this.checked && save_values.push(encodeURIComponent(this.value));
-      });
   
-      $.cookie("tasks", save_values.join(","));
-
-      return result
-}
-$(document).on('click', '#tyuto', function(){
-    
-});
+  function all_check(checkbox_class, bool) {
+    $(checkbox_class).prop('checked', !bool);
+    $.cookie("tasks", compress());
+    return !bool;
+  }
+  
 
 driver.defineSteps([
     {
@@ -109,3 +70,70 @@ driver.defineSteps([
      }
      ]);
 
+function compress() {
+  var result = []
+  $("input[type=checkbox][name=task]").each(function(){
+    if (this.checked) {
+      // チェック
+      result.push('A')
+    }else{
+      result.push('B')
+    }
+    
+  });
+  return compressBinary(result.join(""))
+}
+
+//圧縮
+function compressBinary(binary) {
+  let result = "";
+  let count = 1;
+  for (let i = 1; i < binary.length; i++) {
+  if (binary[i] === binary[i - 1]) {
+  count++;
+  } else {
+  result += count + binary[i - 1];
+  count = 1;
+  }
+  }
+  result += count + binary[binary.length - 1];
+  return result;
+}
+
+//展開
+// ランレングス圧縮された2進数を展開する関数
+function decompressBinary(compressedBinary) {
+  let result = "";
+  let count = "";
+  for (let i = 0; i < compressedBinary.length; i++) {
+    if (isNaN(parseInt(compressedBinary[i]))) {
+      for (let j = 0; j < parseInt(count); j++) {
+        result += compressedBinary[i];
+      }
+      count = "";
+    } else {
+      count += compressedBinary[i];
+    }
+  }
+  return result;
+}
+
+$(document).on('click', '#setting', function(){
+  $("#url").val("https://pukusyou.com/task/?check="+compress());
+  $(document).on('click', '#copy', function(){
+    navigator.clipboard.writeText($("#url").val());
+    $('.success-msg').fadeIn("slow", function () {
+      $(this).delay(2000).fadeOut("slow");
+  });
+  });
+});
+
+function getParam(name, url) {
+  if (!url) url = window.location.href;
+  name = name.replace(/[\[\]]/g, "\\$&");
+  var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
+      results = regex.exec(url);
+  if (!results) return null;
+  if (!results[2]) return '';
+  return decodeURIComponent(results[2].replace(/\+/g, " "));
+}

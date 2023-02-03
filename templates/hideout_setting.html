@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+         <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-ZGJKS21QN2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-ZGJKS21QN2');
+</script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HideoutSetting</title>
+    <link rel="icon" type="image/png" href="../static/img/logo.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/driver.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/hideout_setting.css') }}">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1577082847733195"
+    crossorigin="anonymous"></script>
+</head>
+<body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark h-100" style="height: 2px;">
+        <a href="/" class="navbar-brand h-50"><img src="../static/img/logo.png" width="50px">EFT Item Hub</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar4">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="navbar-collapse collapse" id="navbar4">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="/task/">Task</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/hideout/">Hideout</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <button type="button" class="btn btn-primary mb-12" id="setting" data-toggle="modal" data-target="#testModal">共有</button>
+    <div class="modal fade" id="testModal" tabindex="-1" role="dialog" aria-labelledby="basicModal" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4>共有URL</h4>
+                </div>
+                <div class="modal-body">
+                    <table>
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">URL</label>
+                            <input type="email" class="form-control" id="url" aria-describedby="emailHelp" readonly>
+                            <div id="emailHelp" class="text-light">このURLにアクセスすると、現時点のチェック状態を共有できます</div>
+                          </div>
+                    </table>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" id="copy" class="btn btn-default">コピー</button>
+                    <div class="success-msg">クリップボードにコピーしました</div>
+                    <button type="button" class="btn btn-default" data-dismiss="modal">閉じる</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <h1>ハイドアウト進行状況</h1>
+    <form action="/hideout/item/" method="post", enctype="multipart/form-data">
+        <div id="Bitcoin_Farm" class="task">
+        <h1 class="dealer">ビットコインファーム</h1>
+        <button type="button" id="Bitcoin_Farm_button">✓</button>
+        {% for task in Bitcoin_Farm_tasks %}
+        <div id="task">
+         <label for={{task[1]}}>{{task[0]}}</label>
+         <input type="checkbox" id={{task[1]}} name="task" value={{task[1]}} class="Bitcoin_Farm">
+        </div>
+        {% endfor %}
+        </div>
+        <div id="Booze_Generator" class="task">
+            <h1 class="dealer">醸造器</h1>
+            <button type="button" id="Booze_Generator_button">✓</button>
+            {% for task in Booze_Generator_tasks %}
+            <div id="task">
+             <label for={{task[1]}}>{{task[0]}}</label>
+             <input type="checkbox" id={{task[1]}} name="task" value={{task[1]}} class="Booze_Generator">
+            </div>
+            {% endfor %}
+        </div>
+        <div id="Intelligence_Center" class="task">
+            <h1 class="dealer">インテリジェンスセンター</h1>
+            <button type="button" id="Intelligence_Center_button">✓</button>
+            {% for task in Intelligence_Center_tasks %}
+            <div id="task">
+             <label for={{task[1]}}>{{task[0]}}</label>
+             <input type="checkbox" id={{task[1]}} name="task" value={{task[1]}} class="Intelligence_Center">
+            </div>
+            {% endfor %}
+        </div>
+        <div id="Lavatory" class="task">
+            <h1 class="dealer">洗面所</h1>
+            <button type="button" id="Lavatory_button">✓</button>
+            {% for task in Lavatory_tasks %}
+            <div id="task">
+             <label for={{task[1]}}>{{task[0]}}</label>
+             <input type="checkbox" id={{task[1]}} name="task" value={{task[1]}} class="Lavatory">
+            </div>
+            {% endfor %}
+        </div>
+        <div id="Medstation" class="task">
+            <h1 class="dealer">医療ステーション</h1>
+            <button type="button" id="Medstation_button">✓</button>
+            {% for task in Medstation_tasks %}
+            <div id="task">
+             <label for={{task[1]}}>{{task[0]}}</label>
+             <input type="checkbox" id={{task[1]}} name="task" value={{task[1]}} class="Medstation">
+            </div>
+            {% endfor %}
+        </div>
+        <div id="Nutrition_Unit" class="task">
+            <h1 class="dealer">食堂ユニット</h1>
+            <button type="button" id="Nutrition_Unit_button">✓</button>
+            {% for task in Nutrition_Unit_tasks %}
+            <div id="task">
+             <label for={{task[1]}}>{{task[0]}}</label>
+             <input type="checkbox" id={{task[1]}} name="task" value={{task[1]}} class="Nutrition_Unit">
+            </div>
+            {% endfor %}
+        </div>
+        <div id="Scav_case" class="task">
+            <h1 class="dealer">Scavケース</h1>
+            <button type="button" id="Scav_case_button">✓</button>
+            {% for task in Scav_case_tasks %}
+            <div id="task">
+             <label for={{task[1]}}>{{task[0]}}</label>
+             <input type="checkbox" id={{task[1]}} name="task" value={{task[1]}} class="Scav_case">
+            </div>
+            {% endfor %}
+        </div>
+        <div id="Water_collector" class="task">
+            <h1 class="dealer">集水器</h1>
+            <button type="button" id="Water_collector_button">✓</button>
+            {% for task in Water_collector_tasks %}
+            <div id="task">
+             <label for={{task[1]}}>{{task[0]}}</label>
+             <input type="checkbox" id={{task[1]}} name="task" value={{task[1]}} class="Water_collector">
+            </div>
+            {% endfor %}
+        </div>
+        <div id="Workbench" class="task">
+            <h1 class="dealer">ワークベンチ</h1>
+            <button type="button" id="Workbench_button">✓</button>
+            {% for task in Workbench_tasks %}
+            <div id="task">
+             <label for={{task[1]}}>{{task[0]}}</label>
+             <input type="checkbox" id={{task[1]}} name="task" value={{task[1]}} class="Workbench">
+            </div>
+            {% endfor %}
+        </div>
+        <div id="Air_Filtering_Unit" class="task">
+            <h1 class="dealer">空調ユニット</h1>
+            <button type="button" id="Air_Filtering_Unit_button">✓</button>
+            {% for task in Air_Filtering_Unit_tasks %}
+            <div id="task">
+             <label for={{task[1]}}>{{task[0]}}</label>
+             <input type="checkbox" id={{task[1]}} name="task" value={{task[1]}} class="Air_Filtering_Unit">
+            </div>
+            {% endfor %}
+        </div>
+        <div id="Generator" class="task">
+            <h1 class="dealer">発電機</h1>
+            <button type="button" id="Generator_button">✓</button>
+            {% for task in Generator_tasks %}
+            <div id="task">
+             <label for={{task[1]}}>{{task[0]}}</label>
+             <input type="checkbox" id={{task[1]}} name="task" value={{task[1]}} class="Generator">
+            </div>
+            {% endfor %}
+        </div>
+        <div id="Heating" class="task">
+            <h1 class="dealer">ヒーター</h1>
+            <button type="button" id="Heating_button">✓</button>
+            {% for task in Heating_tasks %}
+            <div id="task">
+             <label for={{task[1]}}>{{task[0]}}</label>
+             <input type="checkbox" id={{task[1]}} name="task" value={{task[1]}} class="Heating">
+            </div>
+            {% endfor %}
+        </div>
+        <div id="Illumination" class="task">
+            <h1 class="dealer">照明</h1>
+            <button type="button" id="Illumination_button">✓</button>
+            {% for task in Illumination_tasks %}
+            <div id="task">
+             <label for={{task[1]}}>{{task[0]}}</label>
+             <input type="checkbox" id={{task[1]}} name="task" value={{task[1]}} class="Illumination">
+            </div>
+            {% endfor %}
+        </div>
+        <div id="Library" class="task">
+            <h1 class="dealer">本棚</h1>
+            <button type="button" id="Library_button">✓</button>
+            {% for task in Library_tasks %}
+            <div id="task">
+             <label for={{task[1]}}>{{task[0]}}</label>
+             <input type="checkbox" id={{task[1]}} name="task" value={{task[1]}} class="Library">
+            </div>
+            {% endfor %}
+        </div>
+        <div id="Rest_Space" class="task">
+            <h1 class="dealer">休憩スペース</h1>
+            <button type="button" id="Rest_Space_button">✓</button>
+            {% for task in Rest_Space_tasks %}
+            <div id="task">
+             <label for={{task[1]}}>{{task[0]}}</label>
+             <input type="checkbox" id={{task[1]}} name="task" value={{task[1]}} class="Rest_Space">
+            </div>
+            {% endfor %}
+        </div>
+        <div id="Security" class="task">
+            <h1 class="dealer">警備システム</h1>
+            <button type="button" id="Security_button">✓</button>
+            {% for task in Security_tasks %}
+            <div id="task">
+             <label for={{task[1]}}>{{task[0]}}</label>
+             <input type="checkbox" id={{task[1]}} name="task" value={{task[1]}} class="Security">
+            </div>
+            {% endfor %}
+        </div>
+        <div id="Shooting_range" class="task">
+            <h1 class="dealer">射撃場</h1>
+            <button type="button" id="Shooting_range_button">✓</button>
+            {% for task in Shooting_range_tasks %}
+            <div id="task">
+             <label for={{task[1]}}>{{task[0]}}</label>
+             <input type="checkbox" id={{task[1]}} name="task" value={{task[1]}} class="Shooting_range">
+            </div>
+            {% endfor %}
+        </div>
+        <div id="Solar_power" class="task">
+            <h1 class="dealer">ソーラーパネル</h1>
+            <button type="button" id="Solar_power_button">✓</button>
+            {% for task in Solar_power_tasks %}
+            <div id="task">
+             <label for={{task[1]}}>{{task[0]}}</label>
+             <input type="checkbox" id={{task[1]}} name="task" value={{task[1]}} class="Solar_power">
+            </div>
+            {% endfor %}
+        </div>
+        <div id="Stash" class="task">
+            <h1 class="dealer">スタッシュ</h1>
+            <button type="button" id="Stash_button">✓</button>
+            {% for task in Stash_tasks %}
+            <div id="task">
+             <label for={{task[1]}}>{{task[0]}}</label>
+             <input type="checkbox" id={{task[1]}} name="task" value={{task[1]}} class="Stash">
+            </div>
+            {% endfor %}
+        </div>
+        <div id="Vents" class="task">
+            <h1 class="dealer">通気口</h1>
+            <button type="button" id="Vents_button">✓</button>
+            {% for task in Vents_tasks %}
+            <div id="task">
+             <label for={{task[1]}}>{{task[0]}}</label>
+             <input type="checkbox" id={{task[1]}} name="task" value={{task[1]}} class="Vents">
+            </div>
+            {% endfor %}
+        </div>
+        <div>
+			<input type="submit" class="btn btn-primary mb-12" value="決定" id="submit">
+		</div>
+       </form>
+       <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+       <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+       <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+        <script type="text/javascript" src="{{ url_for('static', filename='../static/js/jquery-3.6.3.min.js') }}"></script>
+        <script type="text/javascript" src="{{ url_for('static', filename='../static/js/jquery.cookie.js') }}"></script>
+        <script type="text/javascript" src="{{ url_for('static', filename='../static/js/driver.js') }}"></script>
+        <script type="text/javascript" src="{{ url_for('static', filename='../static/js/hideout_setting.js') }}"></script>
+        <!-- admax -->
+        <script src="https://adm.shinobi.jp/s/bdf0514589e7a591482acd3294974437"></script>
+        <!-- admax -->
+        <footer>
+            <small>このWebアプリは、<a href="https://wikiwiki.jp/eft/">Escape From Tarkov JPN Wiki</a> の「<a href="https://wikiwiki.jp/eft/%E9%9A%A0%E3%82%8C%E5%AE%B6">隠れ家</a>」記事の素材を使用しており、Creative Commons Attribution-NonCommercial-ShareAlike の下でライセンスされています。</small>
+            <small>Game content and materials are trademarks and copyrights of Battlestate Games and its licensors. All rights reserved.</small>
+        </footer>
+    </body>
+</html>
