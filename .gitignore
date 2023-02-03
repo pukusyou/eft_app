@@ -5,6 +5,7 @@ wiki_html
 __pycache__/
 *.py[cod]
 *$py.class
+*.ini
 
 # C extensions
 *.so
