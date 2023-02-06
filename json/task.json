@@ -2474,7 +2474,7 @@
 					"num": 10,
 					"inRaid": true,
 					"img": "../../static/img/Ragman/Bottle_of_Dan_Jackiel_Whiskey.png",
-					"category": "key"
+					"category": "loot"
 				},
 				"item3": {
 					"full_name": "Purified water",
