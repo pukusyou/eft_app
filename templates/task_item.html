@@ -1,29 +1,32 @@
 <!DOCTYPE html>
 <html lang="ja">
-<head>
-         <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-ZGJKS21QN2"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
 
-  gtag('config', 'G-ZGJKS21QN2');
-</script>
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZGJKS21QN2"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-ZGJKS21QN2');
+    </script>
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1577082847733195"
-     crossorigin="anonymous"></script>
+        crossorigin="anonymous"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Task Items</title>
     <link rel="icon" type="image/png" href="../../static/img/logo.png">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/task_item.css') }}">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/lightbox.css') }}">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/driver.css') }}">
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1577082847733195"
-     crossorigin="anonymous"></script>
-     
+        crossorigin="anonymous"></script>
+
 </head>
+
 <body>
     <nav class="navbar navbar-expand-md navbar-dark bg-dark h-100" style="height: 2px;">
         <a href="/" class="navbar-brand h-50"><img src="../../static/img/logo.png" width="50px">EFT Item Hub</a>
@@ -42,88 +45,116 @@
         </div>
     </nav>
     <h1>タスクで使用するアイテム</h1>
-<!-- モーダルを開くボタン・リンク -->
-<div class="container">
-    <div class="row mb-5">
-        <div class="col-2">
-            <button type="button" class="btn btn-primary mb-12" id="setting" data-toggle="modal" data-target="#testModal">表示設定</button>
-            <button type="button" class="btn btn-primary mb-12" id="select">選択</button>
+    <!-- モーダルを開くボタン・リンク -->
+    <div class="container">
+        <div class="row mb-5">
+            <div class="col-2">
+                <button type="button" class="btn btn-primary mb-12" id="setting" data-toggle="modal"
+                    data-target="#testModal">表示設定</button>
+                <button type="button" class="btn btn-primary mb-12" id="select">選択</button>
+            </div>
         </div>
     </div>
-</div>
 
-<!-- ボタン・リンククリック後に表示される画面の内容 -->
-<div class="modal fade" id="testModal" tabindex="-1" role="dialog" aria-labelledby="basicModal" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h4>表示設定</h4>
-            </div>
-            <div class="modal-body">
-                <table>
-                    <th><p class="loot_p">ルート品の表示   </p></th>
-                    <th><div class="toggle checked" id="loot">  
-                        <input type="checkbox" name="check" id="loot_in" />
-                    </div></th>
-                </table>
-                <table>
-                    <th><p class="key_p">鍵の表示　　　</p></td>
-                    <th><div class="toggle checked" id="key">
-                        <input type="checkbox" name="check" id="key_in" />
-                    </div></th>
-                </table>
-                <table>
-                    <th><p class="wepon_p">装備系の表示　</p></td>
-                    <th><div class="toggle checked" id="wepon">
-                        <input type="checkbox" name="check" id="wepon_in" />
-                    </div></th>
-                </table>
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-default" data-dismiss="modal">閉じる</button>
+    <!-- ボタン・リンククリック後に表示される画面の内容 -->
+    <div class="modal fade" id="testModal" tabindex="-1" role="dialog" aria-labelledby="basicModal" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4>表示設定</h4>
+                </div>
+                <div class="modal-body">
+                    <table>
+                        <th>
+                            <p class="loot_p">ルート品の表示 </p>
+                        </th>
+                        <th>
+                            <div class="toggle checked" id="loot">
+                                <input type="checkbox" name="check" id="loot_in" />
+                            </div>
+                        </th>
+                    </table>
+                    <table>
+                        <th>
+                            <p class="key_p">鍵の表示　　　</p>
+                            </td>
+                        <th>
+                            <div class="toggle checked" id="key">
+                                <input type="checkbox" name="check" id="key_in" />
+                            </div>
+                        </th>
+                    </table>
+                    <table>
+                        <th>
+                            <p class="wepon_p">装備系の表示　</p>
+                            </td>
+                        <th>
+                            <div class="toggle checked" id="wepon">
+                                <input type="checkbox" name="check" id="wepon_in" />
+                            </div>
+                        </th>
+                    </table>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">閉じる</button>
+                </div>
             </div>
         </div>
     </div>
-</div>
-<div id="only_img_area"></div>
+    <div id="only_img_area"></div>
     {% for item in tasks_item %}
     <div class="bigBox {{item[5]}}">
-    <div class="box1">
-        <p id="fullname">{{item[1]}}</p>
-    </div>
-    <div class="box2">
-        {% if item[2] > 0 %}
-        <p class="num">x{{item[2]}}</p>
-        {% else %}
-        <p class="num">タスクで使用</p>
-        {% endif %}
-        {% if item[3] %}
-        <p class="inRaid">inRaid</p>
-        {% endif %}
-    </div>
-    <div class="box3">
-        <img src="{{item[4]}}" class="item_img" loading="lazy">
-    </div>
+        <div class="box1">
+            <p id="fullname">{{item[1]}}</p>
+        </div>
+        <div class="box2">
+            {% if item[2] > 0 %}
+            <p class="num">x{{item[2]}}</p>
+            {% else %}
+            <p class="num">タスクで使用</p>
+            {% endif %}
+            {% if item[3] %}
+            <p class="inRaid">inRaid</p>
+            {% endif %}
+        </div>
+        <div class="box4">
+            <div class="btn-group" role="group">
+                <button id="btnGroupDrop1" type="button" class="btn btn-secondary dropdown-toggle"
+                    data-toggle="dropdown" aria-expanded="false">
+                    タスク
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+                    {% for cnt in range (item[6]|length) %}
+                    <li><a class="dropdown-item" href="{{item[6][cnt]}}" target="_blank">{{item[7][cnt]}}</a></li>
+                    {% endfor %}
+                </ul>
+            </div>
+        </div>
+        <div class="box3">
+            <img src="{{item[4]}}" class="item_img" loading="lazy">
+        </div>
     </div>
     {% endfor %}
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1577082847733195"
-    crossorigin="anonymous"></script>
-<!-- eft_test -->
-<ins class="adsbygoogle"
-    style="display:block"
-    data-ad-client="ca-pub-1577082847733195"
-    data-ad-slot="5022456881"
-    data-ad-format="auto"
-    data-full-width-responsive="true"></ins>
-<script>
+        crossorigin="anonymous"></script>
+    <!-- eft_test -->
+    <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-1577082847733195" data-ad-slot="5022456881"
+        data-ad-format="auto" data-full-width-responsive="true"></ins>
+    <script>
     // (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
-<div id="back_zone">
-    <button type="button" onclick="location.href='/task/'" class="btn btn-primary mb-12" id="back">戻る</button>
-</div>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    </script>
+    <div id="back_zone">
+        <button type="button" onclick="location.href='/task/'" class="btn btn-primary mb-12" id="back">戻る</button>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
     <script type="text/javascript" src="{{ url_for('static', filename='../static/js/jquery-3.6.3.min.js') }}"></script>
     <script type="text/javascript" src="{{ url_for('static', filename='../static/js/driver.js') }}"></script>
     <script type="text/javascript" src="{{ url_for('static', filename='../static/js/lightbox.js') }}"></script>
@@ -132,8 +163,11 @@
     <script src="https://adm.shinobi.jp/s/68c661359bace86de845fa54f8e2b69e"></script>
     <!-- admax -->
     <footer>
-        <small>このWebアプリは、<a href="https://wikiwiki.jp/eft/">Escape From Tarkov JPN Wiki</a> の「<a href="https://wikiwiki.jp/eft/%E3%82%BF%E3%82%B9%E3%82%AF#t9c50f18">タスクリスト</a>」記事の素材を使用しており、Creative Commons Attribution-NonCommercial-ShareAlike の下でライセンスされています。</small>
-        <small>Game content and materials are trademarks and copyrights of Battlestate Games and its licensors. All rights reserved.</small>
+        <small>このWebアプリは、<a href="https://wikiwiki.jp/eft/">Escape From Tarkov JPN Wiki</a> の「<a
+                href="https://wikiwiki.jp/eft/%E3%82%BF%E3%82%B9%E3%82%AF#t9c50f18">タスクリスト</a>」記事の素材を使用しており、Creative
+            Commons Attribution-NonCommercial-ShareAlike の下でライセンスされています。</small>
+        <small>Game content and materials are trademarks and copyrights of Battlestate Games and its licensors. All
+            rights reserved.</small>
     </footer>
 </body>
 
