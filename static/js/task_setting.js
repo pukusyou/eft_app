@@ -11,7 +11,7 @@ jQuery(function () {
   if (getParam("check") != null) {
     var load_values = getParam("check");
   } else {
-    var load_values = $.cookie("tasks");
+    var load_values = localStorage.getItem('tasks');
   }
   var load_values = decompressBinary(load_values)
   var count = 0;
@@ -25,7 +25,7 @@ jQuery(function () {
 
 $(document).on('click', 'input', function () {
   // console.log(save_values)
-  $.cookie("tasks", compress());
+  localStorage.setItem('tasks', compress());
 });
 
 // var p_bool, t_bool, s_bool, pe_bool, m_bool, r_bool, j_bool = false
@@ -39,7 +39,7 @@ $(document).on('click', '[id$="_button"]', function () {
 
 function all_check(checkbox_class, bool) {
   $(checkbox_class).prop('checked', !bool);
-  $.cookie("tasks", compress());
+  localStorage.setItem('tasks', compress());
   return !bool;
 }
 

@@ -11,7 +11,7 @@ jQuery(function () {
   if (getParam("check") != null) {
     var load_values = getParam("check");
   } else {
-    var load_values = $.cookie("tasks");
+    var load_values = localStorage.getItem('hideouts');
   }
   var load_values = decompressBinary(load_values)
   var count = 0;
@@ -47,13 +47,13 @@ jQuery(function () {
           $(this).prop('checked', false);
         }
       }
-      $.cookie("tasks", compress());
+      localStorage.setItem('hideouts', compress());
     });
   });
 });
 
 $(document).on('click', 'input', function () {
-  $.cookie("tasks", compress());
+  localStorage.setItem('hideouts', compress());
 });
 
 
