@@ -104,17 +104,19 @@ function compressBinary(binary) {
 function decompressBinary(compressedBinary) {
   let result = "";
   let count = "";
-  for (let i = 0; i < compressedBinary.length; i++) {
-    if (isNaN(parseInt(compressedBinary[i]))) {
-      for (let j = 0; j < parseInt(count); j++) {
-        result += compressedBinary[i];
+  if (compressedBinary != null) {
+    for (let i = 0; i < compressedBinary.length; i++) {
+      if (isNaN(parseInt(compressedBinary[i]))) {
+        for (let j = 0; j < parseInt(count); j++) {
+          result += compressedBinary[i];
+        }
+        count = "";
+      } else {
+        count += compressedBinary[i];
       }
-      count = "";
-    } else {
-      count += compressedBinary[i];
     }
+    return result;
   }
-  return result;
 }
 
 $(document).on('click', '#setting', function () {
