@@ -1,7 +1,12 @@
-from flask import Flask, render_template, request, redirect, url_for
+from flask import Flask, render_template, request, redirect, url_for, session
+import requests, json
+import configparser, random
 import deal_json as dj
 
 app = Flask(__name__, static_folder="./static")
+inifile = configparser.SafeConfigParser()
+inifile.read("setting.ini")
+app.secret_key = inifile.get("MAIN", "secret_key")
 task_json = dj.load_json("task.json")
 hideout_json = dj.load_json("hideout.json")
 
@@ -14,6 +19,46 @@ def index():
 @app.route("/en/", methods=["GET", "POST"])
 def index_en():
     return render_template("index_en.html")
+
+
+@app.route("/privacy/", methods=["GET", "POST"])
+def privacy():
+    return render_template("privacy_policy.html")
+
+
+@app.route("/en/privacy/", methods=["GET", "POST"])
+def privacy_en():
+    return render_template("privacy_policy_en.html")
+
+
+@app.route("/contact/", methods=["GET", "POST"])
+def contact():
+    key = random.random()
+    if request.method == "GET":
+        session["key"] = key
+        return render_template("contact.html", key=key)
+    else:
+        r_key = session.get("key")
+        contacts = request.form.getlist("contact")
+        if r_key == float(contacts[4]):
+            send_discord(contacts)
+        session["key"] = key
+        return render_template("contact.html", key=key)
+
+
+@app.route("/en/contact/", methods=["GET", "POST"])
+def contact_en():
+    key = random.random()
+    if request.method == "GET":
+        session["key"] = key
+        return render_template("contact_en.html", key=key)
+    else:
+        r_key = session.get("key")
+        contacts = request.form.getlist("contact")
+        if r_key == float(contacts[4]):
+            send_discord(contacts)
+        session["key"] = key
+        return render_template("contact_en.html", key=key)
 
 
 @app.route("/task/", methods=["GET", "POST"])
@@ -196,6 +241,30 @@ def hideout_item_en():
         remain_tasks = hideout_json.get_sa_hideout(tasks_no_symbol)
         tasks_item = hideout_json.get_hideout_task_item_sum(remain_tasks)
         return render_template("hideout_item_en.html", tasks_item=tasks_item)
+
+
+def send_discord(content):
+    inifile = configparser.SafeConfigParser()
+    inifile.read("setting.ini")
+    if int(content[0]) == 1:
+        webhook_url = inifile.get("MAIN", "Info_error")
+    elif int(content[0]) == 2:
+        webhook_url = inifile.get("MAIN", "Bug")
+    elif int(content[0]) == 3:
+        webhook_url = inifile.get("MAIN", "Improve_plan")
+    elif int(content[0]) == 4:
+        webhook_url = inifile.get("MAIN", "Impressions")
+    else:
+        webhook_url = inifile.get("MAIN", "Other")
+    content_shaping = (
+        "email:" + content[1] + "\n件名:" + content[2] + "\n本文:" + content[3]
+    )
+    if len(content[3]) >= 10:
+        main_content = {"content": content_shaping}
+        headers = {"Content-Type": "application/json"}
+        response = requests.post(
+            webhook_url, json.dumps(main_content), headers=headers
+        )
 
 
 if __name__ == "__main__":
