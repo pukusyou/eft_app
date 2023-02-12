@@ -118,7 +118,7 @@ function decompressBinary(compressedBinary) {
 }
 
 $(document).on('click', '#setting', function () {
-  $("#url").val("https://pukusyou.com/task/?check=" + compress());
+  $("#url").val("https://pukusyou.com/en/task/?check=" + compress());
   $(document).on('click', '#copy', function () {
     navigator.clipboard.writeText($("#url").val());
     $('.success-msg').fadeIn("slow", function () {

@@ -1399,7 +1399,7 @@
 					"name": "AKS-74U",
 					"num": 1,
 					"inRaid": false,
-					"img": "https://cdn.wikiwiki.jp/to/w/eft/img/::ref/AKS-74U_icon.png",
+					"img": "../../static/img/Mechanic/Kalashnikov_AKS-74U_5.45x39_assault_rifle.png",
 					"category": "wepon"
 				}
 			}
@@ -1412,7 +1412,7 @@
 					"name": "MP5",
 					"num": 1,
 					"inRaid": false,
-					"img": "https://cdn.wikiwiki.jp/to/w/eft/img/::ref/MP5_icon.png",
+					"img": "../../static/img/Mechanic/HK_MP5_9x19_submachine_gun.png",
 					"category": "wepon"
 				}
 			}
@@ -1425,7 +1425,7 @@
 					"name": "AK-105",
 					"num": 1,
 					"inRaid": false,
-					"img": "https://cdn.wikiwiki.jp/to/w/eft/img/::ref/AK-105-icon.png",
+					"img": "../../static/img/Mechanic/Kalashnikov_AK-105_5.45x39_assault_rifle.png",
 					"category": "wepon"
 				}
 			}
@@ -1438,7 +1438,7 @@
 					"name": "M870",
 					"num": 1,
 					"inRaid": false,
-					"img": "https://cdn.wikiwiki.jp/to/w/eft/img/::ref/M870.png",
+					"img": "../../static/img/Mechanic/Remington_Model_870_12ga_pump-action_shotgun.png",
 					"category": "wepon"
 				}
 			}
@@ -1451,7 +1451,7 @@
 					"name": "AKM",
 					"num": 1,
 					"inRaid": false,
-					"img": "https://cdn.wikiwiki.jp/to/w/eft/img/::ref/Akm.png",
+					"img": "../../static/img/Mechanic/Kalashnikov_AKM_7.62x39_assault_rifle.png",
 					"category": "wepon"
 				}
 			}
@@ -1464,7 +1464,7 @@
 					"name": "M4A1",
 					"num": 1,
 					"inRaid": false,
-					"img": "https://cdn.wikiwiki.jp/to/w/eft/img/::ref/M4a1.png",
+					"img": "../../static/img/Mechanic/Colt_M4A1_5.56x45_assault_rifle.png",
 					"category": "wepon"
 				}
 			}
@@ -1477,7 +1477,7 @@
 					"name": "AKS-74N",
 					"num": 1,
 					"inRaid": false,
-					"img": "https://cdn.wikiwiki.jp/to/w/eft/img/::ref/AKS-74N.png",
+					"img": "../../static/img/Mechanic/Kalashnikov_AKS-74N_5.45x39_assault_rifle.png",
 					"category": "wepon"
 				}
 			}
@@ -1490,7 +1490,7 @@
 					"name": "P226R",
 					"num": 1,
 					"inRaid": false,
-					"img": "https://cdn.wikiwiki.jp/to/w/eft/img/::ref/p226r_cell3.png",
+					"img": "../../static/img/Mechanic/SIG_P226R_9x19_pistol.png",
 					"category": "wepon"
 				}
 			}
@@ -1503,7 +1503,7 @@
 					"name": "AK-105",
 					"num": 1,
 					"inRaid": false,
-					"img": "https://cdn.wikiwiki.jp/to/w/eft/img/::ref/AK-105-icon.png",
+					"img": "../../static/img/Mechanic/Kalashnikov_AK-105_5.45x39_assault_rifle.png",
 					"category": "wepon"
 				}
 			}
@@ -1516,7 +1516,7 @@
 					"name": "Vector",
 					"num": 1,
 					"inRaid": false,
-					"img": "https://cdn.wikiwiki.jp/to/w/eft/img/::ref/Vector_9x19_View.png",
+					"img": "../../static/img/Mechanic/TDI_KRISS_Vector_Gen.2_9x19_submachine_gun.png",
 					"category": "wepon"
 				}
 			}
@@ -1529,7 +1529,7 @@
 					"name": "MPX",
 					"num": 1,
 					"inRaid": false,
-					"img": "https://cdn.wikiwiki.jp/to/w/eft/img/::ref/mpx-icon.png",
+					"img": "../../static/img/Mechanic/SIG_MPX_9x19_submachine_gun.png",
 					"category": "wepon"
 				}
 			}
@@ -1542,7 +1542,7 @@
 					"name": "RSASS",
 					"num": 1,
 					"inRaid": false,
-					"img": "https://cdn.wikiwiki.jp/to/w/eft/img/::ref/rsass-icon.png",
+					"img": "../../static/img/Mechanic/Remington_R11_RSASS_7.62x51_marksman_rifle.png",
 					"category": "wepon"
 				}
 			}
@@ -1555,7 +1555,7 @@
 					"name": "HK 416A5",
 					"num": 1,
 					"inRaid": false,
-					"img": "https://cdn.wikiwiki.jp/to/w/eft/img/::ref/HKicon.png",
+					"img": "../../static/img/Mechanic/HK_416A5_5.56x45_assault_rifle.png",
 					"category": "wepon"
 				}
 			}
@@ -1568,7 +1568,7 @@
 					"name": "AS VAL",
 					"num": 1,
 					"inRaid": false,
-					"img": "https://cdn.wikiwiki.jp/to/w/eft/img/::ref/ASVALicon.png",
+					"img": "../../static/img/Mechanic/AS_VAL_9x39_special_assault_rifle.png",
 					"category": "wepon"
 				}
 			}
@@ -1581,7 +1581,7 @@
 					"name": "DVL10",
 					"num": 1,
 					"inRaid": false,
-					"img": "https://cdn.wikiwiki.jp/to/w/eft/img/::ref/DVL10icon.png",
+					"img": "../../static/img/Mechanic/Lobaev_Arms_DVL-10_7.62x51_bolt-action_sniper_rifle.png",
 					"category": "wepon"
 				}
 			}
@@ -1594,7 +1594,7 @@
 					"name": "AK-102",
 					"num": 1,
 					"inRaid": false,
-					"img": "https://cdn.wikiwiki.jp/to/w/eft/img/::ref/AK102icon.png",
+					"img": "../../static/img/Mechanic/Kalashnikov_AK-102_5.56x45_assault_rifle.png",
 					"category": "wepon"
 				}
 			}
@@ -1607,7 +1607,7 @@
 					"name": "AKMN",
 					"num": 1,
 					"inRaid": false,
-					"img": "https://cdn.wikiwiki.jp/to/w/eft/img/::ref/akmnicon.png",
+					"img": "../../static/img/Mechanic/Kalashnikov_AKMN_7.62x39_assault_rifle.png",
 					"category": "wepon"
 				}
 			}
@@ -1620,7 +1620,7 @@
 					"name": "SVDS",
 					"num": 1,
 					"inRaid": false,
-					"img": "https://cdn.wikiwiki.jp/to/w/eft/img/::ref/SVDSicon.png",
+					"img": "../../static/img/Mechanic/SVDS_7.62x54R_sniper_rifle.png",
 					"category": "wepon"
 				}
 			}
@@ -1633,7 +1633,7 @@
 					"name": "M1A",
 					"num": 1,
 					"inRaid": false,
-					"img": "https://cdn.wikiwiki.jp/to/w/eft/img/::ref/m1aicon.png",
+					"img": "../../static/img/Mechanic/Springfield_Armory_M1A_7.62x51_rifle.png",
 					"category": "wepon"
 				}
 			}
@@ -1646,7 +1646,7 @@
 					"name": "M700",
 					"num": 1,
 					"inRaid": false,
-					"img": "https://cdn.wikiwiki.jp/to/w/eft/img/::ref/m700icon.png",
+					"img": "../../static/img/Mechanic/Remington_Model_700_7.62x51_bolt-action_sniper_rifle.png",
 					"category": "wepon"
 				},
 				"item2": {
@@ -1654,7 +1654,7 @@
 					"name": "M1911A1",
 					"num": 1,
 					"inRaid": false,
-					"img": "https://cdn.wikiwiki.jp/to/w/eft/img/::ref/m1911icon.png",
+					"img": "../../static/img/Mechanic/Colt_M1911A1_.45_ACP_pistol.png",
 					"category": "wepon"
 				}
 			}
@@ -1667,7 +1667,7 @@
 					"name": "M4A1",
 					"num": 1,
 					"inRaid": false,
-					"img": "https://cdn.wikiwiki.jp/to/w/eft/img/::ref/m4a1icon.png",
+					"img": "../../static/img/Mechanic/Colt_M4A1_5.56x45_assault_rifle.png",
 					"category": "wepon"
 				}
 			}
@@ -1936,7 +1936,7 @@
 					"name": "OR",
 					"num": -1,
 					"inRaid": false,
-					"img": "https://cdn.wikiwiki.jp/to/w/eft/img/::ref/Operating_Room_Key_icon.png",
+					"img": "../../static/img/Mechanic/Operating_room_key.png",
 					"category": "key"
 				}
 			}

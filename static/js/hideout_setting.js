@@ -21,6 +21,35 @@ jQuery(function () {
     }
 
   });
+  $(document).on('change', '.task input[type="checkbox"]', function () {
+    var box = $(this).prop('checked')
+    var className = $(this).attr('class');
+    var id = $(this).attr('id');
+    var level = parseInt(id.slice(-1));
+
+    if (className == 'Gym') {
+      $('.Defective_wall').each(function () {
+        if (box) {
+          $(this).prop('checked', true);
+        } else {
+          $(this).prop('checked', false);
+        }
+      });
+    }
+    $('.' + className).each(function () {
+      var currentLevel = parseInt($(this).attr('id').slice(-1));
+      if (box) {
+        if (currentLevel <= level) {
+          $(this).prop('checked', true);
+        }
+      } else {
+        if (currentLevel <= level) {
+          $(this).prop('checked', false);
+        }
+      }
+      $.cookie("tasks", compress());
+    });
+  });
 });
 
 $(document).on('click', 'input', function () {

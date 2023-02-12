@@ -88,7 +88,7 @@ def download_img(dealer, filename):
             ]
             urllib.request.install_opener(opener)
             urllib.request.urlretrieve(img[n], save_path)
-            replace_str(img[n], "../../" + save_path, "hideout.json")
+            replace_str(img[n], "../../" + save_path, "task.json")
             print(img[n] + " >>> " + save_path)
             time.sleep(2)
 
@@ -109,7 +109,7 @@ def add_str(path, yoso, yoso2, sinyoso):
 # hideout_list = ['Bitcoin Farm','Booze Generator','Intelligence Center','Lavatory','Medstation','Nutrition Unit','Scav case','Water collector','Workbench'
 #         ,'Air Filtering Unit','Generator','Heating','Illumination','Library','Rest Space','Security','Shooting range','Solar power',
 #         'Stash','Vents']
-download_img("Gym", "hideout.json")
+download_img("Mechanic", "task.json")
 # def write_txt(list):
 #     f = open('item.txt', 'w')
 #     for txt in list:
