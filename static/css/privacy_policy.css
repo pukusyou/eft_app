@@ -23,6 +23,7 @@ footer {
     color: #fff;
     /*文字色*/
     font-size: 85%;
+    min-height: 80px;
     /*文字サイズ*/
 }
 
