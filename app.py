@@ -94,7 +94,7 @@ def task_setting_en():
 @app.route("/task/item/", methods=["GET", "POST"])
 def task_item():
     if request.method == "GET":
-        return render_template("task_setting.html")
+        return render_template("task_item.html")
     else:
         tasks_no_symbol = []
         tasks = request.form.getlist("task")
@@ -108,7 +108,7 @@ def task_item():
 @app.route("/en/task/item/", methods=["GET", "POST"])
 def task_item_en():
     if request.method == "GET":
-        return render_template("task_setting_en.html")
+        return render_template("task_item_en.html")
     else:
         tasks_no_symbol = []
         tasks = request.form.getlist("task")
@@ -218,7 +218,7 @@ def hideout_setting_en():
 @app.route("/hideout/item/", methods=["GET", "POST"])
 def hideout_item():
     if request.method == "GET":
-        return render_template("hideout_setting.html")
+        return render_template("hideout_item.html")
     else:
         tasks_no_symbol = []
         tasks = request.form.getlist("task")
@@ -232,7 +232,7 @@ def hideout_item():
 @app.route("/en/hideout/item/", methods=["GET", "POST"])
 def hideout_item_en():
     if request.method == "GET":
-        return render_template("hideout_setting_en.html")
+        return render_template("hideout_item.html")
     else:
         tasks_no_symbol = []
         tasks = request.form.getlist("task")
