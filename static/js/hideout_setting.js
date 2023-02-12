@@ -21,14 +21,41 @@ jQuery(function () {
     }
 
   });
+  $(document).on('change', '.task input[type="checkbox"]', function () {
+    var box = $(this).prop('checked')
+    var className = $(this).attr('class');
+    var id = $(this).attr('id');
+    var level = parseInt(id.slice(-1));
+
+    if (className == 'Gym') {
+      $('.Defective_wall').each(function () {
+        if (box) {
+          $(this).prop('checked', true);
+        } else {
+          $(this).prop('checked', false);
+        }
+      });
+    }
+    $('.' + className).each(function () {
+      var currentLevel = parseInt($(this).attr('id').slice(-1));
+      if (box) {
+        if (currentLevel <= level) {
+          $(this).prop('checked', true);
+        }
+      } else {
+        if (currentLevel <= level) {
+          $(this).prop('checked', false);
+        }
+      }
+      $.cookie("tasks", compress());
+    });
+  });
 });
 
 $(document).on('click', 'input', function () {
-  // console.log(save_values)
   $.cookie("tasks", compress());
 });
 
-// var p_bool, t_bool, s_bool, pe_bool, m_bool, r_bool, j_bool = false
 
 // 「全て選択」がクリックされたら
 $(document).on('click', '[id$="_button"]', function () {
@@ -79,6 +106,7 @@ function compress() {
     } else {
       result.push('B')
     }
+
   });
   return compressBinary(result.join(""))
 }
@@ -118,7 +146,7 @@ function decompressBinary(compressedBinary) {
 }
 
 $(document).on('click', '#setting', function () {
-  $("#url").val("https://pukusyou.com/task/?check=" + compress());
+  $("#url").val("https://pukusyou.com/hideout/?check=" + compress());
   $(document).on('click', '#copy', function () {
     navigator.clipboard.writeText($("#url").val());
     $('.success-msg').fadeIn("slow", function () {

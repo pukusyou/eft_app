@@ -152,7 +152,7 @@
 					"category": "wepon"
 				},
 				"item2": {
-					"full_name": "M4A1",
+					"full_name": "Colt M4A1 5.56x45 assault rifle",
 					"name": "M4A1",
 					"num": 1,
 					"inRaid": true,
@@ -1379,55 +1379,298 @@
 			"wiki_url": "https://wikiwiki.jp/eft/Mechanic/Introduction"
 		},
 		"Gunsmith - Part 1": {
-			"wiki_url": "https://wikiwiki.jp/eft/Mechanic/Gunsmith%20-%20Part%201"
+			"wiki_url": "https://wikiwiki.jp/eft/Mechanic/Gunsmith%20-%20Part%201",
+			"items": {
+				"item1": {
+					"full_name": "MP-133 12ga pump-action shotgun",
+					"name": "MP-133",
+					"num": 1,
+					"inRaid": false,
+					"img": "../../static/img/prapor/MP-133_12ga_pump-action_shotgun.png",
+					"category": "wepon"
+				}
+			}
 		},
 		"Gunsmith - Part 2": {
-			"wiki_url": "https://wikiwiki.jp/eft/Mechanic/Gunsmith%20-%20Part%202"
+			"wiki_url": "https://wikiwiki.jp/eft/Mechanic/Gunsmith%20-%20Part%202",
+			"items": {
+				"item1": {
+					"full_name": "Kalashnikov AKS-74U 5.45x39 assault rifle",
+					"name": "AKS-74U",
+					"num": 1,
+					"inRaid": false,
+					"img": "../../static/img/Mechanic/Kalashnikov_AKS-74U_5.45x39_assault_rifle.png",
+					"category": "wepon"
+				}
+			}
 		},
 		"Gunsmith - Part 3": {
-			"wiki_url": "https://wikiwiki.jp/eft/Mechanic/Gunsmith%20-%20Part%203"
+			"wiki_url": "https://wikiwiki.jp/eft/Mechanic/Gunsmith%20-%20Part%203",
+			"items": {
+				"item1": {
+					"full_name": "HK MP5 9x19 submachine gun",
+					"name": "MP5",
+					"num": 1,
+					"inRaid": false,
+					"img": "../../static/img/Mechanic/HK_MP5_9x19_submachine_gun.png",
+					"category": "wepon"
+				}
+			}
 		},
 		"Gunsmith - Part 4": {
-			"wiki_url": "https://wikiwiki.jp/eft/Mechanic/Gunsmith%20-%20Part%204"
+			"wiki_url": "https://wikiwiki.jp/eft/Mechanic/Gunsmith%20-%20Part%204",
+			"items": {
+				"item1": {
+					"full_name": "Kalashnikov AK-105 5.45x39 assault rifle",
+					"name": "AK-105",
+					"num": 1,
+					"inRaid": false,
+					"img": "../../static/img/Mechanic/Kalashnikov_AK-105_5.45x39_assault_rifle.png",
+					"category": "wepon"
+				}
+			}
 		},
 		"Gunsmith - Part 5": {
-			"wiki_url": "https://wikiwiki.jp/eft/Mechanic/Gunsmith%20-%20Part%205"
+			"wiki_url": "https://wikiwiki.jp/eft/Mechanic/Gunsmith%20-%20Part%205",
+			"items": {
+				"item1": {
+					"full_name": "Remington Model 870 12ga pump-action shotgun",
+					"name": "M870",
+					"num": 1,
+					"inRaid": false,
+					"img": "../../static/img/Mechanic/Remington_Model_870_12ga_pump-action_shotgun.png",
+					"category": "wepon"
+				}
+			}
 		},
 		"Gunsmith - Part 6": {
-			"wiki_url": "https://wikiwiki.jp/eft/Mechanic/Gunsmith%20-%20Part%206"
+			"wiki_url": "https://wikiwiki.jp/eft/Mechanic/Gunsmith%20-%20Part%206",
+			"items": {
+				"item1": {
+					"full_name": "Kalashnikov AKM 7.62x39 assault rifle",
+					"name": "AKM",
+					"num": 1,
+					"inRaid": false,
+					"img": "../../static/img/Mechanic/Kalashnikov_AKM_7.62x39_assault_rifle.png",
+					"category": "wepon"
+				}
+			}
 		},
 		"Gunsmith - Part 7": {
-			"wiki_url": "https://wikiwiki.jp/eft/Mechanic/Gunsmith%20-%20Part%207"
+			"wiki_url": "https://wikiwiki.jp/eft/Mechanic/Gunsmith%20-%20Part%207",
+			"items": {
+				"item1": {
+					"full_name": "Colt M4A1 5.56x45 assault rifle",
+					"name": "M4A1",
+					"num": 1,
+					"inRaid": false,
+					"img": "../../static/img/Mechanic/Colt_M4A1_5.56x45_assault_rifle.png",
+					"category": "wepon"
+				}
+			}
 		},
 		"Gunsmith - Part 8": {
-			"wiki_url": "https://wikiwiki.jp/eft/Mechanic/Gunsmith%20-%20Part%208"
+			"wiki_url": "https://wikiwiki.jp/eft/Mechanic/Gunsmith%20-%20Part%208",
+			"items": {
+				"item1": {
+					"full_name": "Kalashnikov AKS-74N 5.45x39 assault rifle",
+					"name": "AKS-74N",
+					"num": 1,
+					"inRaid": false,
+					"img": "../../static/img/Mechanic/Kalashnikov_AKS-74N_5.45x39_assault_rifle.png",
+					"category": "wepon"
+				}
+			}
 		},
 		"Gunsmith - Part 9": {
-			"wiki_url": "https://wikiwiki.jp/eft/Mechanic/Gunsmith%20-%20Part%209"
+			"wiki_url": "https://wikiwiki.jp/eft/Mechanic/Gunsmith%20-%20Part%209",
+			"items": {
+				"item1": {
+					"full_name": "SIG P226R 9x19 pistol",
+					"name": "P226R",
+					"num": 1,
+					"inRaid": false,
+					"img": "../../static/img/Mechanic/SIG_P226R_9x19_pistol.png",
+					"category": "wepon"
+				}
+			}
 		},
 		"Gunsmith - Part 10": {
-			"wiki_url": "https://wikiwiki.jp/eft/Mechanic/Gunsmith%20-%20Part%2010"
+			"wiki_url": "https://wikiwiki.jp/eft/Mechanic/Gunsmith%20-%20Part%2010",
+			"items": {
+				"item1": {
+					"full_name": "Kalashnikov AK-105 5.45x39 assault rifle",
+					"name": "AK-105",
+					"num": 1,
+					"inRaid": false,
+					"img": "../../static/img/Mechanic/Kalashnikov_AK-105_5.45x39_assault_rifle.png",
+					"category": "wepon"
+				}
+			}
 		},
 		"Gunsmith - Part 11": {
-			"wiki_url": "https://wikiwiki.jp/eft/Mechanic/Gunsmith%20-%20Part%2011"
+			"wiki_url": "https://wikiwiki.jp/eft/Mechanic/Gunsmith%20-%20Part%2011",
+			"items": {
+				"item1": {
+					"full_name": "TDI KRISS Vector Gen.2 9x19 submachine gun",
+					"name": "Vector",
+					"num": 1,
+					"inRaid": false,
+					"img": "../../static/img/Mechanic/TDI_KRISS_Vector_Gen.2_9x19_submachine_gun.png",
+					"category": "wepon"
+				}
+			}
 		},
 		"Gunsmith - Part 12": {
-			"wiki_url": "https://wikiwiki.jp/eft/Mechanic/Gunsmith%20-%20Part%2012"
+			"wiki_url": "https://wikiwiki.jp/eft/Mechanic/Gunsmith%20-%20Part%2012",
+			"items": {
+				"item1": {
+					"full_name": "SIG MPX 9x19 submachine gun",
+					"name": "MPX",
+					"num": 1,
+					"inRaid": false,
+					"img": "../../static/img/Mechanic/SIG_MPX_9x19_submachine_gun.png",
+					"category": "wepon"
+				}
+			}
 		},
 		"Gunsmith - Part 13": {
-			"wiki_url": "https://wikiwiki.jp/eft/Mechanic/Gunsmith%20-%20Part%2013"
+			"wiki_url": "https://wikiwiki.jp/eft/Mechanic/Gunsmith%20-%20Part%2013",
+			"items": {
+				"item1": {
+					"full_name": "Remington R11 RSASS 7.62x51 marksman rifle",
+					"name": "RSASS",
+					"num": 1,
+					"inRaid": false,
+					"img": "../../static/img/Mechanic/Remington_R11_RSASS_7.62x51_marksman_rifle.png",
+					"category": "wepon"
+				}
+			}
 		},
 		"Gunsmith - Part 14": {
-			"wiki_url": "https://wikiwiki.jp/eft/Mechanic/Gunsmith%20-%20Part%2014"
+			"wiki_url": "https://wikiwiki.jp/eft/Mechanic/Gunsmith%20-%20Part%2014",
+			"items": {
+				"item1": {
+					"full_name": "HK 416A5 5.56x45 assault rifle",
+					"name": "HK 416A5",
+					"num": 1,
+					"inRaid": false,
+					"img": "../../static/img/Mechanic/HK_416A5_5.56x45_assault_rifle.png",
+					"category": "wepon"
+				}
+			}
 		},
 		"Gunsmith - Part 15": {
-			"wiki_url": "https://wikiwiki.jp/eft/Mechanic/Gunsmith%20-%20Part%2015"
+			"wiki_url": "https://wikiwiki.jp/eft/Mechanic/Gunsmith%20-%20Part%2015",
+			"items": {
+				"item1": {
+					"full_name": "AS VAL 9x39 special assault rifle",
+					"name": "AS VAL",
+					"num": 1,
+					"inRaid": false,
+					"img": "../../static/img/Mechanic/AS_VAL_9x39_special_assault_rifle.png",
+					"category": "wepon"
+				}
+			}
 		},
 		"Gunsmith - Part 16": {
-			"wiki_url": "https://wikiwiki.jp/eft/Mechanic/Gunsmith%20-%20Part%2016"
+			"wiki_url": "https://wikiwiki.jp/eft/Mechanic/Gunsmith%20-%20Part%2016",
+			"items": {
+				"item1": {
+					"full_name": "Lobaev Arms DVL-10 7.62x51 bolt-action sniper rifle",
+					"name": "DVL10",
+					"num": 1,
+					"inRaid": false,
+					"img": "../../static/img/Mechanic/Lobaev_Arms_DVL-10_7.62x51_bolt-action_sniper_rifle.png",
+					"category": "wepon"
+				}
+			}
 		},
 		"Gunsmith - Part 17": {
-			"wiki_url": "https://wikiwiki.jp/eft/Mechanic/Gunsmith%20-%20Part%2017"
+			"wiki_url": "https://wikiwiki.jp/eft/Mechanic/Gunsmith%20-%20Part%2017",
+			"items": {
+				"item1": {
+					"full_name": "Kalashnikov AK-102 5.56x45 assault rifle",
+					"name": "AK-102",
+					"num": 1,
+					"inRaid": false,
+					"img": "../../static/img/Mechanic/Kalashnikov_AK-102_5.56x45_assault_rifle.png",
+					"category": "wepon"
+				}
+			}
+		},
+		"Gunsmith - Part 18": {
+			"wiki_url": "https://wikiwiki.jp/eft/Mechanic/Gunsmith%20-%20Part%2018",
+			"items": {
+				"item1": {
+					"full_name": "Kalashnikov AKMN 7.62x39 assault rifle",
+					"name": "AKMN",
+					"num": 1,
+					"inRaid": false,
+					"img": "../../static/img/Mechanic/Kalashnikov_AKMN_7.62x39_assault_rifle.png",
+					"category": "wepon"
+				}
+			}
+		},
+		"Gunsmith - Part 19": {
+			"wiki_url": "https://wikiwiki.jp/eft/Mechanic/Gunsmith%20-%20Part%2019",
+			"items": {
+				"item1": {
+					"full_name": "SVDS 7.62x54R sniper rifle",
+					"name": "SVDS",
+					"num": 1,
+					"inRaid": false,
+					"img": "../../static/img/Mechanic/SVDS_7.62x54R_sniper_rifle.png",
+					"category": "wepon"
+				}
+			}
+		},
+		"Gunsmith - Part 20": {
+			"wiki_url": "https://wikiwiki.jp/eft/Mechanic/Gunsmith%20-%20Part%2020",
+			"items": {
+				"item1": {
+					"full_name": "Springfield Armory M1A 7.62x51 rifle",
+					"name": "M1A",
+					"num": 1,
+					"inRaid": false,
+					"img": "../../static/img/Mechanic/Springfield_Armory_M1A_7.62x51_rifle.png",
+					"category": "wepon"
+				}
+			}
+		},
+		"Gunsmith - Part 21": {
+			"wiki_url": "https://wikiwiki.jp/eft/Mechanic/Gunsmith%20-%20Part%2021",
+			"items": {
+				"item1": {
+					"full_name": "Remington Model 700 7.62x51 bolt-action sniper rifle",
+					"name": "M700",
+					"num": 1,
+					"inRaid": false,
+					"img": "../../static/img/Mechanic/Remington_Model_700_7.62x51_bolt-action_sniper_rifle.png",
+					"category": "wepon"
+				},
+				"item2": {
+					"full_name": "Colt M1911A1 .45 ACP pistol",
+					"name": "M1911A1",
+					"num": 1,
+					"inRaid": false,
+					"img": "../../static/img/Mechanic/Colt_M1911A1_.45_ACP_pistol.png",
+					"category": "wepon"
+				}
+			}
+		},
+		"Gunsmith - Part 22": {
+			"wiki_url": "https://wikiwiki.jp/eft/Mechanic/Gunsmith%20-%20Part%2022",
+			"items": {
+				"item1": {
+					"full_name": "Colt M4A1 5.56x45 assault rifle",
+					"name": "M4A1",
+					"num": 1,
+					"inRaid": false,
+					"img": "../../static/img/Mechanic/Colt_M4A1_5.56x45_assault_rifle.png",
+					"category": "wepon"
+				}
+			}
 		},
 		"Signal - Part 1": {
 			"wiki_url": "https://wikiwiki.jp/eft/Mechanic/Signal%20-%20Part%201"
@@ -1693,7 +1936,7 @@
 					"name": "OR",
 					"num": -1,
 					"inRaid": false,
-					"img": "https://cdn.wikiwiki.jp/to/w/eft/img/::ref/Operating_Room_Key_icon.png",
+					"img": "../../static/img/Mechanic/Operating_room_key.png",
 					"category": "key"
 				}
 			}
@@ -2231,7 +2474,7 @@
 					"num": 10,
 					"inRaid": true,
 					"img": "../../static/img/Ragman/Bottle_of_Dan_Jackiel_Whiskey.png",
-					"category": "key"
+					"category": "loot"
 				},
 				"item3": {
 					"full_name": "Purified water",

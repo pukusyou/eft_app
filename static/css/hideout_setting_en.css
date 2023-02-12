@@ -22,6 +22,9 @@
      float: left;
      flex-wrap: wrap;
      padding-right: 15px;
+     width: 400px;
+     height: 230px;
+     padding-bottom: 20px;
  }
 
  /* ラベル全体にクリックイベントを追加 */
@@ -61,7 +64,7 @@
  #submit {
      position: fixed;
      top: 10px;
-     right: 50px;
+     right: 10px;
      background-color: #333;
  }
 
@@ -102,7 +105,7 @@
      width: auto;
      height: auto;
      top: 10px;
-     right: 120px;
+     right: 100px;
      background-color: #333;
  }
 
@@ -138,8 +141,4 @@
      margin: auto;
      text-align: center;
      border-radius: 5px;
- }
-
- .navbar-light .navbar-toggler {
-     border-color: rgba(0, 0, 0, 0);
  }

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ja">
+<html lang="en">
 
 <head>
     <!-- Google tag (gtag.js) -->
@@ -29,29 +29,29 @@
 
 <body>
     <nav class="navbar navbar-expand-md navbar-dark bg-dark h-100" style="height: 2px;">
-        <a href="/" class="navbar-brand h-50"><img src="../../static/img/logo.png" width="50px">EFT Item Hub</a>
+        <a href="/en/" class="navbar-brand h-50"><img src="../../../static/img/logo.png" width="50px">EFT Item Hub</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar4">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="navbar-collapse collapse" id="navbar4">
             <ul class="navbar-nav">
                 <li class="nav-item active">
-                    <a class="nav-link" href="/task/">Task</a>
+                    <a class="nav-link" href="/en/task/">Task</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/hideout/">Hideout</a>
+                    <a class="nav-link" href="/en/hideout/">Hideout</a>
                 </li>
             </ul>
         </div>
     </nav>
-    <h1>タスクで使用するアイテム</h1>
+    <h1>Items to be used in the task</h1>
     <!-- モーダルを開くボタン・リンク -->
     <div class="container">
         <div class="row mb-5">
             <div class="col-2">
                 <button type="button" class="btn btn-primary mb-12" id="setting" data-toggle="modal"
-                    data-target="#testModal">表示設定</button>
-                <button type="button" class="btn btn-primary mb-12" id="select">選択</button>
+                    data-target="#testModal">Display Settings</button>
+                <button type="button" class="btn btn-primary mb-12" id="select">Selection</button>
             </div>
         </div>
     </div>
@@ -61,12 +61,12 @@
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h4>表示設定</h4>
+                    <h4>Display Settings</h4>
                 </div>
                 <div class="modal-body">
                     <table>
                         <th>
-                            <p class="loot_p">ルート品の表示 </p>
+                            <p class="loot_p">loot product display </p>
                         </th>
                         <th>
                             <div class="toggle checked" id="loot">
@@ -76,7 +76,7 @@
                     </table>
                     <table>
                         <th>
-                            <p class="key_p">鍵の表示　　　</p>
+                            <p class="key_p">Key display　　　</p>
                             </td>
                         <th>
                             <div class="toggle checked" id="key">
@@ -86,7 +86,7 @@
                     </table>
                     <table>
                         <th>
-                            <p class="wepon_p">装備系の表示　</p>
+                            <p class="wepon_p">Equipment system display　</p>
                             </td>
                         <th>
                             <div class="toggle checked" id="wepon">
@@ -96,7 +96,7 @@
                     </table>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-default" data-dismiss="modal">閉じる</button>
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
                 </div>
             </div>
         </div>
@@ -111,7 +111,7 @@
             {% if item[2] > 0 %}
             <p class="num">x{{item[2]}}</p>
             {% else %}
-            <p class="num">タスクで使用</p>
+            <p class="num">Used in task</p>
             {% endif %}
             {% if item[3] %}
             <p class="inRaid">inRaid</p>
@@ -121,7 +121,7 @@
             <div class="btn-group" role="group">
                 <button id="btnGroupDrop1" type="button" class="btn btn-secondary dropdown-toggle"
                     data-toggle="dropdown" aria-expanded="false">
-                    タスク
+                    Task
                 </button>
                 <ul class="dropdown-menu" aria-labelledby="btnGroupDrop1">
                     {% for cnt in range (item[6]|length) %}
@@ -131,7 +131,7 @@
             </div>
         </div>
         <div class="box3">
-            <img src="{{item[4]}}" class="item_img" loading="lazy">
+            <img src="../{{item[4]}}" class="item_img" loading="lazy">
         </div>
     </div>
     {% endfor %}
@@ -144,7 +144,7 @@
     // (adsbygoogle = window.adsbygoogle || []).push({});
     </script>
     <div id="back_zone">
-        <button type="button" onclick="location.href='/task/'" class="btn btn-primary mb-12" id="back">戻る</button>
+        <button type="button" onclick="location.href='/en/task/'" class="btn btn-primary mb-12" id="back">Back</button>
     </div>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
@@ -158,14 +158,15 @@
     <script type="text/javascript" src="{{ url_for('static', filename='../static/js/jquery-3.6.3.min.js') }}"></script>
     <script type="text/javascript" src="{{ url_for('static', filename='../static/js/driver.js') }}"></script>
     <script type="text/javascript" src="{{ url_for('static', filename='../static/js/lightbox.js') }}"></script>
-    <script type="text/javascript" src="{{ url_for('static', filename='../static/js/task_item.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='../static/js/task_item_en.js') }}"></script>
     <!-- admax -->
-    <script src="https://adm.shinobi.jp/s/68c661359bace86de845fa54f8e2b69e"></script>
+    <!-- <script src="https://adm.shinobi.jp/s/68c661359bace86de845fa54f8e2b69e"></script> -->
     <!-- admax -->
     <footer>
-        <small>このWebアプリは、<a href="https://wikiwiki.jp/eft/">Escape From Tarkov JPN Wiki</a> の「<a
-                href="https://wikiwiki.jp/eft/%E3%82%BF%E3%82%B9%E3%82%AF#t9c50f18">タスクリスト</a>」記事の素材を使用しており、Creative
-            Commons Attribution-NonCommercial-ShareAlike の下でライセンスされています。</small>
+        <small>This web app uses material from the <a
+                href="https://wikiwiki.jp/eft/%E3%82%BF%E3%82%B9%E3%82%AF#t9c50f18">"Task List"</a> article on the <a
+                href="https://wikiwiki.jp/eft/">"Escape From Tarkov JPN Wiki"</a>
+            Licensed under Creative Commons Attribution-NonCommercial-ShareAlike.</small>
         <small>Game content and materials are trademarks and copyrights of Battlestate Games and its licensors. All
             rights reserved.</small>
     </footer>

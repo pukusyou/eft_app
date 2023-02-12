@@ -31,11 +31,11 @@ $("#select").on("click", function () {
   $("#setting").hide();
   $("#select").hide();
   $(".bigBox").css("border", "6px solid white")
-  $("#back_zone").html('<button type="button" class="btn btn-success mb-12 border-primary" id="completion">選択した画像のみを表示</button>')
-  $("#back_zone").append('<button type="button" class="btn btn-success mb-12 border-primary" id="all_completion">選択したものを表示</button>')
+  $("#back_zone").html('<button type="button" class="btn btn-success mb-12 border-primary" id="completion">Show only selected images</button>')
+  $("#back_zone").append('<button type="button" class="btn btn-success mb-12 border-primary" id="all_completion">Show selection</button>')
   $(".bigBox").on("click", function () {
     if (!toleger) {
-      return;
+      return false;
     }
     var result = object_iqual(bigBox_list, $(this))
     if (result[0]) {
@@ -55,7 +55,7 @@ $("#select").on("click", function () {
         var clone = $(element.find("img")[0]).clone()
         $("#only_img_area").append(clone);
       });
-      $("#back_zone").html('<button type="button" class="btn btn-success mb-12 border-primary" id="itiran_back">一覧に戻る</button>')
+      $("#back_zone").html('<button type="button" class="btn btn-success mb-12 border-primary" id="itiran_back">Return to list</button>')
       $("#itiran_back").on("click", function () {
         $("#only_img_area").empty();
         $(".bigBox").css({ "border": "", "box-sizing": "" })
@@ -63,6 +63,7 @@ $("#select").on("click", function () {
         $("#setting").show();
         $("#select").show();
         $("#back_zone").html(back_button)
+        console.log("ok")
         $(".toggle").addClass("checked");
         toleger = false
       });
@@ -89,7 +90,7 @@ $("#select").on("click", function () {
         $(".bigBox" + "." + String(count)).append(clone.html());
         count++;
       });
-      $("#back_zone").html('<button type="button" class="btn btn-success mb-12 border-primary" id="itiran_back">一覧に戻る</button>')
+      $("#back_zone").html('<button type="button" class="btn btn-success mb-12 border-primary" id="itiran_back">Return to list</button>')
       $("#itiran_back").on("click", function () {
         $("#only_img_area").empty();
         $(".bigBox").css({ "border": "", "box-sizing": "" })
