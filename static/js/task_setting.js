@@ -34,12 +34,19 @@ $(document).on('click', 'input', function () {
 $(document).on('click', '[id$="_button"]', function () {
   var className = "." + this.id.replace("_button", "");
   var bool = window[this.id.replace("_button", "_bool")];
+  if (typeof bool === "undefined") bool = false;
   window[this.id.replace("_button", "_bool")] = all_check(className, bool);
 });
 
 function all_check(checkbox_class, bool) {
-  $(checkbox_class).prop('checked', !bool);
-  localStorage.setItem('tasks', compress());
+  var div_class = checkbox_class + "_task"
+  $(div_class).each(function () {
+    if ($(this).css('display') != 'none') {
+      $(this).find(checkbox_class).prop('checked', bool);
+      localStorage.setItem('tasks', compress());
+    }
+  });
+  console.log(bool)
   return !bool;
 }
 
@@ -137,4 +144,48 @@ function getParam(name, url) {
   if (!results) return null;
   if (!results[2]) return '';
   return decodeURIComponent(results[2].replace(/\+/g, " "));
+}
+
+function toggle(name) {
+  all_dealer = ['prapor', 'therapist', 'skier', 'peacekeeper', 'mechanic', 'ragman', 'jaeger']
+  all_dealer.forEach(dealer => {
+    if (name == dealer || name == "all") {
+      $("#" + dealer).show();
+    } else {
+      $("#" + dealer).hide();
+    }
+  });
+}
+$(document).on('input', '#prapor_search', function (e) {
+  search("prapor")
+});
+$(document).on('input', '#therapist_search', function (e) {
+  search("therapist")
+});
+$(document).on('input', '#skier_search', function (e) {
+  search("skier")
+});
+$(document).on('input', '#peacekeeper_search', function (e) {
+  search("peacekeeper")
+});
+$(document).on('input', '#mechanic_search', function (e) {
+  search("mechanic")
+});
+$(document).on('input', '#ragman_search', function (e) {
+  search("ragman")
+});
+$(document).on('input', '#jaeger_search', function (e) {
+  search("jaeger")
+});
+
+function search(dealer) {
+  $('.' + dealer + '_task').each(function () {
+    if ($('#' + dealer + '_search').val().length <= 0) {
+      $(this).show()
+    } else if ($(this).find("label").text().toUpperCase().replace(" ", "").indexOf($('#' + dealer + '_search').val().toUpperCase().replace(" ", "")) == -1) {
+      $(this).hide()
+    } else {
+      $(this).show()
+    }
+  });
 }
