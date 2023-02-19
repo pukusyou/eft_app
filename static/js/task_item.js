@@ -1,23 +1,23 @@
-var driver = new Driver({
-  stageBackground: '#3d648a',
-  nextBtnText: '次へ',
-  prevBtnText: '戻る',
-  closeBtnText: '閉じる',
-  doneBtnText: '完了',
-  padding: 5,
-});
+// var driver = new Driver({
+//   stageBackground: '#3d648a',
+//   nextBtnText: '次へ',
+//   prevBtnText: '戻る',
+//   closeBtnText: '閉じる',
+//   doneBtnText: '完了',
+//   padding: 5,
+// });
 
 
-driver.defineSteps([
-  {
-    element: '#setting', // ハイライトさせる要素
-    popover: {
-      title: '1.表示設定',
-      description: 'アイテムの表示・非表示のオプションを選択できます',
-      position: 'right',
-    }
-  }
-]);
+// driver.defineSteps([
+//   {
+//     element: '#setting', // ハイライトさせる要素
+//     popover: {
+//       title: '1.表示設定',
+//       description: 'アイテムの表示・非表示のオプションを選択できます',
+//       position: 'right',
+//     }
+//   }
+// ]);
 
 $(".toggle").on("click", function () {
   $(this).toggleClass("checked");

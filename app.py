@@ -2,6 +2,7 @@ from flask import Flask, render_template, request, redirect, url_for, session
 import requests, json
 import configparser, random
 import deal_json as dj
+import deal_csv as dc
 
 app = Flask(__name__, static_folder="./static")
 inifile = configparser.SafeConfigParser()
@@ -241,6 +242,12 @@ def hideout_item_en():
         remain_tasks = hideout_json.get_sa_hideout(tasks_no_symbol)
         tasks_item = hideout_json.get_hideout_task_item_sum(remain_tasks)
         return render_template("hideout_item_en.html", tasks_item=tasks_item)
+
+
+@app.route("/ammo/", methods=["GET", "POST"])
+def ammo():
+    ammo_list = dc.get_ammo_list()
+    return render_template("ammo_list.html", ammo_list=ammo_list)
 
 
 def send_discord(content):

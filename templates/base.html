@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1577082847733195"
+        crossorigin="anonymous"></script>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZGJKS21QN2"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-ZGJKS21QN2');
+    </script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>{% block title %}
+        EFT Item Hub
+        {% endblock %}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="EscapeFromTarkovのタスク・ハイドアウトで使用するアイテムを表示するアプリです">
+    <meta name="keywords" content="eft,EscapeFromTarkov">
+    <link rel="icon" type="image/png" href="{{ url_for('static', filename='img/logo.webp') }}">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/base.css') }}">
+    {% block css %}
+    {% endblock %}
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+        <a href="/" class="navbar-brand h-50"><img src="{{ url_for('static', filename='img/logo.webp') }}"
+                width="50px">EFT
+            Item Hub</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar4">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="navbar-collapse collapse" id="navbar4">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="/task/">Task</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/hideout/">Hideout</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/ammo/">Ammo(beta)</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    {% block contents %}
+    {% endblock %}
+    {% block ad %}
+    {% endblock %}
+    <footer>
+        <font size="3">
+            <p id="privacy"><a href="/privacy/">プライバシーポリシー</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a
+                    href="/contact/">お問い合わせ</a>
+            </p>
+        </font>
+        {% block footer %}
+        {% endblock %}
+        <small>Game content and materials are trademarks and copyrights of Battlestate Games and its
+            licensors. All rights
+            reserved.</small>
+        <p class="float-start"><a href="/">EFT Item Hub</a></p>
+        <p class="float-end">&copy; 2023 EFT Item Hub</p>
+        {% block footer_last %}
+        {% endblock %}
+    </footer>
+</body>
+
+</html>

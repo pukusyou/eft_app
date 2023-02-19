@@ -8,7 +8,7 @@
 					"name": "MP-133",
 					"num": 2,
 					"inRaid": false,
-					"img": "../../static/img/prapor/MP-133_12ga_pump-action_shotgun.png",
+					"img": "../../static/img/prapor/MP-133_12ga_pump-action_shotgun.webp",
 					"category": "wepon"
 				}
 			}
@@ -24,7 +24,7 @@
 					"name": "Key",
 					"num": -1,
 					"inRaid": false,
-					"img": "../../static/img/prapor/Machinery_key.png",
+					"img": "../../static/img/prapor/Machinery_key.webp",
 					"category": "key"
 				}
 			}
@@ -40,7 +40,7 @@
 					"name": "Customs",
 					"num": -1,
 					"inRaid": false,
-					"img": "../../static/img/prapor/Tarcone_Director's_office_key.png",
+					"img": "../../static/img/prapor/Tarcone_Director's_office_key.webp",
 					"category": "key"
 				}
 			}
@@ -62,7 +62,7 @@
 					"name": "Key",
 					"num": -1,
 					"inRaid": false,
-					"img": "../../static/img/prapor/Portable_bunkhouse_key.png",
+					"img": "../../static/img/prapor/Portable_bunkhouse_key.webp",
 					"category": "key"
 				}
 			}
@@ -75,7 +75,7 @@
 					"name": "6L31",
 					"num": 3,
 					"inRaid": true,
-					"img": "../../static/img/prapor/AK-74_5.45x39_6L31_60-round_magazine.png",
+					"img": "../../static/img/prapor/AK-74_5.45x39_6L31_60-round_magazine.webp",
 					"category": "wepon"
 				}
 			}
@@ -103,7 +103,7 @@
 					"name": "Dorm 203",
 					"num": -1,
 					"inRaid": false,
-					"img": "../../static/img/prapor/Dorm_room_203_key.png",
+					"img": "../../static/img/prapor/Dorm_room_203_key.webp",
 					"category": "key"
 				}
 			}
@@ -119,7 +119,7 @@
 					"name": "Mask",
 					"num": 7,
 					"inRaid": true,
-					"img": "../../static/img/prapor/Lower_half-mask.png",
+					"img": "../../static/img/prapor/Lower_half-mask.webp",
 					"category": "wepon"
 				}
 			}
@@ -135,7 +135,7 @@
 					"name": "A-2607",
 					"num": 5,
 					"inRaid": true,
-					"img": "../../static/img/prapor/Bars_A-2607_95H18_knife.png",
+					"img": "../../static/img/prapor/Bars_A-2607_95H18_knife.webp",
 					"category": "wepon"
 				}
 			}
@@ -148,7 +148,7 @@
 					"name": "AK-74N",
 					"num": 1,
 					"inRaid": true,
-					"img": "../../static/img/prapor/AK-74N.png",
+					"img": "../../static/img/prapor/AK-74N.webp",
 					"category": "wepon"
 				},
 				"item2": {
@@ -156,7 +156,7 @@
 					"name": "M4A1",
 					"num": 1,
 					"inRaid": true,
-					"img": "../../static/img/prapor/M4A1.png",
+					"img": "../../static/img/prapor/M4A1.webp",
 					"category": "wepon"
 				},
 				"item3": {
@@ -164,7 +164,7 @@
 					"name": "PM",
 					"num": 2,
 					"inRaid": true,
-					"img": "../../static/img/prapor/PM_pistol.png",
+					"img": "../../static/img/prapor/PM_pistol.webp",
 					"category": "wepon"
 				}
 			}
@@ -183,7 +183,7 @@
 					"name": "USEC",
 					"num": 7,
 					"inRaid": false,
-					"img": "../../static/img/prapor/USEC_Dogtag.png",
+					"img": "../../static/img/prapor/USEC_Dogtag.webp",
 					"category": "loot"
 				},
 				"item2": {
@@ -191,7 +191,7 @@
 					"name": "BEAR",
 					"num": 7,
 					"inRaid": false,
-					"img": "../../static/img/prapor/BEAR_Dogtag.png",
+					"img": "../../static/img/prapor/BEAR_Dogtag.webp",
 					"category": "loot"
 				}
 			}
@@ -222,7 +222,7 @@
 					"name": "Tank battery",
 					"num": 1,
 					"inRaid": true,
-					"img": "../../static/img/prapor/6-STEN-140-M_military_battery.png",
+					"img": "../../static/img/prapor/6-STEN-140-M_military_battery.webp",
 					"category": "loot"
 				},
 				"item2": {
@@ -230,7 +230,7 @@
 					"name": "OFZ",
 					"num": 5,
 					"inRaid": true,
-					"img": "../../static/img/prapor/OFZ_30x160mm_shell.png",
+					"img": "../../static/img/prapor/OFZ_30x160mm_shell.webp",
 					"category": "loot"
 				}
 			}
@@ -246,7 +246,7 @@
 					"name": "M67",
 					"num": 10,
 					"inRaid": false,
-					"img": "../../static/img/prapor/M67_Hand_grenade.png",
+					"img": "../../static/img/prapor/M67_Hand_grenade.webp",
 					"category": "wepon"
 				}
 			}
@@ -274,7 +274,7 @@
 					"name": "USEC",
 					"num": 20,
 					"inRaid": true,
-					"img": "../../static/img/prapor/USEC_Dogtag.png",
+					"img": "../../static/img/prapor/USEC_Dogtag.webp",
 					"category": "loot"
 				}
 			}
@@ -292,7 +292,7 @@
 					"name": "Salewa",
 					"num": 3,
 					"inRaid": true,
-					"img": "../../static/img/Therapist/Salewa_first_aid_kit.png",
+					"img": "../../static/img/Therapist/Salewa_first_aid_kit.webp",
 					"category": "loot"
 				}
 			}
@@ -305,7 +305,7 @@
 					"name": "Dorm 206",
 					"num": -1,
 					"inRaid": false,
-					"img": "../../static/img/Therapist/Dorm_room_206_Key.png",
+					"img": "../../static/img/Therapist/Dorm_room_206_Key.webp",
 					"category": "key"
 				}
 			}
@@ -321,7 +321,7 @@
 					"name": "GasAn",
 					"num": 1,
 					"inRaid": true,
-					"img": "../../static/img/Therapist/Gas_analyzer.png",
+					"img": "../../static/img/Therapist/Gas_analyzer.webp",
 					"category": "loot"
 				}
 			}
@@ -334,7 +334,7 @@
 					"name": "GasAn",
 					"num": 2,
 					"inRaid": true,
-					"img": "../../static/img/Therapist/Gas_analyzer.png",
+					"img": "../../static/img/Therapist/Gas_analyzer.webp",
 					"category": "loot"
 				}
 			}
@@ -347,7 +347,7 @@
 					"name": "Morphine",
 					"num": 4,
 					"inRaid": true,
-					"img": "../../static/img/Therapist/Morphine_injector.png",
+					"img": "../../static/img/Therapist/Morphine_injector.webp",
 					"category": "loot"
 				}
 			}
@@ -360,7 +360,7 @@
 					"name": "114 Key",
 					"num": -1,
 					"inRaid": false,
-					"img": "../../static/img/Therapist/Dorm_room_114_Key.png",
+					"img": "../../static/img/Therapist/Dorm_room_114_Key.webp",
 					"category": "key"
 				}
 			}
@@ -379,7 +379,7 @@
 					"name": "Car batt.",
 					"num": 4,
 					"inRaid": true,
-					"img": "../../static/img/Therapist/Car_battery.png",
+					"img": "../../static/img/Therapist/Car_battery.webp",
 					"category": "loot"
 				},
 				"item2": {
@@ -387,7 +387,7 @@
 					"name": "Plug",
 					"num": 8,
 					"inRaid": true,
-					"img": "../../static/img/Therapist/Spark_plug.png",
+					"img": "../../static/img/Therapist/Spark_plug.webp",
 					"category": "loot"
 				}
 			}
@@ -403,7 +403,7 @@
 					"name": "RB-KSM",
 					"num": -1,
 					"inRaid": false,
-					"img": "../../static/img/Therapist/RB-KSM_key.png",
+					"img": "../../static/img/Therapist/RB-KSM_key.webp",
 					"category": "key"
 				},
 				"item2": {
@@ -411,7 +411,7 @@
 					"name": "RB-SMP",
 					"num": -1,
 					"inRaid": true,
-					"img": "../../static/img/Therapist/RB-SMP_key.png",
+					"img": "../../static/img/Therapist/RB-SMP_key.webp",
 					"category": "key"
 				}
 			}
@@ -433,7 +433,7 @@
 					"name": "W306 San",
 					"num": -1,
 					"inRaid": false,
-					"img": "../../static/img/Therapist/Health_Resort_west_wing_room_306_key.png",
+					"img": "../../static/img/Therapist/Health_Resort_west_wing_room_306_key.webp",
 					"category": "key"
 				}
 			}
@@ -458,7 +458,7 @@
 					"name": "OScope",
 					"num": 1,
 					"inRaid": true,
-					"img": "../../static/img/Therapist/Ophthalmoscope.png",
+					"img": "../../static/img/Therapist/Ophthalmoscope.webp",
 					"category": "loot"
 				},
 				"item2": {
@@ -466,7 +466,7 @@
 					"name": "LEDX",
 					"num": 1,
 					"inRaid": true,
-					"img": "../../static/img/Therapist/LEDX_Skin_Transilluminator.png",
+					"img": "../../static/img/Therapist/LEDX_Skin_Transilluminator.webp",
 					"category": "loot"
 				}
 			}
@@ -479,7 +479,7 @@
 					"name": "Kite",
 					"num": 3,
 					"inRaid": false,
-					"img": "../../static/img/Therapist/Gunpowder_Kite.png",
+					"img": "../../static/img/Therapist/Gunpowder_Kite.webp",
 					"category": "loot"
 				}
 			}
@@ -495,7 +495,7 @@
 					"name": "Tushonka",
 					"num": 15,
 					"inRaid": true,
-					"img": "../../static/img/Therapist/Can_of_beef_stew_(Small).png",
+					"img": "../../static/img/Therapist/Can_of_beef_stew_(Small).webp",
 					"category": "loot"
 				}
 			}
@@ -511,7 +511,7 @@
 					"name": "Cottage",
 					"num": -1,
 					"inRaid": false,
-					"img": "../../static/img/Therapist/Cottage_back_door_key.png",
+					"img": "../../static/img/Therapist/Cottage_back_door_key.webp",
 					"category": "key"
 				}
 			}
@@ -524,7 +524,7 @@
 					"name": "AHF1-M",
 					"num": 1,
 					"inRaid": true,
-					"img": "../../static/img/Therapist/AHF1-M_stimulant_injector.png",
+					"img": "../../static/img/Therapist/AHF1-M_stimulant_injector.webp",
 					"category": "loot"
 				},
 				"item2": {
@@ -532,7 +532,7 @@
 					"name": "3-(b-TG)",
 					"num": 1,
 					"inRaid": true,
-					"img": "../../static/img/Therapist/3-(b-TG)_stimulant_injector.png",
+					"img": "../../static/img/Therapist/3-(b-TG)_stimulant_injector.webp",
 					"category": "loot"
 				},
 				"item3": {
@@ -540,7 +540,7 @@
 					"name": "Blue",
 					"num": 1,
 					"inRaid": false,
-					"img": "../../static/img/Therapist/TerraGroup_Labs_keycard_(Blue).png",
+					"img": "../../static/img/Therapist/TerraGroup_Labs_keycard_(Blue).webp",
 					"category": "key"
 				},
 				"item4": {
@@ -548,7 +548,7 @@
 					"name": "Green",
 					"num": 1,
 					"inRaid": false,
-					"img": "../../static/img/Therapist/TerraGroup_Labs_keycard_(Green).png",
+					"img": "../../static/img/Therapist/TerraGroup_Labs_keycard_(Green).webp",
 					"category": "key"
 				}
 			}
@@ -567,7 +567,7 @@
 					"name": "Dorm 303",
 					"num": 1,
 					"inRaid": false,
-					"img": "../../static/img/Therapist/Dorm_room_303_key.png",
+					"img": "../../static/img/Therapist/Dorm_room_303_key.webp",
 					"category": "key"
 				},
 				"item2": {
@@ -575,7 +575,7 @@
 					"name": "ZB-014",
 					"num": 1,
 					"inRaid": false,
-					"img": "../../static/img/Therapist/ZB-014_key.png",
+					"img": "../../static/img/Therapist/ZB-014_key.webp",
 					"category": "key"
 				},
 				"item3": {
@@ -583,7 +583,7 @@
 					"name": "Checkpoin",
 					"num": 1,
 					"inRaid": false,
-					"img": "../../static/img/Therapist/Military_checkpoint_key.png",
+					"img": "../../static/img/Therapist/Military_checkpoint_key.webp",
 					"category": "key"
 				},
 				"item4": {
@@ -591,7 +591,7 @@
 					"name": "Storage",
 					"num": 1,
 					"inRaid": false,
-					"img": "../../static/img/Therapist/Gas_station_storage_room_key.png",
+					"img": "../../static/img/Therapist/Gas_station_storage_room_key.webp",
 					"category": "key"
 				}
 			}
@@ -604,7 +604,7 @@
 					"name": "Defibrillat",
 					"num": 5,
 					"inRaid": true,
-					"img": "../../static/img/Therapist/Portable_defibrillator.png",
+					"img": "../../static/img/Therapist/Portable_defibrillator.webp",
 					"category": "loot"
 				},
 				"item2": {
@@ -612,7 +612,7 @@
 					"name": "OScope",
 					"num": 5,
 					"inRaid": true,
-					"img": "../../static/img/Therapist/Ophthalmoscope.png",
+					"img": "../../static/img/Therapist/Ophthalmoscope.webp",
 					"category": "loot"
 				},
 				"item3": {
@@ -620,7 +620,7 @@
 					"name": "LEDX",
 					"num": 5,
 					"inRaid": true,
-					"img": "../../static/img/Therapist/LEDX_Skin_Transilluminator.png",
+					"img": "../../static/img/Therapist/LEDX_Skin_Transilluminator.webp",
 					"category": "loot"
 				},
 				"item4": {
@@ -628,7 +628,7 @@
 					"name": "Meds",
 					"num": 20,
 					"inRaid": true,
-					"img": "../../static/img/Therapist/Pile_of_meds.png",
+					"img": "../../static/img/Therapist/Pile_of_meds.webp",
 					"category": "loot"
 				},
 				"item5": {
@@ -636,7 +636,7 @@
 					"name": "Vitam.",
 					"num": 10,
 					"inRaid": true,
-					"img": "../../static/img/Therapist/Bottle_of_OLOLO_Multivitamins.png",
+					"img": "../../static/img/Therapist/Bottle_of_OLOLO_Multivitamins.webp",
 					"category": "loot"
 				}
 			}
@@ -660,7 +660,7 @@
 					"name": "3M",
 					"num": 1,
 					"inRaid": true,
-					"img": "../../static/img/Skier/BNTI_Module-3M_body_armor.png",
+					"img": "../../static/img/Skier/BNTI_Module-3M_body_armor.webp",
 					"category": "wepon"
 				},
 				"item2": {
@@ -668,7 +668,7 @@
 					"name": "TOZ-106",
 					"num": 1,
 					"inRaid": true,
-					"img": "../../static/img/Skier/TOZ-106_20ga_bolt-action_shotgun.png",
+					"img": "../../static/img/Skier/TOZ-106_20ga_bolt-action_shotgun.webp",
 					"category": "wepon"
 				}
 			}
@@ -681,7 +681,7 @@
 					"name": "Unk. key",
 					"num": -1,
 					"inRaid": false,
-					"img": "../../static/img/Skier/Unknown_Key.png",
+					"img": "../../static/img/Skier/Unknown_Key.webp",
 					"category": "key"
 				}
 			}
@@ -697,7 +697,7 @@
 					"name": "Flash drive",
 					"num": 2,
 					"inRaid": true,
-					"img": "../../static/img/Skier/Secure_Flash_drive.png",
+					"img": "../../static/img/Skier/Secure_Flash_drive.webp",
 					"category": "loot"
 				}
 			}
@@ -710,7 +710,7 @@
 					"name": "Dorm 303",
 					"num": -1,
 					"inRaid": false,
-					"img": "../../static/img/Therapist/Dorm_room_303_key.png",
+					"img": "../../static/img/Therapist/Dorm_room_303_key.webp",
 					"category": "key"
 				},
 				"item2": {
@@ -718,7 +718,7 @@
 					"name": "Cabin",
 					"num": -1,
 					"inRaid": false,
-					"img": "../../static/img/Skier/Trailer_park_portable_cabin_key.png",
+					"img": "../../static/img/Skier/Trailer_park_portable_cabin_key.webp",
 					"category": "key"
 				}
 			}
@@ -731,7 +731,7 @@
 					"name": "Dorm 220",
 					"num": -1,
 					"inRaid": false,
-					"img": "../../static/img/Skier/Dorm_room_220_Key.png",
+					"img": "../../static/img/Skier/Dorm_room_220_Key.webp",
 					"category": "key"
 				}
 			}
@@ -744,7 +744,7 @@
 					"name": "Dorm 220",
 					"num": -1,
 					"inRaid": false,
-					"img": "../../static/img/Skier/Dorm_room_220_Key.png",
+					"img": "../../static/img/Skier/Dorm_room_220_Key.webp",
 					"category": "key"
 				}
 			}
@@ -766,7 +766,7 @@
 					"name": "W112 San",
 					"num": -1,
 					"inRaid": false,
-					"img": "../../static/img/Skier/Health_Resort_west_wing_office_room_112_key.png",
+					"img": "../../static/img/Skier/Health_Resort_west_wing_office_room_112_key.webp",
 					"category": "key"
 				},
 				"item2": {
@@ -774,7 +774,7 @@
 					"name": "EMC",
 					"num": -1,
 					"inRaid": false,
-					"img": "../../static/img/Skier/EMERCOM_medical_unit_key.png",
+					"img": "../../static/img/Skier/EMERCOM_medical_unit_key.webp",
 					"category": "key"
 				}
 			}
@@ -787,7 +787,7 @@
 					"name": "Respirator",
 					"num": 4,
 					"inRaid": true,
-					"img": "../../static/img/Skier/Respirator.png",
+					"img": "../../static/img/Skier/Respirator.webp",
 					"category": "wepon"
 				},
 				"item2": {
@@ -795,7 +795,7 @@
 					"name": "Bloodset",
 					"num": 3,
 					"inRaid": true,
-					"img": "../../static/img/Skier/Medical_bloodset.png",
+					"img": "../../static/img/Skier/Medical_bloodset.webp",
 					"category": "loot"
 				}
 			}
@@ -808,7 +808,7 @@
 					"name": "USEC",
 					"num": 7,
 					"inRaid": false,
-					"img": "../../static/img/prapor/USEC_Dogtag.png",
+					"img": "../../static/img/prapor/USEC_Dogtag.webp",
 					"category": "loot"
 				}
 			}
@@ -827,7 +827,7 @@
 					"name": "GoldChain",
 					"num": 9,
 					"inRaid": false,
-					"img": "../../static/img/Skier/Golden_neck_chain.png",
+					"img": "../../static/img/Skier/Golden_neck_chain.webp",
 					"category": "loot"
 				}
 			}
@@ -840,7 +840,7 @@
 					"name": "Pnwd 206",
 					"num": -1,
 					"inRaid": false,
-					"img": "../../static/img/Skier/Hotel_room_206_key.png",
+					"img": "../../static/img/Skier/Hotel_room_206_key.webp",
 					"category": "key"
 				}
 			}
@@ -853,7 +853,7 @@
 					"name": "Iron gate",
 					"num": -1,
 					"inRaid": false,
-					"img": "../../static/img/Skier/Iron_gate_key.png",
+					"img": "../../static/img/Skier/Iron_gate_key.webp",
 					"category": "key"
 				}
 			}
@@ -869,7 +869,7 @@
 					"name": "Roler",
 					"num": 1,
 					"inRaid": false,
-					"img": "../../static/img/Skier/Roler_submariner_gold_wrist_watch.png",
+					"img": "../../static/img/Skier/Roler_submariner_gold_wrist_watch.webp",
 					"category": "loot"
 				},
 				"item2": {
@@ -877,7 +877,7 @@
 					"name": "SV-98",
 					"num": 1,
 					"inRaid": false,
-					"img": "../../static/img/Skier/SV-98_7.62x54R_bolt-action_sniper_rifle.png",
+					"img": "../../static/img/Skier/SV-98_7.62x54R_bolt-action_sniper_rifle.webp",
 					"category": "wepon"
 				}
 			}
@@ -896,7 +896,7 @@
 					"name": "W216 San",
 					"num": -1,
 					"inRaid": false,
-					"img": "../../static/img/Skier/Health_Resort_west_wing_room_216_key.png",
+					"img": "../../static/img/Skier/Health_Resort_west_wing_room_216_key.webp",
 					"category": "key"
 				},
 				"item2": {
@@ -904,7 +904,7 @@
 					"name": "E306 San",
 					"num": -1,
 					"inRaid": false,
-					"img": "../../static/img/Skier/Health_Resort_east_wing_room_306_key.png",
+					"img": "../../static/img/Skier/Health_Resort_east_wing_room_306_key.webp",
 					"category": "key"
 				},
 				"item3": {
@@ -912,7 +912,7 @@
 					"name": "E308 San",
 					"num": -1,
 					"inRaid": false,
-					"img": "../../static/img/Skier/Health_Resort_east_wing_room_308_key.png",
+					"img": "../../static/img/Skier/Health_Resort_east_wing_room_308_key.webp",
 					"category": "key"
 				}
 			}
@@ -943,7 +943,7 @@
 					"name": "Radar",
 					"num": -1,
 					"inRaid": false,
-					"img": "../../static/img/Skier/Radar_station_commandant_room_key.png",
+					"img": "../../static/img/Skier/Radar_station_commandant_room_key.webp",
 					"category": "key"
 				}
 			}
@@ -958,7 +958,7 @@
 					"name": "SV-98",
 					"num": 1,
 					"inRaid": false,
-					"img": "../../static/img/Skier/SV-98_7.62x54R_bolt-action_sniper_rifle.png",
+					"img": "../../static/img/Skier/SV-98_7.62x54R_bolt-action_sniper_rifle.webp",
 					"category": "wepon"
 				},
 				"item2": {
@@ -966,7 +966,7 @@
 					"name": "Multitool",
 					"num": 1,
 					"inRaid": false,
-					"img": "../../static/img/Peacekeeper/Leatherman_Multitool.png",
+					"img": "../../static/img/Peacekeeper/Leatherman_Multitool.webp",
 					"category": "loot"
 				}
 			}
@@ -988,7 +988,7 @@
 					"name": "MRE",
 					"num": 5,
 					"inRaid": false,
-					"img": "../../static/img/Peacekeeper/MRE_ration_pack.png",
+					"img": "../../static/img/Peacekeeper/MRE_ration_pack.webp",
 					"category": "loot"
 				}
 			}
@@ -1004,7 +1004,7 @@
 					"name": "Mark.Key",
 					"num": -1,
 					"inRaid": false,
-					"img": "../../static/img/Peacekeeper/Dorm_room_314_marked_key.png",
+					"img": "../../static/img/Peacekeeper/Dorm_room_314_marked_key.webp",
 					"category": "key"
 				}
 			}
@@ -1023,7 +1023,7 @@
 					"name": "WD-40",
 					"num": 1,
 					"inRaid": true,
-					"img": "../../static/img/Peacekeeper/WD-40_100ml.png",
+					"img": "../../static/img/Peacekeeper/WD-40_100ml.webp",
 					"category": "loot"
 				},
 				"item2": {
@@ -1031,7 +1031,7 @@
 					"name": "Clin",
 					"num": 2,
 					"inRaid": true,
-					"img": "../../static/img/Peacekeeper/Clin_window_cleaner.png",
+					"img": "../../static/img/Peacekeeper/Clin_window_cleaner.webp",
 					"category": "loot"
 				},
 				"item3": {
@@ -1039,7 +1039,7 @@
 					"name": "Bleach",
 					"num": 2,
 					"inRaid": true,
-					"img": "../../static/img/Peacekeeper/Ox_bleach.png",
+					"img": "../../static/img/Peacekeeper/Ox_bleach.webp",
 					"category": "loot"
 				},
 				"item4": {
@@ -1047,7 +1047,7 @@
 					"name": "Hose",
 					"num": 2,
 					"inRaid": true,
-					"img": "../../static/img/Peacekeeper/Corrugated_hose.png",
+					"img": "../../static/img/Peacekeeper/Corrugated_hose.webp",
 					"category": "loot"
 				}
 			}
@@ -1060,7 +1060,7 @@
 					"name": "San 219",
 					"num": -1,
 					"inRaid": false,
-					"img": "../../static/img/Peacekeeper/Health_Resort_west_wing_room_219_key.png",
+					"img": "../../static/img/Peacekeeper/Health_Resort_west_wing_room_219_key.webp",
 					"category": "key"
 				},
 				"item2": {
@@ -1068,7 +1068,7 @@
 					"name": "San 220",
 					"num": -1,
 					"inRaid": false,
-					"img": "../../static/img/Peacekeeper/Health_Resort_west_wing_room_220_key.png",
+					"img": "../../static/img/Peacekeeper/Health_Resort_west_wing_room_220_key.webp",
 					"category": "key"
 				}
 			}
@@ -1087,7 +1087,7 @@
 					"name": "Morphine",
 					"num": 4,
 					"inRaid": true,
-					"img": "../../static/img/Therapist/Morphine_injector.png",
+					"img": "../../static/img/Therapist/Morphine_injector.webp",
 					"category": "loot"
 				},
 				"item2": {
@@ -1095,7 +1095,7 @@
 					"name": "Alkali",
 					"num": 2,
 					"inRaid": true,
-					"img": "../../static/img/Peacekeeper/Alkaline_cleaner_for_heat_exchangers.png",
+					"img": "../../static/img/Peacekeeper/Alkaline_cleaner_for_heat_exchangers.webp",
 					"category": "loot"
 				},
 				"item3": {
@@ -1103,7 +1103,7 @@
 					"name": "Hose",
 					"num": 2,
 					"inRaid": true,
-					"img": "../../static/img/Peacekeeper/Corrugated_hose.png",
+					"img": "../../static/img/Peacekeeper/Corrugated_hose.webp",
 					"category": "loot"
 				},
 				"item4": {
@@ -1111,7 +1111,7 @@
 					"name": "Propane",
 					"num": 2,
 					"inRaid": true,
-					"img": "../../static/img/Peacekeeper/Propane_tank_(5L).png",
+					"img": "../../static/img/Peacekeeper/Propane_tank_(5L).webp",
 					"category": "loot"
 				}
 			}
@@ -1127,7 +1127,7 @@
 					"name": "E306 San",
 					"num": -1,
 					"inRaid": false,
-					"img": "../../static/img/Skier/Health_Resort_east_wing_room_306_key.png",
+					"img": "../../static/img/Skier/Health_Resort_east_wing_room_306_key.webp",
 					"category": "key"
 				},
 				"item2": {
@@ -1135,7 +1135,7 @@
 					"name": "E308 San",
 					"num": -1,
 					"inRaid": false,
-					"img": "../../static/img/Skier/Health_Resort_east_wing_room_308_key.png",
+					"img": "../../static/img/Skier/Health_Resort_east_wing_room_308_key.webp",
 					"category": "key"
 				}
 			}
@@ -1169,7 +1169,7 @@
 					"name": "San 328",
 					"num": -1,
 					"inRaid": false,
-					"img": "../../static/img/Peacekeeper/East_wing_room_328_key.png",
+					"img": "../../static/img/Peacekeeper/East_wing_room_328_key.webp",
 					"category": "key"
 				},
 				"item2": {
@@ -1177,7 +1177,7 @@
 					"name": "Storageroom",
 					"num": -1,
 					"inRaid": false,
-					"img": "../../static/img/Peacekeeper/Health_resort_utility_room_key.png",
+					"img": "../../static/img/Peacekeeper/Health_resort_utility_room_key.webp",
 					"category": "key"
 				}
 			}
@@ -1202,7 +1202,7 @@
 					"name": "M.U.L.E.",
 					"num": 1,
 					"inRaid": true,
-					"img": "../../static/img/Peacekeeper/M.U.L.E._stimulant_injector.png",
+					"img": "../../static/img/Peacekeeper/M.U.L.E._stimulant_injector.webp",
 					"category": "loot"
 				},
 				"item2": {
@@ -1210,7 +1210,7 @@
 					"name": "Obdolbos",
 					"num": 1,
 					"inRaid": true,
-					"img": "../../static/img/Peacekeeper/Obdolbos_cocktail_injector.png",
+					"img": "../../static/img/Peacekeeper/Obdolbos_cocktail_injector.webp",
 					"category": "loot"
 				},
 				"item3": {
@@ -1218,7 +1218,7 @@
 					"name": "Meldonin",
 					"num": 1,
 					"inRaid": true,
-					"img": "../../static/img/Peacekeeper/Meldonin_stimulant_injector.png",
+					"img": "../../static/img/Peacekeeper/Meldonin_stimulant_injector.webp",
 					"category": "loot"
 				},
 				"item4": {
@@ -1226,7 +1226,7 @@
 					"name": "AHF1-M",
 					"num": 1,
 					"inRaid": true,
-					"img": "../../static/img/Peacekeeper/AHF1-M_stimulant_injector.png",
+					"img": "../../static/img/Peacekeeper/AHF1-M_stimulant_injector.webp",
 					"category": "loot"
 				},
 				"item5": {
@@ -1234,7 +1234,7 @@
 					"name": "P22",
 					"num": 1,
 					"inRaid": true,
-					"img": "../../static/img/Peacekeeper/P22_stimulant_injector.png",
+					"img": "../../static/img/Peacekeeper/P22_stimulant_injector.webp",
 					"category": "loot"
 				},
 				"item6": {
@@ -1242,7 +1242,7 @@
 					"name": "L1",
 					"num": 1,
 					"inRaid": true,
-					"img": "../../static/img/Peacekeeper/L1_(Norepinephrine)_stimulant_injector.png",
+					"img": "../../static/img/Peacekeeper/L1_(Norepinephrine)_stimulant_injector.webp",
 					"category": "loot"
 				},
 				"item7": {
@@ -1250,7 +1250,7 @@
 					"name": "3-(b-TG)",
 					"num": 1,
 					"inRaid": true,
-					"img": "../../static/img/Peacekeeper/3-(b-TG)_stimulant_injector.png",
+					"img": "../../static/img/Peacekeeper/3-(b-TG)_stimulant_injector.webp",
 					"category": "loot"
 				}
 			}
@@ -1263,7 +1263,7 @@
 					"name": "Key card",
 					"num": -1,
 					"inRaid": false,
-					"img": "../../static/img/Peacekeeper/Key_card_with_a_blue_marking.png",
+					"img": "../../static/img/Peacekeeper/Key_card_with_a_blue_marking.webp",
 					"category": "key"
 				}
 			}
@@ -1276,7 +1276,7 @@
 					"name": "SG-C10",
 					"num": 1,
 					"inRaid": true,
-					"img": "../../static/img/Peacekeeper/Military_COFDM_wireless_Signal_Transmitter.png",
+					"img": "../../static/img/Peacekeeper/Military_COFDM_wireless_Signal_Transmitter.webp",
 					"category": "loot"
 				},
 				"item2": {
@@ -1284,7 +1284,7 @@
 					"name": "Virtex",
 					"num": 1,
 					"inRaid": true,
-					"img": "../../static/img/Peacekeeper/Virtex_programmable_processor.png",
+					"img": "../../static/img/Peacekeeper/Virtex_programmable_processor.webp",
 					"category": "loot"
 				}
 			}
@@ -1303,7 +1303,7 @@
 					"name": "RB-ST",
 					"num": 1,
 					"inRaid": false,
-					"img": "../../static/img/Peacekeeper/RB-ST_key.png",
+					"img": "../../static/img/Peacekeeper/RB-ST_key.webp",
 					"category": "key"
 				}
 			}
@@ -1325,7 +1325,7 @@
 					"name": "VPX",
 					"num": 5,
 					"inRaid": true,
-					"img": "../../static/img/Peacekeeper/VPX_Flash_Storage_Module.png",
+					"img": "../../static/img/Peacekeeper/VPX_Flash_Storage_Module.webp",
 					"category": "loot"
 				},
 				"item2": {
@@ -1333,7 +1333,7 @@
 					"name": "RFIDR",
 					"num": 5,
 					"inRaid": true,
-					"img": "../../static/img/Peacekeeper/UHF_RFID_Reader.png",
+					"img": "../../static/img/Peacekeeper/UHF_RFID_Reader.webp",
 					"category": "loot"
 				},
 				"item3": {
@@ -1341,7 +1341,7 @@
 					"name": "Virtex",
 					"num": 5,
 					"inRaid": true,
-					"img": "../../static/img/Peacekeeper/Virtex_programmable_processor.png",
+					"img": "../../static/img/Peacekeeper/Virtex_programmable_processor.webp",
 					"category": "loot"
 				},
 				"item4": {
@@ -1349,7 +1349,7 @@
 					"name": "SG-C10",
 					"num": 5,
 					"inRaid": true,
-					"img": "../../static/img/Peacekeeper/Military_COFDM_wireless_Signal_Transmitter.png",
+					"img": "../../static/img/Peacekeeper/Military_COFDM_wireless_Signal_Transmitter.webp",
 					"category": "loot"
 				}
 			}
@@ -1362,7 +1362,7 @@
 					"name": "BEAR",
 					"num": 20,
 					"inRaid": true,
-					"img": "../../static/img/prapor/BEAR_Dogtag.png",
+					"img": "../../static/img/prapor/BEAR_Dogtag.webp",
 					"category": "loot"
 				}
 			}
@@ -1386,7 +1386,7 @@
 					"name": "MP-133",
 					"num": 1,
 					"inRaid": false,
-					"img": "../../static/img/prapor/MP-133_12ga_pump-action_shotgun.png",
+					"img": "../../static/img/prapor/MP-133_12ga_pump-action_shotgun.webp",
 					"category": "wepon"
 				}
 			}
@@ -1399,7 +1399,7 @@
 					"name": "AKS-74U",
 					"num": 1,
 					"inRaid": false,
-					"img": "../../static/img/Mechanic/Kalashnikov_AKS-74U_5.45x39_assault_rifle.png",
+					"img": "../../static/img/Mechanic/Kalashnikov_AKS-74U_5.45x39_assault_rifle.webp",
 					"category": "wepon"
 				}
 			}
@@ -1412,7 +1412,7 @@
 					"name": "MP5",
 					"num": 1,
 					"inRaid": false,
-					"img": "../../static/img/Mechanic/HK_MP5_9x19_submachine_gun.png",
+					"img": "../../static/img/Mechanic/HK_MP5_9x19_submachine_gun.webp",
 					"category": "wepon"
 				}
 			}
@@ -1425,7 +1425,7 @@
 					"name": "AK-105",
 					"num": 1,
 					"inRaid": false,
-					"img": "../../static/img/Mechanic/Kalashnikov_AK-105_5.45x39_assault_rifle.png",
+					"img": "../../static/img/Mechanic/Kalashnikov_AK-105_5.45x39_assault_rifle.webp",
 					"category": "wepon"
 				}
 			}
@@ -1438,7 +1438,7 @@
 					"name": "M870",
 					"num": 1,
 					"inRaid": false,
-					"img": "../../static/img/Mechanic/Remington_Model_870_12ga_pump-action_shotgun.png",
+					"img": "../../static/img/Mechanic/Remington_Model_870_12ga_pump-action_shotgun.webp",
 					"category": "wepon"
 				}
 			}
@@ -1451,7 +1451,7 @@
 					"name": "AKM",
 					"num": 1,
 					"inRaid": false,
-					"img": "../../static/img/Mechanic/Kalashnikov_AKM_7.62x39_assault_rifle.png",
+					"img": "../../static/img/Mechanic/Kalashnikov_AKM_7.62x39_assault_rifle.webp",
 					"category": "wepon"
 				}
 			}
@@ -1464,7 +1464,7 @@
 					"name": "M4A1",
 					"num": 1,
 					"inRaid": false,
-					"img": "../../static/img/Mechanic/Colt_M4A1_5.56x45_assault_rifle.png",
+					"img": "../../static/img/Mechanic/Colt_M4A1_5.56x45_assault_rifle.webp",
 					"category": "wepon"
 				}
 			}
@@ -1477,7 +1477,7 @@
 					"name": "AKS-74N",
 					"num": 1,
 					"inRaid": false,
-					"img": "../../static/img/Mechanic/Kalashnikov_AKS-74N_5.45x39_assault_rifle.png",
+					"img": "../../static/img/Mechanic/Kalashnikov_AKS-74N_5.45x39_assault_rifle.webp",
 					"category": "wepon"
 				}
 			}
@@ -1490,7 +1490,7 @@
 					"name": "P226R",
 					"num": 1,
 					"inRaid": false,
-					"img": "../../static/img/Mechanic/SIG_P226R_9x19_pistol.png",
+					"img": "../../static/img/Mechanic/SIG_P226R_9x19_pistol.webp",
 					"category": "wepon"
 				}
 			}
@@ -1503,7 +1503,7 @@
 					"name": "AK-105",
 					"num": 1,
 					"inRaid": false,
-					"img": "../../static/img/Mechanic/Kalashnikov_AK-105_5.45x39_assault_rifle.png",
+					"img": "../../static/img/Mechanic/Kalashnikov_AK-105_5.45x39_assault_rifle.webp",
 					"category": "wepon"
 				}
 			}
@@ -1516,7 +1516,7 @@
 					"name": "Vector",
 					"num": 1,
 					"inRaid": false,
-					"img": "../../static/img/Mechanic/TDI_KRISS_Vector_Gen.2_9x19_submachine_gun.png",
+					"img": "../../static/img/Mechanic/TDI_KRISS_Vector_Gen.2_9x19_submachine_gun.webp",
 					"category": "wepon"
 				}
 			}
@@ -1529,7 +1529,7 @@
 					"name": "MPX",
 					"num": 1,
 					"inRaid": false,
-					"img": "../../static/img/Mechanic/SIG_MPX_9x19_submachine_gun.png",
+					"img": "../../static/img/Mechanic/SIG_MPX_9x19_submachine_gun.webp",
 					"category": "wepon"
 				}
 			}
@@ -1542,7 +1542,7 @@
 					"name": "RSASS",
 					"num": 1,
 					"inRaid": false,
-					"img": "../../static/img/Mechanic/Remington_R11_RSASS_7.62x51_marksman_rifle.png",
+					"img": "../../static/img/Mechanic/Remington_R11_RSASS_7.62x51_marksman_rifle.webp",
 					"category": "wepon"
 				}
 			}
@@ -1555,7 +1555,7 @@
 					"name": "HK 416A5",
 					"num": 1,
 					"inRaid": false,
-					"img": "../../static/img/Mechanic/HK_416A5_5.56x45_assault_rifle.png",
+					"img": "../../static/img/Mechanic/HK_416A5_5.56x45_assault_rifle.webp",
 					"category": "wepon"
 				}
 			}
@@ -1568,7 +1568,7 @@
 					"name": "AS VAL",
 					"num": 1,
 					"inRaid": false,
-					"img": "../../static/img/Mechanic/AS_VAL_9x39_special_assault_rifle.png",
+					"img": "../../static/img/Mechanic/AS_VAL_9x39_special_assault_rifle.webp",
 					"category": "wepon"
 				}
 			}
@@ -1581,7 +1581,7 @@
 					"name": "DVL10",
 					"num": 1,
 					"inRaid": false,
-					"img": "../../static/img/Mechanic/Lobaev_Arms_DVL-10_7.62x51_bolt-action_sniper_rifle.png",
+					"img": "../../static/img/Mechanic/Lobaev_Arms_DVL-10_7.62x51_bolt-action_sniper_rifle.webp",
 					"category": "wepon"
 				}
 			}
@@ -1594,7 +1594,7 @@
 					"name": "AK-102",
 					"num": 1,
 					"inRaid": false,
-					"img": "../../static/img/Mechanic/Kalashnikov_AK-102_5.56x45_assault_rifle.png",
+					"img": "../../static/img/Mechanic/Kalashnikov_AK-102_5.56x45_assault_rifle.webp",
 					"category": "wepon"
 				}
 			}
@@ -1607,7 +1607,7 @@
 					"name": "AKMN",
 					"num": 1,
 					"inRaid": false,
-					"img": "../../static/img/Mechanic/Kalashnikov_AKMN_7.62x39_assault_rifle.png",
+					"img": "../../static/img/Mechanic/Kalashnikov_AKMN_7.62x39_assault_rifle.webp",
 					"category": "wepon"
 				}
 			}
@@ -1620,7 +1620,7 @@
 					"name": "SVDS",
 					"num": 1,
 					"inRaid": false,
-					"img": "../../static/img/Mechanic/SVDS_7.62x54R_sniper_rifle.png",
+					"img": "../../static/img/Mechanic/SVDS_7.62x54R_sniper_rifle.webp",
 					"category": "wepon"
 				}
 			}
@@ -1633,7 +1633,7 @@
 					"name": "M1A",
 					"num": 1,
 					"inRaid": false,
-					"img": "../../static/img/Mechanic/Springfield_Armory_M1A_7.62x51_rifle.png",
+					"img": "../../static/img/Mechanic/Springfield_Armory_M1A_7.62x51_rifle.webp",
 					"category": "wepon"
 				}
 			}
@@ -1646,7 +1646,7 @@
 					"name": "M700",
 					"num": 1,
 					"inRaid": false,
-					"img": "../../static/img/Mechanic/Remington_Model_700_7.62x51_bolt-action_sniper_rifle.png",
+					"img": "../../static/img/Mechanic/Remington_Model_700_7.62x51_bolt-action_sniper_rifle.webp",
 					"category": "wepon"
 				},
 				"item2": {
@@ -1654,7 +1654,7 @@
 					"name": "M1911A1",
 					"num": 1,
 					"inRaid": false,
-					"img": "../../static/img/Mechanic/Colt_M1911A1_.45_ACP_pistol.png",
+					"img": "../../static/img/Mechanic/Colt_M1911A1_.45_ACP_pistol.webp",
 					"category": "wepon"
 				}
 			}
@@ -1667,7 +1667,7 @@
 					"name": "M4A1",
 					"num": 1,
 					"inRaid": false,
-					"img": "../../static/img/Mechanic/Colt_M4A1_5.56x45_assault_rifle.png",
+					"img": "../../static/img/Mechanic/Colt_M4A1_5.56x45_assault_rifle.webp",
 					"category": "wepon"
 				}
 			}
@@ -1686,7 +1686,7 @@
 					"name": "CPU",
 					"num": 3,
 					"inRaid": true,
-					"img": "../../static/img/Mechanic/PC_CPU.png",
+					"img": "../../static/img/Mechanic/PC_CPU.webp",
 					"category": "loot"
 				},
 				"item2": {
@@ -1694,7 +1694,7 @@
 					"name": "RBattery",
 					"num": 3,
 					"inRaid": true,
-					"img": "../../static/img/Mechanic/Rechargeable_battery.png",
+					"img": "../../static/img/Mechanic/Rechargeable_battery.webp",
 					"category": "loot"
 				},
 				"item3": {
@@ -1702,7 +1702,7 @@
 					"name": "PCB",
 					"num": 3,
 					"inRaid": true,
-					"img": "../../static/img/Mechanic/PC_CPU.png",
+					"img": "../../static/img/Mechanic/PC_CPU.webp",
 					"category": "loot"
 				},
 				"item4": {
@@ -1710,7 +1710,7 @@
 					"name": "GPhone",
 					"num": 3,
 					"inRaid": true,
-					"img": "../../static/img/Mechanic/Broken_GPhone_smartphone.png",
+					"img": "../../static/img/Mechanic/Broken_GPhone_smartphone.webp",
 					"category": "loot"
 				}
 			}
@@ -1726,7 +1726,7 @@
 					"name": "RB-ST",
 					"num": -1,
 					"inRaid": false,
-					"img": "../../static/img/Peacekeeper/RB-ST_key.png",
+					"img": "../../static/img/Peacekeeper/RB-ST_key.webp",
 					"category": "key"
 				}
 			}
@@ -1748,7 +1748,7 @@
 					"name": "Set",
 					"num": 2,
 					"inRaid": false,
-					"img": "../../static/img/Mechanic/A_set_of_tools.png",
+					"img": "../../static/img/Mechanic/A_set_of_tools.webp",
 					"category": "loot"
 				}
 			}
@@ -1761,7 +1761,7 @@
 					"name": "Cord",
 					"num": 2,
 					"inRaid": true,
-					"img": "../../static/img/Mechanic/Power_cord.png",
+					"img": "../../static/img/Mechanic/Power_cord.webp",
 					"category": "loot"
 				},
 				"item2": {
@@ -1769,7 +1769,7 @@
 					"name": "T-Plug",
 					"num": 4,
 					"inRaid": true,
-					"img": "../../static/img/Mechanic/T-Shaped_Plug.png",
+					"img": "../../static/img/Mechanic/T-Shaped_Plug.webp",
 					"category": "loot"
 				},
 				"item3": {
@@ -1777,7 +1777,7 @@
 					"name": "PCB",
 					"num": 2,
 					"inRaid": true,
-					"img": "../../static/img/Mechanic/Printed_circuit_board.png",
+					"img": "../../static/img/Mechanic/Printed_circuit_board.webp",
 					"category": "loot"
 				}
 			}
@@ -1790,7 +1790,7 @@
 					"name": "Director's",
 					"num": -1,
 					"inRaid": false,
-					"img": "../../static/img/Mechanic/Tarcone_Director's_office_key.png",
+					"img": "../../static/img/Mechanic/Tarcone_Director's_office_key.webp",
 					"category": "key"
 				}
 			}
@@ -1803,7 +1803,7 @@
 					"name": "GPU",
 					"num": 3,
 					"inRaid": true,
-					"img": "../../static/img/Mechanic/Graphics_card.png",
+					"img": "../../static/img/Mechanic/Graphics_card.webp",
 					"category": "loot"
 				},
 				"item2": {
@@ -1811,7 +1811,7 @@
 					"name": "CPU fan",
 					"num": 8,
 					"inRaid": true,
-					"img": "../../static/img/Mechanic/CPU_fan.png",
+					"img": "../../static/img/Mechanic/CPU_fan.webp",
 					"category": "loot"
 				}
 			}
@@ -1824,7 +1824,7 @@
 					"name": "Malboro",
 					"num": 5,
 					"inRaid": true,
-					"img": "../../static/img/Mechanic/Malboro_Cigarettes.png",
+					"img": "../../static/img/Mechanic/Malboro_Cigarettes.webp",
 					"category": "loot"
 				},
 				"item2": {
@@ -1832,7 +1832,7 @@
 					"name": "Strike",
 					"num": 5,
 					"inRaid": true,
-					"img": "../../static/img/Mechanic/Strike_Cigarettes.png",
+					"img": "../../static/img/Mechanic/Strike_Cigarettes.webp",
 					"category": "loot"
 				},
 				"item3": {
@@ -1840,7 +1840,7 @@
 					"name": "Wilston",
 					"num": 5,
 					"inRaid": true,
-					"img": "../../static/img/Mechanic/Wilston_cigarettes.png",
+					"img": "../../static/img/Mechanic/Wilston_cigarettes.webp",
 					"category": "loot"
 				}
 			}
@@ -1859,7 +1859,7 @@
 					"name": "Wires",
 					"num": 5,
 					"inRaid": true,
-					"img": "../../static/img/Mechanic/Bundle_of_wires.png",
+					"img": "../../static/img/Mechanic/Bundle_of_wires.webp",
 					"category": "loot"
 				},
 				"item2": {
@@ -1867,7 +1867,7 @@
 					"name": "Caps",
 					"num": 5,
 					"inRaid": true,
-					"img": "../../static/img/Mechanic/Capacitors.png",
+					"img": "../../static/img/Mechanic/Capacitors.webp",
 					"category": "loot"
 				}
 			}
@@ -1880,7 +1880,7 @@
 					"name": "RFID",
 					"num": 1,
 					"inRaid": true,
-					"img": "../../static/img/Peacekeeper/UHF_RFID_Reader.png",
+					"img": "../../static/img/Peacekeeper/UHF_RFID_Reader.webp",
 					"category": "loot"
 				},
 				"item2": {
@@ -1888,7 +1888,7 @@
 					"name": "VPX",
 					"num": 1,
 					"inRaid": true,
-					"img": "../../static/img/Peacekeeper/VPX_Flash_Storage_Module.png",
+					"img": "../../static/img/Peacekeeper/VPX_Flash_Storage_Module.webp",
 					"category": "loot"
 				}
 			}
@@ -1901,7 +1901,7 @@
 					"name": "San tape",
 					"num": -1,
 					"inRaid": false,
-					"img": "../../static/img/Mechanic/Health_Resort_office_key_with_a_blue_tape.png",
+					"img": "../../static/img/Mechanic/Health_Resort_office_key_with_a_blue_tape.webp",
 					"category": "key"
 				}
 			}
@@ -1917,7 +1917,7 @@
 					"name": "REAP-IR",
 					"num": 2,
 					"inRaid": false,
-					"img": "../../static/img/Mechanic/Trijicon_REAP-IR_thermal_scope.png",
+					"img": "../../static/img/Mechanic/Trijicon_REAP-IR_thermal_scope.webp",
 					"category": "wepon"
 				}
 			}
@@ -1936,7 +1936,7 @@
 					"name": "OR",
 					"num": -1,
 					"inRaid": false,
-					"img": "../../static/img/Mechanic/Operating_room_key.png",
+					"img": "../../static/img/Mechanic/Operating_room_key.webp",
 					"category": "key"
 				}
 			}
@@ -1952,7 +1952,7 @@
 					"name": "Pnwd 215",
 					"num": -1,
 					"inRaid": false,
-					"img": "../../static/img/Mechanic/Hotel_room_215_key.png",
+					"img": "../../static/img/Mechanic/Hotel_room_215_key.webp",
 					"category": "key"
 				}
 			}
@@ -1965,7 +1965,7 @@
 					"name": "Concd sec.",
 					"num": -1,
 					"inRaid": false,
-					"img": "../../static/img/Mechanic/Concordia_security_room_key.png",
+					"img": "../../static/img/Mechanic/Concordia_security_room_key.webp",
 					"category": "key"
 				}
 			}
@@ -1978,7 +1978,7 @@
 					"name": "EC",
 					"num": 4,
 					"inRaid": true,
-					"img": "../../static/img/Mechanic/Eectronic_components.png",
+					"img": "../../static/img/Mechanic/Eectronic_components.webp",
 					"category": "loot"
 				},
 				"item2": {
@@ -1986,7 +1986,7 @@
 					"name": "SG-C10",
 					"num": 4,
 					"inRaid": true,
-					"img": "../../static/img/Peacekeeper/Military_COFDM_wireless_Signal_Transmitter.png",
+					"img": "../../static/img/Peacekeeper/Military_COFDM_wireless_Signal_Transmitter.webp",
 					"category": "loot"
 				},
 				"item3": {
@@ -1994,7 +1994,7 @@
 					"name": "GasAn",
 					"num": 4,
 					"inRaid": true,
-					"img": "../../static/img/Therapist/Gas_analyzer.png",
+					"img": "../../static/img/Therapist/Gas_analyzer.webp",
 					"category": "loot"
 				},
 				"item4": {
@@ -2002,7 +2002,7 @@
 					"name": "GPhone",
 					"num": 4,
 					"inRaid": true,
-					"img": "../../static/img/Mechanic/Broken_GPhone_smartphones.png",
+					"img": "../../static/img/Mechanic/Broken_GPhone_smartphones.webp",
 					"category": "loot"
 				}
 			}
@@ -2023,7 +2023,7 @@
 					"name": "Underpass",
 					"num": -1,
 					"inRaid": false,
-					"img": "../../static/img/Ragman/Primorsky_46-48_skybridge_key.png",
+					"img": "../../static/img/Ragman/Primorsky_46-48_skybridge_key.webp",
 					"category": "key"
 				}
 			}
@@ -2036,7 +2036,7 @@
 					"name": "Underpass",
 					"num": -1,
 					"inRaid": false,
-					"img": "../../static/img/Ragman/Primorsky_46-48_skybridge_key.png",
+					"img": "../../static/img/Ragman/Primorsky_46-48_skybridge_key.webp",
 					"category": "key"
 				}
 			}
@@ -2061,7 +2061,7 @@
 					"name": "RB-ORB1",
 					"num": -1,
 					"inRaid": false,
-					"img": "../../static/img/Ragman/RB-ORB1_key.png",
+					"img": "../../static/img/Ragman/RB-ORB1_key.webp",
 					"category": "key"
 				},
 				"item2": {
@@ -2069,7 +2069,7 @@
 					"name": "RB-ORB2",
 					"num": -1,
 					"inRaid": false,
-					"img": "../../static/img/Ragman/RB-ORB2_key.png",
+					"img": "../../static/img/Ragman/RB-ORB2_key.webp",
 					"category": "key"
 				},
 				"item3": {
@@ -2077,7 +2077,7 @@
 					"name": "RB-ORB3",
 					"num": -1,
 					"inRaid": false,
-					"img": "../../static/img/Ragman/RB-ORB3_key.png",
+					"img": "../../static/img/Ragman/RB-ORB3_key.webp",
 					"category": "key"
 				},
 				"item4": {
@@ -2085,7 +2085,7 @@
 					"name": "RB-OB",
 					"num": -1,
 					"inRaid": false,
-					"img": "../../static/img/Ragman/RB-OB_key.png",
+					"img": "../../static/img/Ragman/RB-OB_key.webp",
 					"category": "key"
 				}
 			}
@@ -2101,7 +2101,7 @@
 					"name": "Ushanka",
 					"num": 2,
 					"inRaid": true,
-					"img": "../../static/img/Ragman/Ushanka_ear-flap_cap.png",
+					"img": "../../static/img/Ragman/Ushanka_ear-flap_cap.webp",
 					"category": "wepon"
 				},
 				"item2": {
@@ -2109,7 +2109,7 @@
 					"name": "Cowboy",
 					"num": 2,
 					"inRaid": true,
-					"img": "../../static/img/Ragman/Kinda_cowboy_hat.png",
+					"img": "../../static/img/Ragman/Kinda_cowboy_hat.webp",
 					"category": "wepon"
 				}
 			}
@@ -2122,7 +2122,7 @@
 					"name": "Ghost",
 					"num": 1,
 					"inRaid": false,
-					"img": "../../static/img/Ragman/Ghost_balaclava.png",
+					"img": "../../static/img/Ragman/Ghost_balaclava.webp",
 					"category": "wepon"
 				},
 				"item2": {
@@ -2130,7 +2130,7 @@
 					"name": "Shemagh",
 					"num": 1,
 					"inRaid": false,
-					"img": "../../static/img/Ragman/Shemagh_(Green).png",
+					"img": "../../static/img/Ragman/Shemagh_(Green).webp",
 					"category": "wepon"
 				},
 				"item3": {
@@ -2138,7 +2138,7 @@
 					"name": "RayBench",
 					"num": 1,
 					"inRaid": false,
-					"img": "../../static/img/Ragman/RayBench_Hipster_Reserve_sunglasses.png",
+					"img": "../../static/img/Ragman/RayBench_Hipster_Reserve_sunglasses.webp",
 					"category": "wepon"
 				},
 				"item4": {
@@ -2146,7 +2146,7 @@
 					"name": "RGlass",
 					"num": 1,
 					"inRaid": false,
-					"img": "../../static/img/Ragman/Round_frame_sunglasses.png",
+					"img": "../../static/img/Ragman/Round_frame_sunglasses.webp",
 					"category": "wepon"
 				}
 			}
@@ -2159,7 +2159,7 @@
 					"name": "ComTac2",
 					"num": 2,
 					"inRaid": false,
-					"img": "../../static/img/Ragman/Peltor_ComTac_2_headset.png",
+					"img": "../../static/img/Ragman/Peltor_ComTac_2_headset.webp",
 					"category": "wepon"
 				},
 				"item2": {
@@ -2167,7 +2167,7 @@
 					"name": "6B47",
 					"num": 2,
 					"inRaid": false,
-					"img": "../../static/img/Ragman/6B47_Helmet.png",
+					"img": "../../static/img/Ragman/6B47_Helmet.webp",
 					"category": "wepon"
 				},
 				"item3": {
@@ -2175,7 +2175,7 @@
 					"name": "GZHEL-K",
 					"num": 2,
 					"inRaid": false,
-					"img": "../../static/img/Ragman/BNTI_Gzhel-K_armor.png",
+					"img": "../../static/img/Ragman/BNTI_Gzhel-K_armor.webp",
 					"category": "wepon"
 				}
 			}
@@ -2197,7 +2197,7 @@
 					"name": "OLI Log.",
 					"num": -1,
 					"inRaid": false,
-					"img": "../../static/img/Ragman/OLI_logistics_department_office_key.png",
+					"img": "../../static/img/Ragman/OLI_logistics_department_office_key.webp",
 					"category": "key"
 				}
 			}
@@ -2213,7 +2213,7 @@
 					"name": "Shmaska",
 					"num": 1,
 					"inRaid": true,
-					"img": "../../static/img/Ragman/Ski_hat_with_holes_for_eyes.png",
+					"img": "../../static/img/Ragman/Ski_hat_with_holes_for_eyes.webp",
 					"category": "wepon"
 				},
 				"item2": {
@@ -2221,7 +2221,7 @@
 					"name": "Pilgrim",
 					"num": 1,
 					"inRaid": true,
-					"img": "../../static/img/Ragman/Pilgrim_tourist_backpack.png",
+					"img": "../../static/img/Ragman/Pilgrim_tourist_backpack.webp",
 					"category": "wepon"
 				}
 			}
@@ -2234,7 +2234,7 @@
 					"name": "FCond",
 					"num": 4,
 					"inRaid": true,
-					"img": "../../static/img/Ragman/Fuel_conditioner.png",
+					"img": "../../static/img/Ragman/Fuel_conditioner.webp",
 					"category": "loot"
 				}
 			}
@@ -2250,7 +2250,7 @@
 					"name": "Teapot",
 					"num": 3,
 					"inRaid": true,
-					"img": "../../static/img/Ragman/Antique_teapot.png",
+					"img": "../../static/img/Ragman/Antique_teapot.webp",
 					"category": "loot"
 				},
 				"item2": {
@@ -2258,7 +2258,7 @@
 					"name": "Vase",
 					"num": 2,
 					"inRaid": true,
-					"img": "../../static/img/Ragman/Antique_vase.png",
+					"img": "../../static/img/Ragman/Antique_vase.webp",
 					"category": "loot"
 				},
 				"item3": {
@@ -2266,7 +2266,7 @@
 					"name": "Axel",
 					"num": 1,
 					"inRaid": true,
-					"img": "../../static/img/Ragman/Axel_parrot_figurine.png",
+					"img": "../../static/img/Ragman/Axel_parrot_figurine.webp",
 					"category": "loot"
 				},
 				"item4": {
@@ -2274,7 +2274,7 @@
 					"name": "Raven",
 					"num": 3,
 					"inRaid": true,
-					"img": "../../static/img/Ragman/Raven_figurine.png",
+					"img": "../../static/img/Ragman/Raven_figurine.webp",
 					"category": "loot"
 				}
 			}
@@ -2287,7 +2287,7 @@
 					"name": "GZHEL-K",
 					"num": 2,
 					"inRaid": false,
-					"img": "../../static/img/Ragman/BNTI_Gzhel-K_armor.png",
+					"img": "../../static/img/Ragman/BNTI_Gzhel-K_armor.webp",
 					"category": "wepon"
 				}
 			}
@@ -2309,7 +2309,7 @@
 					"name": "Goshan re",
 					"num": 1,
 					"inRaid": false,
-					"img": "../../static/img/Ragman/Goshan_cash_register_key.png",
+					"img": "../../static/img/Ragman/Goshan_cash_register_key.webp",
 					"category": "key"
 				}
 			}
@@ -2322,7 +2322,7 @@
 					"name": "6B43 6A",
 					"num": 2,
 					"inRaid": false,
-					"img": "../../static/img/Ragman/6B43_armor.png",
+					"img": "../../static/img/Ragman/6B43_armor.webp",
 					"category": "wepon"
 				}
 			}
@@ -2335,7 +2335,7 @@
 					"name": "Lion",
 					"num": 2,
 					"inRaid": true,
-					"img": "../../static/img/Ragman/Bronze_lion.png",
+					"img": "../../static/img/Ragman/Bronze_lion.webp",
 					"category": "loot"
 				},
 				"item2": {
@@ -2343,7 +2343,7 @@
 					"name": "Horse",
 					"num": 2,
 					"inRaid": true,
-					"img": "../../static/img/Ragman/Horse_figurine.png",
+					"img": "../../static/img/Ragman/Horse_figurine.webp",
 					"category": "loot"
 				},
 				"item3": {
@@ -2351,7 +2351,7 @@
 					"name": "Cat",
 					"num": 1,
 					"inRaid": true,
-					"img": "../../static/img/Ragman/Cat_figurine.png",
+					"img": "../../static/img/Ragman/Cat_figurine.webp",
 					"category": "loot"
 				},
 				"item4": {
@@ -2359,7 +2359,7 @@
 					"name": "Roler",
 					"num": 1,
 					"inRaid": true,
-					"img": "../../static/img/Skier/Roler_submariner_gold_wrist_watch.png",
+					"img": "../../static/img/Skier/Roler_submariner_gold_wrist_watch.webp",
 					"category": "loot"
 				},
 				"item5": {
@@ -2367,7 +2367,7 @@
 					"name": "Egg",
 					"num": 1,
 					"inRaid": true,
-					"img": "../../static/img/Ragman/Golden_egg.png",
+					"img": "../../static/img/Ragman/Golden_egg.webp",
 					"category": "loot"
 				}
 			}
@@ -2380,7 +2380,7 @@
 					"name": "WTRlg",
 					"num": 2,
 					"inRaid": true,
-					"img": "../../static/img/Ragman/Wartech_gear_rig_(TV-109,_TV-106).png",
+					"img": "../../static/img/Ragman/Wartech_gear_rig_(TV-109,_TV-106).webp",
 					"category": "wepon"
 				},
 				"item2": {
@@ -2388,7 +2388,7 @@
 					"name": "BlackRock",
 					"num": 2,
 					"inRaid": true,
-					"img": "../../static/img/Ragman/BlackRock_chest_rig.png",
+					"img": "../../static/img/Ragman/BlackRock_chest_rig.webp",
 					"category": "wepon"
 				}
 			}
@@ -2404,7 +2404,7 @@
 					"name": "Aramid",
 					"num": 5,
 					"inRaid": true,
-					"img": "../../static/img/Ragman/Aramid_fiber_cloth.png",
+					"img": "../../static/img/Ragman/Aramid_fiber_cloth.webp",
 					"category": "loot"
 				},
 				"item2": {
@@ -2412,7 +2412,7 @@
 					"name": "Ripstop",
 					"num": 10,
 					"inRaid": true,
-					"img": "../../static/img/Ragman/Ripstop_cloth.png",
+					"img": "../../static/img/Ragman/Ripstop_cloth.webp",
 					"category": "loot"
 				},
 				"item3": {
@@ -2420,7 +2420,7 @@
 					"name": "Paracord",
 					"num": 3,
 					"inRaid": true,
-					"img": "../../static/img/Ragman/Paracord.png",
+					"img": "../../static/img/Ragman/Paracord.webp",
 					"category": "loot"
 				}
 			}
@@ -2433,7 +2433,7 @@
 					"name": "Fleece",
 					"num": 10,
 					"inRaid": true,
-					"img": "../../static/img/Ragman/Fleece_cloth.png",
+					"img": "../../static/img/Ragman/Fleece_cloth.webp",
 					"category": "loot"
 				},
 				"item2": {
@@ -2441,7 +2441,7 @@
 					"name": "Cordura",
 					"num": 10,
 					"inRaid": true,
-					"img": "../../static/img/Ragman/Polyamide_fabric_Cordura.png",
+					"img": "../../static/img/Ragman/Polyamide_fabric_Cordura.webp",
 					"category": "loot"
 				},
 				"item3": {
@@ -2449,7 +2449,7 @@
 					"name": "KEK",
 					"num": 5,
 					"inRaid": true,
-					"img": "../../static/img/Ragman/KEKTAPE_duct_tape.png",
+					"img": "../../static/img/Ragman/KEKTAPE_duct_tape.webp",
 					"category": "loot"
 				}
 			}
@@ -2465,7 +2465,7 @@
 					"name": "Vodka",
 					"num": 10,
 					"inRaid": true,
-					"img": "../../static/img/Ragman/Bottle_of_vodka_Tarkovskaya.png",
+					"img": "../../static/img/Ragman/Bottle_of_vodka_Tarkovskaya.webp",
 					"category": "loot"
 				},
 				"item2": {
@@ -2473,7 +2473,7 @@
 					"name": "Whiskey",
 					"num": 10,
 					"inRaid": true,
-					"img": "../../static/img/Ragman/Bottle_of_Dan_Jackiel_Whiskey.png",
+					"img": "../../static/img/Ragman/Bottle_of_Dan_Jackiel_Whiskey.webp",
 					"category": "loot"
 				},
 				"item3": {
@@ -2481,7 +2481,7 @@
 					"name": "Superwater",
 					"num": 3,
 					"inRaid": true,
-					"img": "../../static/img/Ragman/Purified_water.png",
+					"img": "../../static/img/Ragman/Purified_water.webp",
 					"category": "loot"
 				},
 				"item4": {
@@ -2489,7 +2489,7 @@
 					"name": "Pevko",
 					"num": 20,
 					"inRaid": true,
-					"img": "../../static/img/Ragman/Bottle_of_beer_Pevko_Light.png",
+					"img": "../../static/img/Ragman/Bottle_of_beer_Pevko_Light.webp",
 					"category": "loot"
 				}
 			}
@@ -2504,7 +2504,7 @@
 					"name": "Iskra",
 					"num": 3,
 					"inRaid": true,
-					"img": "../../static/img/Jaeger/Iskra_ration_pack.png",
+					"img": "../../static/img/Jaeger/Iskra_ration_pack.webp",
 					"category": "loot"
 				},
 				"item2": {
@@ -2512,7 +2512,7 @@
 					"name": "Emelya",
 					"num": 2,
 					"inRaid": true,
-					"img": "../../static/img/Jaeger/Emelya_rye_croutons.png",
+					"img": "../../static/img/Jaeger/Emelya_rye_croutons.webp",
 					"category": "loot"
 				},
 				"item3": {
@@ -2520,7 +2520,7 @@
 					"name": "Tushonka",
 					"num": 2,
 					"inRaid": true,
-					"img": "../../static/img/Jaeger/Can_of_beef_stew_(Large).png",
+					"img": "../../static/img/Jaeger/Can_of_beef_stew_(Large).webp",
 					"category": "loot"
 				}
 			}
@@ -2536,7 +2536,7 @@
 					"name": "Iskra",
 					"num": 2,
 					"inRaid": false,
-					"img": "../../static/img/Jaeger/Iskra_ration_pack.png",
+					"img": "../../static/img/Jaeger/Iskra_ration_pack.webp",
 					"category": "loot"
 				},
 				"item2": {
@@ -2544,7 +2544,7 @@
 					"name": "Water",
 					"num": 2,
 					"inRaid": false,
-					"img": "../../static/img/Jaeger/0.6L_water_bottle.png",
+					"img": "../../static/img/Jaeger/0.6L_water_bottle.webp",
 					"category": "loot"
 				}
 			}
@@ -2557,7 +2557,7 @@
 					"name": "Sausage",
 					"num": 1,
 					"inRaid": true,
-					"img": "../../static/img/Jaeger/Salty_Dog_beef_sausage.png",
+					"img": "../../static/img/Jaeger/Salty_Dog_beef_sausage.webp",
 					"category": "loot"
 				}
 			}
@@ -2570,7 +2570,7 @@
 					"name": "Green",
 					"num": 1,
 					"inRaid": false,
-					"img": "../../static/img/Jaeger/RSP-30_reactive_signal_cartridge_(Green).png",
+					"img": "../../static/img/Jaeger/RSP-30_reactive_signal_cartridge_(Green).webp",
 					"category": "loot"
 				}
 			}
@@ -2610,7 +2610,7 @@
 					"name": "CMS",
 					"num": 2,
 					"inRaid": true,
-					"img": "../../static/img/Jaeger/CMS_Kit.png",
+					"img": "../../static/img/Jaeger/CMS_Kit.webp",
 					"category": "loot"
 				},
 				"item2": {
@@ -2618,7 +2618,7 @@
 					"name": "Defibrillat",
 					"num": 1,
 					"inRaid": true,
-					"img": "../../static/img/Therapist/Portable_defibrillator.png",
+					"img": "../../static/img/Therapist/Portable_defibrillator.webp",
 					"category": "loot"
 				}
 			}
@@ -2640,7 +2640,7 @@
 					"name": "Yellow",
 					"num": 1,
 					"inRaid": false,
-					"img": "../../static/img/Jaeger/RSP-30_reactive_signal_cartridge_(Yellow).png",
+					"img": "../../static/img/Jaeger/RSP-30_reactive_signal_cartridge_(Yellow).webp",
 					"category": "loot"
 				}
 			}
@@ -2659,7 +2659,7 @@
 					"name": "Access",
 					"num": 2,
 					"inRaid": true,
-					"img": "../../static/img/Jaeger/TerraGroup_Labs_access_keycard.png",
+					"img": "../../static/img/Jaeger/TerraGroup_Labs_access_keycard.webp",
 					"category": "key"
 				}
 			}
@@ -2672,7 +2672,7 @@
 					"name": "TT",
 					"num": 1,
 					"inRaid": true,
-					"img": "../../static/img/Jaeger/TT_Gold.png",
+					"img": "../../static/img/Jaeger/TT_Gold.webp",
 					"category": "wepon"
 				}
 			}
@@ -2688,7 +2688,7 @@
 					"name": "Maska 1SCh",
 					"num": 1,
 					"inRaid": true,
-					"img": "../../static/img/Jaeger/Maska-1SCh_bulletproof_helmet_(Killa).png",
+					"img": "../../static/img/Jaeger/Maska-1SCh_bulletproof_helmet_(Killa).webp",
 					"category": "wepon"
 				}
 			}
@@ -2701,7 +2701,7 @@
 					"name": "KSH",
 					"num": 1,
 					"inRaid": true,
-					"img": "../../static/img/Jaeger/Shturman_key.png",
+					"img": "../../static/img/Jaeger/Shturman_key.webp",
 					"category": "key"
 				}
 			}
@@ -2717,7 +2717,7 @@
 					"name": "Cap",
 					"num": 1,
 					"inRaid": true,
-					"img": "../../static/img/Jaeger/BOSS_cap.png",
+					"img": "../../static/img/Jaeger/BOSS_cap.webp",
 					"category": "wepon"
 				}
 			}
@@ -2760,7 +2760,7 @@
 					"name": "Flash drive",
 					"num": 3,
 					"inRaid": true,
-					"img": "../../static/img/Skier/Secure_Flash_drive.png",
+					"img": "../../static/img/Skier/Secure_Flash_drive.webp",
 					"category": "loot"
 				}
 			}

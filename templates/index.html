@@ -1,181 +1,135 @@
-<!DOCTYPE html>
-<html lang="ja">
+{% extends "base.html" %}
+{% block css %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/index.css') }}">
+{% endblock %}
 
-<head>
-  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1577082847733195"
-    crossorigin="anonymous"></script>
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZGJKS21QN2"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date());
 
-    gtag('config', 'G-ZGJKS21QN2');
-  </script>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>EFT Item Hub</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="EscapeFromTarkovのタスク・ハイドアウトで使用するアイテムを表示するアプリです">
-  <meta name="keywords" content="eft,EscapeFromTarkov">
-  <link rel="icon" type="image/png" href="../static/img/logo.png">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-  <link href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" rel="stylesheet">
-  <link rel="stylesheet" href="{{ url_for('static', filename='css/index.css') }}">
-</head>
-<nav class="navbar navbar-expand-md navbar-dark bg-dark">
-  <a href="/" class="navbar-brand h-50"><img src="../../static/img/logo.png" width="50px">EFT Item Hub</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar4">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="navbar-collapse collapse" id="navbar4">
-    <ul class="navbar-nav">
-      <li class="nav-item active">
-        <a class="nav-link" href="/task/">Task</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="/hideout/">Hideout</a>
-      </li>
-    </ul>
+
+{% block contents %}
+<header>
+  <div class="cookie-consent">
+    <div class="cookie-text">当サイトでは次回以降の入力負担軽減のために、Cookieを使用します。</div>
+    <div class="cookie-agree">OK</div>
   </div>
-</nav>
-
-<body>
-  <header>
-    <div class="cookie-consent">
-      <div class="cookie-text">当サイトでは次回以降の入力負担軽減のために、Cookieを使用します。</div>
-      <div class="cookie-agree">OK</div>
-    </div>
-    <h1 id="logo"><img src="static/img/wallpaperflare.com_wallpaper.jpg" alt="logo"></h1>
-    <nav id="menubar">
-      <ul>
-        <li><a href="#new">更新履歴</a></li>
-        <li><a href="#explanation">サイトの説明</a></li>
-        <li><a href="#treatment">使い方</a></li>
-        <li><a href="#contact">作成者</a></li>
-      </ul>
-      <ul>
-        <li><a href="/task/" id="start">Task</a></li>
-        <li><a href="/hideout/" id="start">Hideout</a></li>
-      </ul>
-    </nav>
-  </header>
+  <h1 id="logo"><img src="static/img/wallpaperflare.com_wallpaper.webp" alt="logo" class="img-fluid"></h1>
+  <nav id="menubar">
+    <ul>
+      <li><a href="#new">更新履歴</a></li>
+      <li><a href="#explanation">サイトの説明</a></li>
+      <li><a href="#treatment">使い方</a></li>
+      <li><a href="#contact">作成者</a></li>
+    </ul>
+    <ul>
+      <li><a href="/task/" id="start">Task</a></li>
+      <li><a href="/hideout/" id="start">Hideout</a></li>
+      <li><a href="/ammo/" id="start">Ammo(beta)</a></li>
+    </ul>
+  </nav>
+</header>
 
 
 
-  <div id="container">
+<div id="container">
 
-    <div id="contents">
+  <div id="contents">
 
-      <section id="new">
+    <section id="new">
 
-        <h2>更新履歴</h2>
-        <dl>
-          <dt>2023/2/13</dt>
-          <dd>タスク検索機能追加<span class="newicon">NEW</span></dd>
-          <dt>2023/2/12</dt>
-          <dd>プライバシーポリシー・お問い合わせを追加<span class="newicon">NEW</span></dd>
-          <dt>2023/2/7</dt>
-          <dd>ハイドアウトでチェックした以下のレベルの自動チェック機能追加</dd>
-          <dt>2023/2/6</dt>
-          <dd>アイテム一覧画面で使用タスク確認・クリックでWikiへ飛べる機能追加</dd>
-          <dd>情報の修正</dd>
-          <dt>2023/2/4</dt>
-          <dd>大型アップデート</dd>
-          <dd>サイトの見た目と名前を変更</dd>
-          <dd>ハイドアウト追加</dd>
-          <dd>共有機能追加</dd>
-          <dt>2023/2/3</dt>
-          <dd>選択したアイテムのみの表示を追加</dd>
-          <dt>2023/1/29</dt>
-          <dd>不具合の修正</dd>
-          <dt>2023/1/28</dt>
-          <dd>リリース</dd>
-        </dl>
+      <h2>更新履歴</h2>
+      <dl>
+        <dt>2023/2/13</dt>
+        <dd>タスク検索機能追加<span class="newicon">NEW</span></dd>
+        <dt>2023/2/12</dt>
+        <dd>プライバシーポリシー・お問い合わせを追加<span class="newicon">NEW</span></dd>
+        <dt>2023/2/7</dt>
+        <dd>ハイドアウトでチェックした以下のレベルの自動チェック機能追加</dd>
+        <dt>2023/2/6</dt>
+        <dd>アイテム一覧画面で使用タスク確認・クリックでWikiへ飛べる機能追加</dd>
+        <dd>情報の修正</dd>
+        <dt>2023/2/4</dt>
+        <dd>大型アップデート</dd>
+        <dd>サイトの見た目と名前を変更</dd>
+        <dd>ハイドアウト追加</dd>
+        <dd>共有機能追加</dd>
+        <dt>2023/2/3</dt>
+        <dd>選択したアイテムのみの表示を追加</dd>
+        <dt>2023/1/29</dt>
+        <dd>不具合の修正</dd>
+        <dt>2023/1/28</dt>
+        <dd>リリース</dd>
+      </dl>
 
-      </section>
-      <!--/#new-->
-      <section id="explanation">
-        <h2>サイトの説明</h2>
-        <p>このサイトは「Escape from Tarkov」のタスク、ハイドアウトに必要なアイテムを確認するためのものです。</p>
-        <p>使い方については下記を御覧ください。</p>
+    </section>
+    <!--/#new-->
+    <section id="explanation">
+      <h2>サイトの説明</h2>
+      <p>このサイトは「Escape from Tarkov」のタスク、ハイドアウトに必要なアイテムを確認するためのものです。</p>
+      <p>使い方については下記を御覧ください。</p>
 
-      </section>
-
-
-      <section id="treatment">
-
-        <h2>使い方</h2>
-
-        <ol>
-          <li>「Task」「Hideout」をクリックすると一覧が表示されます。</li>
-          <li>完了している「タスク」「ハイドアウトのレベル」を選択し、「決定」ボタンをクリックします。</li>
-          <li>必要なアイテムが表示されます。</li>
-          <li>「選択」をクリックすると、表示するアイテムを自分で決めることができます。</li>
-          <li>「共有」をクリックすると、その時点でのチェック状況を共有することができます。</li>
-        </ol>
-        <p class="t">※タスク選択画面では「✓」マークを押すと、該当するディーラーのタスクが全選択されます。</p>
-        <p class="t">※アイテム一覧画面では「表示設定」ボタンを押すことで表示するアイテムを切り替えることができます。</p>
+    </section>
 
 
-        <!--/#service-->
+    <section id="treatment">
 
-        <section id="contact">
+      <h2>使い方</h2>
 
-          <h2>製作者</h2>
+      <ol>
+        <li>「Task」「Hideout」をクリックすると一覧が表示されます。</li>
+        <li>完了している「タスク」「ハイドアウトのレベル」を選択し、「決定」ボタンをクリックします。</li>
+        <li>必要なアイテムが表示されます。</li>
+        <li>「選択」をクリックすると、表示するアイテムを自分で決めることができます。</li>
+        <li>「共有」をクリックすると、その時点でのチェック状況を共有することができます。</li>
+      </ol>
+      <p class="t">※タスク選択画面では「✓」マークを押すと、該当するディーラーのタスクが全選択されます。</p>
+      <p class="t">※アイテム一覧画面では「表示設定」ボタンを押すことで表示するアイテムを切り替えることができます。</p>
+
+
+      <!--/#service-->
+
+      <section id="contact">
+
+        <h2>製作者</h2>
+        <div id="left_author">
           <a href="https://twitter.com/SYTd_pukusyou" id="twitter"><img src="static/img/twitter.svg" width="32"
               height="32">@SYTd_pukusyou</a>
           <p>情報がまちがっているところ、改善してほしいところ、追加してほしい機能等々ありましたら、お気軽にお問い合わせください。</p>
           <p>このサイトは<a href="https://wikiwiki.jp/eft/">"Escape From Tarkov JPN Wiki"</a>様の情報を使用しております。<a
               href="https://wikiwiki.jp/eft/">Escape From Tarkov JPN Wiki</a>様に感謝申し上げます。</p>
+        </div>
+        <a class="twitter-timeline" data-lang="ja" data-width="600" data-height="400" data-theme="dark"
+          href="https://twitter.com/SYTd_pukusyou?ref_src=twsrc%5Etfw">Tweets by SYTd_pukusyou</a>
+        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-
-        </section>
-        <!--/#contact-->
-
-    </div>
-    <!--/#contents-->
+      </section>
+      <!--/#contact-->
 
   </div>
-  <!--/#container-->
+  <!--/#contents-->
 
-  <footer>
-    <font size="3">
-      <p id="privacy"><a href="/privacy/">プライバシーポリシー</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a
-          href="/contact/">お問い合わせ</a>
-      </p>
-    </font>
-    <small>Game content and materials are trademarks and copyrights of Battlestate Games and its
-      licensors. All rights
-      reserved.</small>
-    <p class="float-start"><a href="/">EFT Item Hub</a></p>
-    <p class="float-end">&copy; 2023 EFT Item Hub</p>
-    <span class="pr">《<a href="https://template-party.com/" target="_blank">Web Design:Template-Party</a>》</span>
+</div>
+{% endblock %}
 
-  </footer>
+<footer>
+  <font size="3">
+    <p id="privacy"><a href="/privacy/">プライバシーポリシー</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a
+        href="/contact/">お問い合わせ</a>
+    </p>
+  </font>
+  <small>Game content and materials are trademarks and copyrights of Battlestate Games and its
+    licensors. All rights
+    reserved.</small>
+  <p class="float-start"><a href="/">EFT Item Hub</a></p>
+  <p class="float-end">&copy; 2023 EFT Item Hub</p>
+  {% block footer_last %}
+  <span class="pr">《<a href="https://template-party.com/" target="_blank">Web Design:Template-Party</a>》</span>
+  {% endblock %}
+</footer>
 
-  <!--jQueryファイルの読み込み-->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/push.js/1.0.12/push.min.js"></script>
-  <script type="text/javascript" src="{{ url_for('static', filename='../static/js/jquery-3.6.3.min.js') }}"></script>
+<!--jQueryファイルの読み込み-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/push.js/1.0.12/push.min.js"></script>
+<script type="text/javascript" src="{{ url_for('static', filename='../static/js/jquery-3.6.3.min.js') }}"></script>
 
-  <!--ページの上部へ戻るボタンとスクリプト-->
-  <p class="scroll"><a href="#">↑</a></p>
-  <script defer src="https://use.fontawesome.com/releases/v5.15.1/js/all.js"></script>
-  <script type="text/javascript" src="{{ url_for('static', filename='../static/js/index.js') }}"></script>
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-    crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
-    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-    crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
-    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
-    crossorigin="anonymous"></script>
-  <!-- admax -->
-  <script src="https://adm.shinobi.jp/s/21f9a729ee343f1a9065357e9578d164"></script>
-  <!-- admax -->
-</body>
-
-</html>
+<!--ページの上部へ戻るボタンとスクリプト-->
+{% block ad %}
+<script src="https://adm.shinobi.jp/s/21f9a729ee343f1a9065357e9578d164"></script>
+{% endblock %}

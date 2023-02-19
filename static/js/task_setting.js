@@ -1,11 +1,11 @@
-var driver = new Driver({
-  stageBackground: '#3d648a',
-  nextBtnText: '次へ',
-  prevBtnText: '戻る',
-  closeBtnText: '閉じる',
-  doneBtnText: '完了',
-  padding: 5,
-});
+// var driver = new Driver({
+//   stageBackground: '#3d648a',
+//   nextBtnText: '次へ',
+//   prevBtnText: '戻る',
+//   closeBtnText: '閉じる',
+//   doneBtnText: '完了',
+//   padding: 5,
+// });
 
 jQuery(function () {
   if (getParam("check") != null) {
@@ -51,31 +51,31 @@ function all_check(checkbox_class, bool) {
 }
 
 
-driver.defineSteps([
-  {
-    element: '#prapor', // ハイライトさせる要素
-    popover: {
-      title: '1.タスクを選択',
-      description: '各ディーラーの完了しているタスクにチェックします',
-      position: 'right',
-    }
-  },
-  {
-    element: '#prapor_button',
-    popover: {
-      title: '2.全選択',
-      description: '全選択、選択解除することができます',
-    }
-  },
-  {
-    element: '#submit',
-    popover: {
-      title: '3.決定',
-      description: '完了したタスクを選択し終えたら決定します',
-      position: 'left',
-    }
-  }
-]);
+// driver.defineSteps([
+//   {
+//     element: '#prapor', // ハイライトさせる要素
+//     popover: {
+//       title: '1.タスクを選択',
+//       description: '各ディーラーの完了しているタスクにチェックします',
+//       position: 'right',
+//     }
+//   },
+//   {
+//     element: '#prapor_button',
+//     popover: {
+//       title: '2.全選択',
+//       description: '全選択、選択解除することができます',
+//     }
+//   },
+//   {
+//     element: '#submit',
+//     popover: {
+//       title: '3.決定',
+//       description: '完了したタスクを選択し終えたら決定します',
+//       position: 'left',
+//     }
+//   }
+// ]);
 
 function compress() {
   var result = []

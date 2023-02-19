@@ -1,0 +1,159 @@
+{% extends "base.html" %}
+{% block title %}
+{{ super() }} - Ammo
+{% endblock %}
+{% block css %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/ammo.css') }}">
+{% endblock %}
+{% block contents %}
+<div class="btn-group pb-1" role="group">
+    <button id="ammo" type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown"
+        aria-expanded="false">
+        All
+    </button>
+    <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="ammo">
+        <li><a class="dropdown-item" href="#" onclick="ammo('ammo','All')">All</a></li>
+        <li><a class="dropdown-item" href="#" onclick="ammo('ammo','7.62x25mm')">7.62x25mm</a></li>
+        <li><a class="dropdown-item" href="#" onclick="ammo('ammo','9x18mm')">9x18mm</a></li>
+        <li><a class="dropdown-item" href="#" onclick="ammo('ammo','9x19mm')">9x19mm</a></li>
+        <li><a class="dropdown-item" href="#" onclick="ammo('ammo','9x21mm')">9x21mm</a></li>
+        <li><a class="dropdown-item" href="#" onclick="ammo('ammo','.357 Magnum')">.357 Magnum</a></li>
+        <li><a class="dropdown-item" href="#" onclick="ammo('ammo','.45 ACP')">.45 ACP</a></li>
+        <li><a class="dropdown-item" href="#" onclick="ammo('ammo','4.6x30mm')">4.6x30mm</a></li>
+        <li><a class="dropdown-item" href="#" onclick="ammo('ammo','5.7x28mm')">5.7x28mm</a></li>
+        <li><a class="dropdown-item" href="#" onclick="ammo('ammo','5.45x39mm')">5.45x39mm</a></li>
+        <li><a class="dropdown-item" href="#" onclick="ammo('ammo','5.56x45mm')">5.56x45mm</a></li>
+        <li><a class="dropdown-item" href="#" onclick="ammo('ammo','7.62x39mm')">7.62x39mm</a></li>
+        <li><a class="dropdown-item" href="#" onclick="ammo('ammo','9x39mm')">9x39mm</a></li>
+        <li><a class="dropdown-item" href="#" onclick="ammo('ammo','7.62x51mm')">7.62x51mm</a></li>
+        <li><a class="dropdown-item" href="#" onclick="ammo('ammo','.300 Blackout')">.300 Blackout</a></li>
+        <li><a class="dropdown-item" href="#" onclick="ammo('ammo','7.62x54mmR')">7.62x54mmR</a></li>
+        <li><a class="dropdown-item" href="#" onclick="ammo('ammo','.338 Lapua Magnum')">.338 Lapua Magnum</a></li>
+        <li><a class="dropdown-item" href="#" onclick="ammo('ammo','12.7x55mm')">12.7x55mm</a></li>
+        <li><a class="dropdown-item" href="#" onclick="ammo('ammo','12 gauge')">12 gauge</a></li>
+        <li><a class="dropdown-item" href="#" onclick="ammo('ammo','20 gauge')">20 gauge</a></li>
+        <li><a class="dropdown-item" href="#" onclick="ammo('ammo','.366 TKM')">.366 TKM</a></li>
+        <li><a class="dropdown-item" href="#" onclick="ammo('ammo','23x75mm')">23x75mm</a></li>
+    </ul>
+</div>
+<br>
+<div class="pb-1">
+    <div class="btn-group" role="group">
+        <button id="prapor" type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown"
+            aria-expanded="false"></button>
+        <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="prapor">
+            <li><a class="dropdown-item" href="#" onclick="dealer('prapor','Prapor.LL1')">Prapor.LL1</a></li>
+            <li><a class="dropdown-item" href="#" onclick="dealer('prapor','Prapor.LL2')">Prapor.LL2</a></li>
+            <li><a class="dropdown-item" href="#" onclick="dealer('prapor','Prapor.LL3')">Prapor.LL3</a></li>
+            <li><a class="dropdown-item" href="#" onclick="dealer('prapor','Prapor.LL4')">Prapor.LL4</a></li>
+        </ul>
+    </div>
+    <div class="btn-group" role="group">
+        <button id="skier" type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown"
+            aria-expanded="false"></button>
+        <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="skier">
+            <li><a class="dropdown-item" href="#" onclick="dealer('skier','Skier.LL1')">Skier.LL1</a></li>
+            <li><a class="dropdown-item" href="#" onclick="dealer('skier','Skier.LL2')">Skier.LL2</a></li>
+            <li><a class="dropdown-item" href="#" onclick="dealer('skier','Skier.LL3')">Skier.LL3</a></li>
+            <li><a class="dropdown-item" href="#" onclick="dealer('skier','Skier.LL4')">Skier.LL4</a></li>
+        </ul>
+    </div>
+    <div class="btn-group" role="group">
+        <button id="peacekeeper" type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown"
+            aria-expanded="false"></button>
+        <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="peacekeeper">
+            <li><a class="dropdown-item" href="#" onclick="dealer('peacekeeper','Peacekeeper.LL1')">Peacekeeper.LL1</a>
+            </li>
+            <li><a class="dropdown-item" href="#" onclick="dealer('peacekeeper','Peacekeeper.LL2')">Peacekeeper.LL2</a>
+            </li>
+            <li><a class="dropdown-item" href="#" onclick="dealer('peacekeeper','Peacekeeper.LL3')">Peacekeeper.LL3</a>
+            </li>
+            <li><a class="dropdown-item" href="#" onclick="dealer('peacekeeper','Peacekeeper.LL4')">Peacekeeper.LL4</a>
+            </li>
+        </ul>
+    </div>
+    <div class="btn-group" role="group">
+        <button id="mechanic" type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown"
+            aria-expanded="false"></button>
+        <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="mechanic">
+            <li><a class="dropdown-item" href="#" onclick="dealer('mechanic','Mechanic.LL1')">Mechanic.LL1</a></li>
+            <li><a class="dropdown-item" href="#" onclick="dealer('mechanic','Mechanic.LL2')">Mechanic.LL2</a></li>
+            <li><a class="dropdown-item" href="#" onclick="dealer('mechanic','Mechanic.LL3')">Mechanic.LL3</a></li>
+            <li><a class="dropdown-item" href="#" onclick="dealer('mechanic','Mechanic.LL4')">Mechanic.LL4</a></li>
+        </ul>
+    </div>
+    <div class="btn-group" role="group">
+        <button id="jaeger" type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown"
+            aria-expanded="false"></button>
+        <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="jaeger">
+            <li><a class="dropdown-item" href="#" onclick="dealer('jaeger','Jaeger.LL1')">Jaeger.LL1</a></li>
+            <li><a class="dropdown-item" href="#" onclick="dealer('jaeger','Jaeger.LL2')">Jaeger.LL2</a></li>
+            <li><a class="dropdown-item" href="#" onclick="dealer('jaeger','Jaeger.LL3')">Jaeger.LL3</a></li>
+            <li><a class="dropdown-item" href="#" onclick="dealer('jaeger','Jaeger.LL4')">Jaeger.LL4</a></li>
+        </ul>
+    </div>
+    <div class="btn-group" role="group">
+        <button id="workbench" type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown"
+            aria-expanded="false"></button>
+        <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="workbench">
+            <li><a class="dropdown-item" href="#" onclick="dealer('workbench','Workbench.Lv1')">Workbench.Lv1</a></li>
+            <li><a class="dropdown-item" href="#" onclick="dealer('workbench','Workbench.Lv2')">Workbench.Lv2</a></li>
+            <li><a class="dropdown-item" href="#" onclick="dealer('workbench','Workbench.Lv3')">Workbench.Lv3</a></li>
+            <li><a class="dropdown-item" href="#" onclick="dealer('workbench','Workbench.Lv4')">Workbench.Lv4</a></li>
+        </ul>
+    </div>
+</div>
+<table class="table table-dark table-bordered tablesorter table-hover border-light" id="ammoTable">
+    <thead>
+        <tr>
+            <th scope="col" class="img"></th>
+            <th scope="col" class="name p-2">名前</th>
+            <th scope="col" class="dmg p-2">ダメージ</th>
+            <th scope="col" class="penetration p-2">貫通</th>
+            <th scope="col" class="armor_dmg p-2 m_none">アーマーダメージ(%)</th>
+            <th scope="col" class="accuracy p-2 m_none">精度(%)</th>
+            <th scope="col" class="recoil p-2 m_none">反動</th>
+            <th scope="col" class="crushing p-2 m_none">破砕(%)</th>
+            <th scope="col" class="speed p-2 m_none">弾速(m/s)</th>
+            <th scope="col" class="dealer p-2 m_none">ディーラー</th>
+            <th scope="col" class="option p-2 m_none">備考</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for ammo in ammo_list %}
+        <tr class="{{ammo[13]}} ammo">
+            <td class="img align-middle"><img src="../{{ammo[0]}}" alt="{{ammo[1]}}"></th>
+            <td class="name p-1 align-middle">{{ammo[1]}}</td>
+            <td class="dmg p-1 align-middle">{{ammo[2]}}</td>
+            <td class="penetration p-1 align-middle">{{ammo[3]}}</td>
+            <td class="armor_dmg p-1 m_none align-middle">{{ammo[4]}}</td>
+            <td class="accuracy p-1 m_none align-middle">{{ammo[5]}}</td>
+            <td class="recoil p-1 m_none align-middle">{{ammo[6]}}</td>
+            <td class="crushing p-1 m_none align-middle">{{ammo[7]}}</td>
+            <td class="speed p-1 m_none align-middle">{{ammo[11]}}</td>
+            <td class="dealer p-1 m_none align-middle">{{ammo[13]}}</td>
+            <td class="option p-1 m_none align-middle">{{ammo[14]}}</td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+
+
+<script src=" https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
+<script type="text/javascript" src="{{ url_for('static', filename='../static/js/jquery-3.6.3.min.js') }}"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.tablesorter/2.31.1/js/jquery.tablesorter.min.js"></script>
+<script type="text/javascript" src="{{ url_for('static', filename='../static/js/ammo.js') }}"></script>
+{% endblock %}
+{% block footer %}
+<p> <small>このWebアプリは、<a href="https://wikiwiki.jp/eft/">Escape From Tarkov JPN Wiki</a> の「<a
+            href="https://wikiwiki.jp/eft/%E5%BC%BE%E8%96%AC">弾薬</a>」記事の素材を使用しており、Creative Commons
+        Attribution-NonCommercial-ShareAlike の下でライセンスされています。</small></p>
+{% endblock %}
