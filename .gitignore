@@ -12,6 +12,8 @@ setting.ini
 ammo.html
 # C extensions
 *.so
+*.jar
+*.bat
 
 # Distribution / packaging
 .Python
