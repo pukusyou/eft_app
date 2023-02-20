@@ -12,7 +12,7 @@ $(function () {
         localStorage.setItem("Peacekeeper_ll", "Peacekeeper.LL1");
         localStorage.setItem("Mechanic_ll", "Mechanic.LL1");
         localStorage.setItem("Jaeger_ll", "Jaeger.LL1");
-        localStorage.setItem("Workbench_lv", "Workbench_lv1");
+        localStorage.setItem("Workbench_lv", "Workbench.lv1");
     }
     var prapor_ll = localStorage.getItem('Prapor_ll')
     var skier_ll = localStorage.getItem('Skier_ll')
