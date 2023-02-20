@@ -162,14 +162,11 @@
         <input type="submit" class="btn btn-primary mb-12" value="決定" id="submit">
     </div>
 </form>
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-    crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
-    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
-    crossorigin="anonymous"></script>
+{% block script %}
 <script type="text/javascript" src="{{ url_for('static', filename='../static/js/jquery-3.6.3.min.js') }}"></script>
 <script type="text/javascript" src="{{ url_for('static', filename='../static/js/task_setting.js') }}"></script>
+{% endblock %}
+
 {% endblock %}
 {% block ad %}
 <script src="https://adm.shinobi.jp/s/906c46d0f72cd113e11211a28e2cb76a"></script>
