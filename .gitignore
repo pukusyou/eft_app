@@ -3,6 +3,7 @@ img
 wiki_html
 # Byte-compiled / optimized / DLL files
 __pycache__/
+uwsgi.ini
 *.py[cod]
 *$py.class
 setting.ini
