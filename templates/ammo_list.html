@@ -6,7 +6,7 @@
 <link rel="stylesheet" href="{{ url_for('static', filename='css/ammo.css') }}">
 {% endblock %}
 {% block contents %}
-<div class="btn-group pb-1" role="group">
+<div class="btn-group p-1" role="group">
     <button id="ammo" type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown"
         aria-expanded="false">
         All
@@ -38,7 +38,7 @@
 </div>
 <br>
 <div class="pb-1">
-    <div class="btn-group" role="group">
+    <div class="btn-group p-1" role="group">
         <button id="prapor" type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown"
             aria-expanded="false"></button>
         <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="prapor">
@@ -48,7 +48,7 @@
             <li><a class="dropdown-item" href="#" onclick="dealer('prapor','Prapor.LL4')">Prapor.LL4</a></li>
         </ul>
     </div>
-    <div class="btn-group" role="group">
+    <div class="btn-group p-1" role="group">
         <button id="skier" type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown"
             aria-expanded="false"></button>
         <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="skier">
@@ -58,7 +58,7 @@
             <li><a class="dropdown-item" href="#" onclick="dealer('skier','Skier.LL4')">Skier.LL4</a></li>
         </ul>
     </div>
-    <div class="btn-group" role="group">
+    <div class="btn-group p-1" role="group">
         <button id="peacekeeper" type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown"
             aria-expanded="false"></button>
         <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="peacekeeper">
@@ -72,7 +72,7 @@
             </li>
         </ul>
     </div>
-    <div class="btn-group" role="group">
+    <div class="btn-group p-1" role="group">
         <button id="mechanic" type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown"
             aria-expanded="false"></button>
         <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="mechanic">
@@ -82,7 +82,7 @@
             <li><a class="dropdown-item" href="#" onclick="dealer('mechanic','Mechanic.LL4')">Mechanic.LL4</a></li>
         </ul>
     </div>
-    <div class="btn-group" role="group">
+    <div class="btn-group p-1" role="group">
         <button id="jaeger" type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown"
             aria-expanded="false"></button>
         <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="jaeger">
@@ -92,7 +92,7 @@
             <li><a class="dropdown-item" href="#" onclick="dealer('jaeger','Jaeger.LL4')">Jaeger.LL4</a></li>
         </ul>
     </div>
-    <div class="btn-group" role="group">
+    <div class="btn-group p-1" role="group">
         <button id="workbench" type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown"
             aria-expanded="false"></button>
         <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="workbench">
@@ -103,6 +103,7 @@
         </ul>
     </div>
 </div>
+<p class="text-white">※beta版であるため、情報の誤りやバグがある場合があります。何かあればお問い合わせから報告いただけると幸いです。</p>
 <table class="table table-dark table-bordered tablesorter table-hover border-light" id="ammoTable">
     <thead>
         <tr>
@@ -137,7 +138,9 @@
         {% endfor %}
     </tbody>
 </table>
-
+{% block ad %}
+<script src="https://adm.shinobi.jp/s/af14d4a28b5d0406a02c648bb5b03f0f"></script>
+{% endblock %}
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
     integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
