@@ -1351,6 +1351,14 @@
 					"inRaid": true,
 					"img": "../../static/img/Peacekeeper/Military_COFDM_wireless_Signal_Transmitter.webp",
 					"category": "loot"
+				},
+				"item5": {
+					"full_name": "Military flash drive",
+					"name": "MFD",
+					"num": 4,
+					"inRaid": true,
+					"img": "../../static/img/Peacekeeper/Military_flash_drive.webp",
+					"category": "loot"
 				}
 			}
 		},
@@ -1702,7 +1710,7 @@
 					"name": "PCB",
 					"num": 3,
 					"inRaid": true,
-					"img": "../../static/img/Mechanic/PC_CPU.webp",
+					"img": "../../static/img/Mechanic/Printed_circuit_board.webp",
 					"category": "loot"
 				},
 				"item4": {
