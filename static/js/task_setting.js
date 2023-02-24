@@ -1,191 +1,156 @@
-// var driver = new Driver({
-//   stageBackground: '#3d648a',
-//   nextBtnText: '次へ',
-//   prevBtnText: '戻る',
-//   closeBtnText: '閉じる',
-//   doneBtnText: '完了',
-//   padding: 5,
-// });
-
 jQuery(function () {
-  if (getParam("check") != null) {
-    var load_values = getParam("check");
-  } else {
-    var load_values = localStorage.getItem('tasks');
-  }
-  var load_values = decompressBinary(load_values)
-  var count = 0;
-  $("input[type=checkbox][name=task]").each(function () {
-    if (load_values[count++] == 'A') {
-      $(this).prop('checked', true);
+    if (getParam("check") != null) {
+        var load_values = getParam("check");
+    } else {
+        var load_values = localStorage.getItem('tasks');
     }
+    var load_values = decompressBinary(load_values)
+    var count = 0;
+    $("input[type=checkbox][name=task]").each(function () {
+        if (load_values[count++] == 'A') {
+            $(this).prop('checked', true);
+        }
 
-  });
+    });
 });
 
 $(document).on('click', 'input', function () {
-  // console.log(save_values)
-  localStorage.setItem('tasks', compress());
+    // console.log(save_values)
+    localStorage.setItem('tasks', compress());
 });
 
 // var p_bool, t_bool, s_bool, pe_bool, m_bool, r_bool, j_bool = false
-
 // 「全て選択」がクリックされたら
-$(document).on('click', '[id$="_button"]', function () {
-  var className = "." + this.id.replace("_button", "");
-  var bool = window[this.id.replace("_button", "_bool")];
-  if (typeof bool === "undefined") bool = false;
-  window[this.id.replace("_button", "_bool")] = all_check(className, bool);
-});
 
-function all_check(checkbox_class, bool) {
-  var div_class = checkbox_class + "_task"
-  $(div_class).each(function () {
-    if ($(this).css('display') != 'none') {
-      $(this).find(checkbox_class).prop('checked', bool);
-      localStorage.setItem('tasks', compress());
-    }
-  });
-  console.log(bool)
-  return !bool;
-}
-
-
-// driver.defineSteps([
-//   {
-//     element: '#prapor', // ハイライトさせる要素
-//     popover: {
-//       title: '1.タスクを選択',
-//       description: '各ディーラーの完了しているタスクにチェックします',
-//       position: 'right',
-//     }
-//   },
-//   {
-//     element: '#prapor_button',
-//     popover: {
-//       title: '2.全選択',
-//       description: '全選択、選択解除することができます',
-//     }
-//   },
-//   {
-//     element: '#submit',
-//     popover: {
-//       title: '3.決定',
-//       description: '完了したタスクを選択し終えたら決定します',
-//       position: 'left',
-//     }
-//   }
-// ]);
-
-function compress() {
-  var result = []
-  $("input[type=checkbox][name=task]").each(function () {
-    if (this.checked) {
-      // チェック
-      result.push('A')
+function all_check(dealer) {
+    var bool
+    var button_id = '#' + dealer + "_button"
+    if ($(button_id).text() == "全選択") {
+        bool = true
+        $(button_id).text("選択解除")
+        $(button_id).attr("class", "btn btn-info")
     } else {
-      result.push('B')
+        bool = false
+        $(button_id).text("全選択")
+        $(button_id).attr("class", "btn btn-primary")
     }
-  });
-  return compressBinary(result.join(""))
+    var div_class = '.' + dealer + "_task"
+    $(div_class).each(function () {
+        if ($(this).css('display') != 'none') {
+            $(this).find('.' + dealer).prop('checked', bool);
+            localStorage.setItem('tasks', compress());
+        }
+    });
+}
+function compress() {
+    var result = []
+    $("input[type=checkbox][name=task]").each(function () {
+        if (this.checked) {
+            // チェック
+            result.push('A')
+        } else {
+            result.push('B')
+        }
+    });
+    return compressBinary(result.join(""))
 }
 
 //圧縮
 function compressBinary(binary) {
-  let result = "";
-  let count = 1;
-  for (let i = 1; i < binary.length; i++) {
-    if (binary[i] === binary[i - 1]) {
-      count++;
-    } else {
-      result += count + binary[i - 1];
-      count = 1;
+    let result = "";
+    let count = 1;
+    for (let i = 1; i < binary.length; i++) {
+        if (binary[i] === binary[i - 1]) {
+            count++;
+        } else {
+            result += count + binary[i - 1];
+            count = 1;
+        }
     }
-  }
-  result += count + binary[binary.length - 1];
-  return result;
+    result += count + binary[binary.length - 1];
+    return result;
 }
 
 //展開
 // ランレングス圧縮された2進数を展開する関数
 function decompressBinary(compressedBinary) {
-  let result = "";
-  let count = "";
-  if (compressedBinary != null) {
-    for (let i = 0; i < compressedBinary.length; i++) {
-      if (isNaN(parseInt(compressedBinary[i]))) {
-        for (let j = 0; j < parseInt(count); j++) {
-          result += compressedBinary[i];
+    let result = "";
+    let count = "";
+    if (compressedBinary != null) {
+        for (let i = 0; i < compressedBinary.length; i++) {
+            if (isNaN(parseInt(compressedBinary[i]))) {
+                for (let j = 0; j < parseInt(count); j++) {
+                    result += compressedBinary[i];
+                }
+                count = "";
+            } else {
+                count += compressedBinary[i];
+            }
         }
-        count = "";
-      } else {
-        count += compressedBinary[i];
-      }
+        return result;
     }
-    return result;
-  }
 }
 
 $(document).on('click', '#setting', function () {
-  $("#url").val("https://pukusyou.com/task/?check=" + compress());
-  $(document).on('click', '#copy', function () {
-    navigator.clipboard.writeText($("#url").val());
-    $('.success-msg').fadeIn("slow", function () {
-      $(this).delay(2000).fadeOut("slow");
+    $("#url").val("https://pukusyou.com/task/?check=" + compress());
+    $(document).on('click', '#copy', function () {
+        navigator.clipboard.writeText($("#url").val());
+        $('.success-msg').fadeIn("slow", function () {
+            $(this).delay(2000).fadeOut("slow");
+        });
     });
-  });
 });
 
 function getParam(name, url) {
-  if (!url) url = window.location.href;
-  name = name.replace(/[\[\]]/g, "\\$&");
-  var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
-    results = regex.exec(url);
-  if (!results) return null;
-  if (!results[2]) return '';
-  return decodeURIComponent(results[2].replace(/\+/g, " "));
+    if (!url) url = window.location.href;
+    name = name.replace(/[\[\]]/g, "\\$&");
+    var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
+        results = regex.exec(url);
+    if (!results) return null;
+    if (!results[2]) return '';
+    return decodeURIComponent(results[2].replace(/\+/g, " "));
 }
 
 function toggle(name) {
-  all_dealer = ['prapor', 'therapist', 'skier', 'peacekeeper', 'mechanic', 'ragman', 'jaeger']
-  all_dealer.forEach(dealer => {
-    if (name == dealer || name == "all") {
-      $("#" + dealer).show();
-    } else {
-      $("#" + dealer).hide();
-    }
-  });
+    all_dealer = ['prapor', 'therapist', 'skier', 'peacekeeper', 'mechanic', 'ragman', 'jaeger']
+    all_dealer.forEach(dealer => {
+        if (name == dealer || name == "all") {
+            $("#" + dealer).show();
+        } else {
+            $("#" + dealer).hide();
+        }
+    });
 }
 $(document).on('input', '#prapor_search', function (e) {
-  search("prapor")
+    search("prapor")
 });
 $(document).on('input', '#therapist_search', function (e) {
-  search("therapist")
+    search("therapist")
 });
 $(document).on('input', '#skier_search', function (e) {
-  search("skier")
+    search("skier")
 });
 $(document).on('input', '#peacekeeper_search', function (e) {
-  search("peacekeeper")
+    search("peacekeeper")
 });
 $(document).on('input', '#mechanic_search', function (e) {
-  search("mechanic")
+    search("mechanic")
 });
 $(document).on('input', '#ragman_search', function (e) {
-  search("ragman")
+    search("ragman")
 });
 $(document).on('input', '#jaeger_search', function (e) {
-  search("jaeger")
+    search("jaeger")
 });
 
 function search(dealer) {
-  $('.' + dealer + '_task').each(function () {
-    if ($('#' + dealer + '_search').val().length <= 0) {
-      $(this).show()
-    } else if ($(this).find("label").text().toUpperCase().replace(" ", "").indexOf($('#' + dealer + '_search').val().toUpperCase().replace(" ", "")) == -1) {
-      $(this).hide()
-    } else {
-      $(this).show()
-    }
-  });
+    $('.' + dealer + '_task').each(function () {
+        if ($('#' + dealer + '_search').val().length <= 0) {
+            $(this).show()
+        } else if ($(this).find("label").text().toUpperCase().replace(" ", "").indexOf($('#' + dealer + '_search').val().toUpperCase().replace(" ", "")) == -1) {
+            $(this).hide()
+        } else {
+            $(this).show()
+        }
+    });
 }

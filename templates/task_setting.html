@@ -66,7 +66,7 @@
             <label for="exampleFormControlInput1" class="form-label">タスク名</label>
             <input type="search" class="form-control search" id="prapor_search" placeholder="Debut">
         </div>
-        <button type="button" id="prapor_button">✓</button>
+        <button type="button" class="btn btn-primary" id="prapor_button" onclick="all_check('prapor')">全選択</button>
         {% for task in prapor_tasks %}
         <div id="task" class="prapor_task">
             <label for={{task[1]}}>{{task[0]}}</label>
@@ -80,7 +80,8 @@
             <label for="exampleFormControlInput1" class="form-label">タスク名</label>
             <input type="search" class="form-control search" id="therapist_search" placeholder="Shortage">
         </div>
-        <button type="button" id="therapist_button">✓</button>
+        <button type="button" class="btn btn-primary" id="therapist_button"
+            onclick="all_check('therapist')">全選択</button>
         {% for task in therapist_tasks %}
         <div id="task" class="therapist_task">
             <label for={{task[1]}}>{{task[0]}}</label>
@@ -94,7 +95,7 @@
             <label for="exampleFormControlInput1" class="form-label">タスク名</label>
             <input type="search" class="form-control search" id="skier_search" placeholder="Supplier">
         </div>
-        <button type="button" id="skier_button">✓</button>
+        <button type="button" class="btn btn-primary" id="skier_button" onclick="all_check('skier')">全選択</button>
         {% for task in skier_tasks %}
         <div id="task" class="skier_task">
             <label for={{task[1]}}>{{task[0]}}</label>
@@ -108,7 +109,8 @@
             <label for="exampleFormControlInput1" class="form-label">タスク名</label>
             <input type="search" class="form-control search" id="peacekeeper_search" placeholder="Fishing Gear">
         </div>
-        <button type="button" id="peacekeeper_button">✓</button>
+        <button type="button" class="btn btn-primary" id="peacekeeper_button"
+            onclick="all_check('peacekeeper')">全選択</button>
         {% for task in peacekeeper_tasks %}
         <div id="task" class="peacekeeper_task">
             <label for={{task[1]}}>{{task[0]}}</label>
@@ -122,7 +124,7 @@
             <label for="exampleFormControlInput1" class="form-label">タスク名</label>
             <input type="search" class="form-control search" id="mechanic_search" placeholder="Introduction">
         </div>
-        <button type="button" id="mechanic_button">✓</button>
+        <button type="button" class="btn btn-primary" id="mechanic_button" onclick="all_check('mechanic')">全選択</button>
         {% for task in mechanic_tasks %}
         <div id="task" class="mechanic_task">
             <label for={{task[1]}}>{{task[0]}}</label>
@@ -136,7 +138,7 @@
             <label for="exampleFormControlInput1" class="form-label">タスク名</label>
             <input type="search" class="form-control search" id="ragman_search" placeholder="Only business">
         </div>
-        <button type="button" id="ragman_button">✓</button>
+        <button type="button" class="btn btn-primary" id="ragman_button" onclick="all_check('ragman')">全選択</button>
         {% for task in ragman_tasks %}
         <div id="task" class="ragman_task">
             <label for={{task[1]}}>{{task[0]}}</label>
@@ -150,7 +152,7 @@
             <label for="exampleFormControlInput1" class="form-label">タスク名</label>
             <input type="search" class="form-control search" id="jaeger_search" placeholder="Acquaintance">
         </div>
-        <button type="button" id="jaeger_button">✓</button>
+        <button type="button" class="btn btn-primary" id="jaeger_button" onclick="all_check('jaeger')">全選択</button>
         {% for task in jaeger_tasks %}
         <div id="task" class="jaeger_task">
             <label for={{task[1]}}>{{task[0]}}</label>

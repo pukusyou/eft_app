@@ -22,6 +22,7 @@
      float: left;
      flex-wrap: wrap;
      padding-right: 15px;
+     height: 100%;
  }
 
  /* ラベル全体にクリックイベントを追加 */
@@ -42,20 +43,6 @@
      /* 背景色 */
      border-color: #ccc;
      /* 枠線色 */
- }
-
- button {
-     border-radius: 50%;
-     color: white;
-     background-color: #555;
-     width: 30px;
-     height: 30px;
- }
-
- button:hover {
-     background-color: #ddd;
-     color: black;
-     border: 1px solid black;
  }
 
  #submit {
