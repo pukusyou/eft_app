@@ -15,7 +15,6 @@ DEALERS = [
 
 
 def task_getter(dealer):
-    task_list = []
     ua = UserAgent()
     header = {"user-agent": ua.chrome}
     url = "https://wikiwiki.jp/eft/" + dealer

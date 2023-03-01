@@ -13,8 +13,8 @@
 				}
 			}
 		},
-		"Search mission": {
-			"wiki_url": "https://wikiwiki.jp/eft/Prapor/Search%20mission"
+		"Search Mission": {
+			"wiki_url": "https://wikiwiki.jp/eft/Prapor/Search%20Mission"
 		},
 		"Checking": {
 			"wiki_url": "https://wikiwiki.jp/eft/Prapor/Checking",
@@ -95,8 +95,8 @@
 		"Glory to CPSU": {
 			"wiki_url": "https://wikiwiki.jp/eft/Prapor/Glory%20to%20CPSU"
 		},
-		"Shaking up teller": {
-			"wiki_url": "https://wikiwiki.jp/eft/Prapor/Shaking%20up%20teller",
+		"Shaking up the Teller": {
+			"wiki_url": "https://wikiwiki.jp/eft/Prapor/Shaking%20up%20the%20Teller",
 			"items": {
 				"item1": {
 					"full_name": "Dorm room 203 key",
@@ -1351,6 +1351,14 @@
 					"inRaid": true,
 					"img": "../../static/img/Peacekeeper/Military_COFDM_wireless_Signal_Transmitter.webp",
 					"category": "loot"
+				},
+				"item5": {
+					"full_name": "Military flash drive",
+					"name": "MFD",
+					"num": 4,
+					"inRaid": true,
+					"img": "../../static/img/Peacekeeper/Military_flash_drive.webp",
+					"category": "loot"
 				}
 			}
 		},
@@ -1702,7 +1710,7 @@
 					"name": "PCB",
 					"num": 3,
 					"inRaid": true,
-					"img": "../../static/img/Mechanic/PC_CPU.webp",
+					"img": "../../static/img/Mechanic/Printed_circuit_board.webp",
 					"category": "loot"
 				},
 				"item4": {
