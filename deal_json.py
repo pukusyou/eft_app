@@ -280,5 +280,5 @@ class load_json:
 # for key in jsn["The Punisher - Part 6"]:
 #     for item in key["item"]:
 #         print(item)
-j = load_json("task.json")
-print(j.get_dealer_task_name_plain("prapor"))
+# j = load_json("task.json")
+# print(j.get_dealer_task_name_plain("prapor"))

@@ -115,4 +115,4 @@ def move_file():
         shutil.copy(url[0], r"ammo_img")
 
 
-move_file()
+# move_file()
