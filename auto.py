@@ -1,7 +1,11 @@
+import configparser
+import time
 import requests
 from fake_useragent import UserAgent
 from bs4 import BeautifulSoup
-import deal_json
+import urllib.request
+import deal_json, json
+
 
 DEALERS = [
     "Prapor",
@@ -14,7 +18,7 @@ DEALERS = [
 ]
 
 
-def task_getter(dealer):
+def wiki_task_getter(dealer):
     ua = UserAgent()
     header = {"user-agent": ua.chrome}
     url = "https://wikiwiki.jp/eft/" + dealer
@@ -25,18 +29,108 @@ def task_getter(dealer):
 
 
 def json_task_getter(dealer):
-    dealer = dealer.lower()
     j = deal_json.load_json("task.json")
     return j.get_dealer_task_name_plain(dealer)
 
 
 def sa_getter(dealer):
-    wiki_task_list = []
-    for elem in task_getter(dealer):
-        wiki_task_list = wiki_task_list + elem.contents
-    json_task_list = json_task_getter(dealer)
-    result = list(set(wiki_task_list) - set(json_task_list))
-    return result
+    wiki_sa_list = []
+    result_list = []
+    for wiki in wiki_task_getter(dealer):
+        result = False
+        for json in json_task_getter(dealer):
+            if(wiki.contents[0]==json):
+                result = True
+        if(not result):
+            wiki_sa_list.append(wiki)
+    for tag in wiki_sa_list:
+        molding = []
+        molding.append(tag.contents[0])
+        molding.append("https://wikiwiki.jp"+tag.get('href'))
+        result_list.append(molding)
+    return result_list
 
+def send_discord(content, items):
+    inifile = configparser.SafeConfigParser()
+    inifile.read("setting.ini")
+    webhook_url = inifile.get("MAIN", "Auto")
+    items_detail = ""
+    for item in items:
+        items_detail = items_detail + "\nfullname: "+ item[0] + "\nnum: "+ item[2] + "\nimg: " + item[1]
+    content_shaping = (
+        "タスク名:" + content[0] + "\nURL:" + content[1] + items_detail
+    )
+    main_content = {"content": content_shaping}
+    headers = {"Content-Type": "application/json"}
+    response = requests.post(
+        webhook_url, json.dumps(main_content), headers=headers
+    )
 
-print(sa_getter(DEALERS[0]))
+def send_discord_only(content):
+    inifile = configparser.SafeConfigParser()
+    inifile.read("setting.ini")
+    webhook_url = inifile.get("MAIN", "Auto")
+    content_shaping = (
+        "タスク名:" + content[0] + "\nURL:" + content[1]
+    )
+    main_content = {"content": content_shaping}
+    headers = {"Content-Type": "application/json"}
+    response = requests.post(
+        webhook_url, json.dumps(main_content), headers=headers
+    )
+
+def need_item(url):
+    time.sleep(3)
+    ua = UserAgent()
+    header = {"user-agent": ua.chrome}
+    response = requests.get(url, headers=header, timeout=2)
+    soup = BeautifulSoup(response.text, "html.parser")
+    elems = soup.find_all("li")
+    result = False
+    for elem in elems:
+        if("必要なアイテム" in elem.get_text()):
+            result = True
+            item_elem = elem
+    if(not result):
+        return []
+    items=item_elem.find_all("tbody")
+    items_details = []
+    for item in items:
+        item_name = item.select("tr > td")[0].get_text()
+        item_img_url = item.find("img").get("src")
+        item_quantity = item.select("tr > td")[1].get_text()
+        items_details.append([item_name,item_img_url,item_quantity])
+    return items_details
+
+def check():
+    for dealer in DEALERS:
+        task_list = sa_getter(dealer)
+        for info in task_list:
+            need_items = need_item(info[1])
+            if(len(need_items)==0):
+                send_discord_only(info)
+            else:
+                for i in range(len(need_items)):
+                    need_items[i][1] = download_img(dealer, need_items[i][0].replace(" ", "_"),need_items[i][1])
+                time.sleep(1)
+                send_discord(info,need_items)
+        print("sleep:30s")
+        time.sleep(5)
+
+def download_img(dealer, name_, url):
+    ua = UserAgent()
+    save_path = "static/img/" + dealer + "/" + name_ + ".png"
+    opener = urllib.request.build_opener()
+    opener.addheaders = [
+        {"user-agent": ua.chrome}
+    ]
+    urllib.request.install_opener(opener)
+    print(url)
+    print(save_path)
+    urllib.request.urlretrieve(url, "static/img/a.png")
+    
+    print(name_ + " >>> " + save_path)
+    time.sleep(2)
+    return save_path
+
+download_img("Therapist", "aaaa", "https://cdn.wikiwiki.jp/to/w/eft/img/::ref/EFT_Salewa-First-Aid-Kit_Icon_2.png?rev=5b86b4b36b977ca771a08d6462a8f65d&t=20220522151202")
