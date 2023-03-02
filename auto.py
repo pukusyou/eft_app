@@ -58,7 +58,7 @@ def send_discord(content, items):
     for item in items:
         items_detail = items_detail + "\nfullname: "+ item[0] + "\nnum: "+ item[2] + "\nimg: " + item[1]
     content_shaping = (
-        "タスク名:" + content[0] + "\nURL:" + content[1] + items_detail
+        "-----------------------------\n"+"タスク名:" + content[0] + "\nURL:" + content[1] + "**********************\n" + items_detail
     )
     main_content = {"content": content_shaping}
     headers = {"Content-Type": "application/json"}
@@ -71,7 +71,7 @@ def send_discord_only(content):
     inifile.read("setting.ini")
     webhook_url = inifile.get("MAIN", "Auto")
     content_shaping = (
-        "タスク名:" + content[0] + "\nURL:" + content[1]
+        "-----------------------------\n"+"タスク名:" + content[0] + "\nURL:" + content[1]
     )
     main_content = {"content": content_shaping}
     headers = {"Content-Type": "application/json"}
@@ -130,10 +130,10 @@ def download_img(dealer, name_, url):
     urllib.request.install_opener(opener)
     print(url)
     print(save_path)
-    urllib.request.urlretrieve(url, "")
+    urllib.request.urlretrieve(url, save_path)
     
     print(name_ + " >>> " + save_path)
     time.sleep(2)
     return save_path
 
-download_img("Therapist", "aaaa", "https://cdn.wikiwiki.jp/to/w/eft/img/::ref/EFT_Salewa-First-Aid-Kit_Icon_2.png?rev=5b86b4b36b977ca771a08d6462a8f65d&t=20220522151202")
+check()
