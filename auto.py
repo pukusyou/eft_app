@@ -122,12 +122,15 @@ def download_img(dealer, name_, url):
     save_path = "static/img/" + dealer + "/" + name_ + ".png"
     opener = urllib.request.build_opener()
     opener.addheaders = [
-        {"user-agent": ua.chrome}
+        (
+                    "User-Agent",
+                    "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1941.0 Safari/537.36",
+                )
     ]
     urllib.request.install_opener(opener)
     print(url)
     print(save_path)
-    urllib.request.urlretrieve(url, "static/img/a.png")
+    urllib.request.urlretrieve(url, "")
     
     print(name_ + " >>> " + save_path)
     time.sleep(2)
