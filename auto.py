@@ -5,7 +5,8 @@ from fake_useragent import UserAgent
 from bs4 import BeautifulSoup
 import urllib.request
 import deal_json, json
-
+from PIL import Image
+import os
 
 DEALERS = [
     "Prapor",
@@ -56,9 +57,9 @@ def send_discord(content, items):
     webhook_url = inifile.get("MAIN", "Auto")
     items_detail = ""
     for item in items:
-        items_detail = items_detail + "\nfullname: "+ item[0] + "\nnum: "+ item[2] + "\nimg: " + item[1]
+        items_detail = items_detail + "\nfullname: "+ item[0] + "\nnum: "+ item[2] + "\nimg: " + item[1] + "\n++++++++++++++"
     content_shaping = (
-        "-----------------------------\n"+"タスク名:" + content[0] + "\nURL:" + content[1] + "**********************\n" + items_detail
+        "-----------------------------\n"+"タスク名:" + content[0] + "\nURL:" + content[1] + "\n=============" + items_detail
     )
     main_content = {"content": content_shaping}
     headers = {"Content-Type": "application/json"}
@@ -120,19 +121,20 @@ def check():
 def download_img(dealer, name_, url):
     ua = UserAgent()
     save_path = "static/img/" + dealer + "/" + name_ + ".png"
+    webp_save_path = "static/img/" + dealer + "/" + name_ + ".webp"
     opener = urllib.request.build_opener()
     opener.addheaders = [
         (
                     "User-Agent",
-                    "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1941.0 Safari/537.36",
+                    "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36",
                 )
     ]
     urllib.request.install_opener(opener)
-    print(url)
-    print(save_path)
     urllib.request.urlretrieve(url, save_path)
-    
-    print(name_ + " >>> " + save_path)
+    imgfile = Image.open(save_path).convert('RGB')
+    imgfile.save(webp_save_path,'webp')
+    print(name_ + " >>> " + webp_save_path)
+    os.remove(save_path)
     time.sleep(2)
     return save_path
 
