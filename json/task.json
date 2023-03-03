@@ -1,5 +1,5 @@
 {
-	"prapor": {
+	"Prapor": {
 		"Debut": {
 			"wiki_url": "https://wikiwiki.jp/eft/Prapor/Debut",
 			"items": {
@@ -8,7 +8,7 @@
 					"name": "MP-133",
 					"num": 2,
 					"inRaid": false,
-					"img": "../../static/img/prapor/MP-133_12ga_pump-action_shotgun.webp",
+					"img": "../../static/img/Prapor/MP-133_12ga_pump-action_shotgun.webp",
 					"category": "wepon"
 				}
 			}
@@ -24,7 +24,7 @@
 					"name": "Key",
 					"num": -1,
 					"inRaid": false,
-					"img": "../../static/img/prapor/Machinery_key.webp",
+					"img": "../../static/img/Prapor/Machinery_key.webp",
 					"category": "key"
 				}
 			}
@@ -40,7 +40,7 @@
 					"name": "Customs",
 					"num": -1,
 					"inRaid": false,
-					"img": "../../static/img/prapor/Tarcone_Director's_office_key.webp",
+					"img": "../../static/img/Prapor/Tarcone_Director's_office_key.webp",
 					"category": "key"
 				}
 			}
@@ -62,7 +62,7 @@
 					"name": "Key",
 					"num": -1,
 					"inRaid": false,
-					"img": "../../static/img/prapor/Portable_bunkhouse_key.webp",
+					"img": "../../static/img/Prapor/Portable_bunkhouse_key.webp",
 					"category": "key"
 				}
 			}
@@ -75,7 +75,7 @@
 					"name": "6L31",
 					"num": 3,
 					"inRaid": true,
-					"img": "../../static/img/prapor/AK-74_5.45x39_6L31_60-round_magazine.webp",
+					"img": "../../static/img/Prapor/AK-74_5.45x39_6L31_60-round_magazine.webp",
 					"category": "wepon"
 				}
 			}
@@ -103,7 +103,7 @@
 					"name": "Dorm 203",
 					"num": -1,
 					"inRaid": false,
-					"img": "../../static/img/prapor/Dorm_room_203_key.webp",
+					"img": "../../static/img/Prapor/Dorm_room_203_key.webp",
 					"category": "key"
 				}
 			}
@@ -119,7 +119,7 @@
 					"name": "Mask",
 					"num": 7,
 					"inRaid": true,
-					"img": "../../static/img/prapor/Lower_half-mask.webp",
+					"img": "../../static/img/Prapor/Lower_half-mask.webp",
 					"category": "wepon"
 				}
 			}
@@ -135,7 +135,7 @@
 					"name": "A-2607",
 					"num": 5,
 					"inRaid": true,
-					"img": "../../static/img/prapor/Bars_A-2607_95H18_knife.webp",
+					"img": "../../static/img/Prapor/Bars_A-2607_95H18_knife.webp",
 					"category": "wepon"
 				}
 			}
@@ -148,7 +148,7 @@
 					"name": "AK-74N",
 					"num": 1,
 					"inRaid": true,
-					"img": "../../static/img/prapor/AK-74N.webp",
+					"img": "../../static/img/Prapor/AK-74N.webp",
 					"category": "wepon"
 				},
 				"item2": {
@@ -156,7 +156,7 @@
 					"name": "M4A1",
 					"num": 1,
 					"inRaid": true,
-					"img": "../../static/img/prapor/M4A1.webp",
+					"img": "../../static/img/Prapor/M4A1.webp",
 					"category": "wepon"
 				},
 				"item3": {
@@ -164,7 +164,7 @@
 					"name": "PM",
 					"num": 2,
 					"inRaid": true,
-					"img": "../../static/img/prapor/PM_pistol.webp",
+					"img": "../../static/img/Prapor/PM_pistol.webp",
 					"category": "wepon"
 				}
 			}
@@ -183,7 +183,7 @@
 					"name": "USEC",
 					"num": 7,
 					"inRaid": false,
-					"img": "../../static/img/prapor/USEC_Dogtag.webp",
+					"img": "../../static/img/Prapor/USEC_Dogtag.webp",
 					"category": "loot"
 				},
 				"item2": {
@@ -191,7 +191,7 @@
 					"name": "BEAR",
 					"num": 7,
 					"inRaid": false,
-					"img": "../../static/img/prapor/BEAR_Dogtag.webp",
+					"img": "../../static/img/Prapor/BEAR_Dogtag.webp",
 					"category": "loot"
 				}
 			}
@@ -222,7 +222,7 @@
 					"name": "Tank battery",
 					"num": 1,
 					"inRaid": true,
-					"img": "../../static/img/prapor/6-STEN-140-M_military_battery.webp",
+					"img": "../../static/img/Prapor/6-STEN-140-M_military_battery.webp",
 					"category": "loot"
 				},
 				"item2": {
@@ -230,7 +230,7 @@
 					"name": "OFZ",
 					"num": 5,
 					"inRaid": true,
-					"img": "../../static/img/prapor/OFZ_30x160mm_shell.webp",
+					"img": "../../static/img/Prapor/OFZ_30x160mm_shell.webp",
 					"category": "loot"
 				}
 			}
@@ -246,7 +246,7 @@
 					"name": "M67",
 					"num": 10,
 					"inRaid": false,
-					"img": "../../static/img/prapor/M67_Hand_grenade.webp",
+					"img": "../../static/img/Prapor/M67_Hand_grenade.webp",
 					"category": "wepon"
 				}
 			}
@@ -274,7 +274,7 @@
 					"name": "USEC",
 					"num": 20,
 					"inRaid": true,
-					"img": "../../static/img/prapor/USEC_Dogtag.webp",
+					"img": "../../static/img/Prapor/USEC_Dogtag.webp",
 					"category": "loot"
 				}
 			}
@@ -808,7 +808,7 @@
 					"name": "USEC",
 					"num": 7,
 					"inRaid": false,
-					"img": "../../static/img/prapor/USEC_Dogtag.webp",
+					"img": "../../static/img/Prapor/USEC_Dogtag.webp",
 					"category": "loot"
 				}
 			}
@@ -1370,7 +1370,7 @@
 					"name": "BEAR",
 					"num": 20,
 					"inRaid": true,
-					"img": "../../static/img/prapor/BEAR_Dogtag.webp",
+					"img": "../../static/img/Prapor/BEAR_Dogtag.webp",
 					"category": "loot"
 				}
 			}
@@ -1394,7 +1394,7 @@
 					"name": "MP-133",
 					"num": 1,
 					"inRaid": false,
-					"img": "../../static/img/prapor/MP-133_12ga_pump-action_shotgun.webp",
+					"img": "../../static/img/Prapor/MP-133_12ga_pump-action_shotgun.webp",
 					"category": "wepon"
 				}
 			}

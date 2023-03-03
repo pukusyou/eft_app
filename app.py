@@ -67,7 +67,7 @@ def task_setting():
     if request.method == "GET":
         return render_template(
             "task_setting.html",
-            prapor_tasks=task_json.get_dealer_task_name("prapor"),
+            prapor_tasks=task_json.get_dealer_task_name("Prapor"),
             therapist_tasks=task_json.get_dealer_task_name("Therapist"),
             skier_tasks=task_json.get_dealer_task_name("Skier"),
             peacekeeper_tasks=task_json.get_dealer_task_name("Peacekeeper"),
@@ -82,7 +82,7 @@ def task_setting_en():
     if request.method == "GET":
         return render_template(
             "task_setting_en.html",
-            prapor_tasks=task_json.get_dealer_task_name("prapor"),
+            prapor_tasks=task_json.get_dealer_task_name("Prapor"),
             therapist_tasks=task_json.get_dealer_task_name("Therapist"),
             skier_tasks=task_json.get_dealer_task_name("Skier"),
             peacekeeper_tasks=task_json.get_dealer_task_name("Peacekeeper"),

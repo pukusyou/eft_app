@@ -5,7 +5,7 @@ class load_json:
     def __init__(self, filename):
         json_open = open("json/" + filename, "r", encoding="utf-8")
         self.dealer_list = [
-            "prapor",
+            "Prapor",
             "Therapist",
             "Skier",
             "Peacekeeper",
