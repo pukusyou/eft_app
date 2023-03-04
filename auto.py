@@ -136,6 +136,6 @@ def download_img(dealer, name_, url):
     print(name_ + " >>> " + webp_save_path)
     os.remove(save_path)
     time.sleep(2)
-    return save_path
+    return webp_save_path
 
 check()
