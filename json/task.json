@@ -13,7 +13,7 @@
 				}
 			}
 		},
-		"Search mission": {
+		"Search Mission": {
 			"wiki_url": "https://wikiwiki.jp/eft/Prapor/Search%20Mission"
 		},
 		"Checking": {
@@ -208,6 +208,9 @@
 		"Test drive - Part 1": {
 			"wiki_url": "https://wikiwiki.jp/eft/Prapor/Test%20drive%20-%20Part%201"
 		},
+		"Test drive - Part 2": {
+			"wiki_url": "https://wikiwiki.jp/eft/Prapor/Test%20drive%20-%20Part%202"
+		},
 		"Perfect mediator": {
 			"wiki_url": "https://wikiwiki.jp/eft/Prapor/Perfect%20mediator"
 		},
@@ -281,6 +284,9 @@
 		},
 		"Reconnaissance": {
 			"wiki_url": "https://wikiwiki.jp/eft/Prapor/Reconnaissance"
+		},
+		"Green Corridor": {
+			"wiki_url": "https://wikiwiki.jp/eft/Prapor/Green%20Corridor"
 		}
 	},
 	"Therapist": {
@@ -858,6 +864,19 @@
 				}
 			}
 		},
+		"House Arrest - Part 2": {
+			"wiki_url": "https://wikiwiki.jp/eft/Skier/House%20Arrest%20-%20Part%202",
+			"items": {
+				"item1": {
+					"full_name": "Chekannaya 15 apartment key",
+					"name": "Chek 15",
+					"num": -1,
+					"inRaid": false,
+					"img": "../../static/img/Skier/Chekannaya_15_apartment_key.webp",
+					"category": "key"
+				}
+			}
+		},
 		"Silent caliber": {
 			"wiki_url": "https://wikiwiki.jp/eft/Skier/Silent%20caliber"
 		},
@@ -1148,6 +1167,27 @@
 		},
 		"Cargo X - Part 4": {
 			"wiki_url": "https://wikiwiki.jp/eft/Peacekeeper/Cargo%20X%20-%20Part%204"
+		},
+		"Your Car Needs a Service": {
+			"wiki_url": "https://wikiwiki.jp/eft/Peacekeeper/Your%20Car%20Needs%20a%20Service",
+			"items": {
+				"item1": {
+					"full_name": "Car dealership director's office room key",
+					"name": "LexOs",
+					"num": -1,
+					"inRaid": false,
+					"img": "../../static/img/Peacekeeper/Car_dealership_director's_office_room_key.webp",
+					"category": "key"
+				},
+				"item2": {
+					"full_name": "Car dealership closed section key",
+					"name": "LexOs sect",
+					"num": -1,
+					"inRaid": false,
+					"img": "../../static/img/Peacekeeper/Car_dealership_closed_section_key.webp",
+					"category": "key"
+				}
+			}
 		},
 		"Wet Job - Part 1": {
 			"wiki_url": "https://wikiwiki.jp/eft/Peacekeeper/Wet%20Job%20-%20Part%201"
@@ -2014,6 +2054,140 @@
 					"category": "loot"
 				}
 			}
+		},
+		"Network Provider - Part 2": {
+			"wiki_url": "https://wikiwiki.jp/eft/Mechanic/Network%20Provider%20-%20Part%202",
+			"items": {
+				"item1": {
+					"full_name": "Radio repeater",
+					"name": "Repeater",
+					"num": 4,
+					"inRaid": false,
+					"img": "../../static/img/Mechanic/Radio_repeater.webp",
+					"category": "loot"
+				}
+			}
+		},
+		"Assessment - Part 1": {
+			"wiki_url": "https://wikiwiki.jp/eft/Mechanic/Assessment%20-%20Part%201"
+		},
+		"Assessment - Part 2": {
+			"wiki_url": "https://wikiwiki.jp/eft/Mechanic/Assessment%20-%20Part%202"
+		},
+		"Assessment - Part 3": {
+			"wiki_url": "https://wikiwiki.jp/eft/Mechanic/Assessment%20-%20Part%203",
+			"items": {
+				"item1": {
+					"full_name": "SJ1 TGLabs combat stimulant injector",
+					"name": "SJ1",
+					"num": 20,
+					"inRaid": true,
+					"img": "../../static/img/Mechanic/SJ1_TGLabs_combat_stimulant_injector.webp",
+					"category": "loot"
+				},
+				"item2": {
+					"full_name": "SJ6 TGLabs combat stimulant injector",
+					"name": "SJ6",
+					"num": 8,
+					"inRaid": true,
+					"img": "../../static/img/Mechanic/SJ6_TGLabs_combat_stimulant_injector.webp",
+					"category": "loot"
+				},
+				"item3": {
+					"full_name": "SJ9 TGLabs combat stimulant injector",
+					"name": "SJ9",
+					"num": 2,
+					"inRaid": true,
+					"img": "../../static/img/Mechanic/SJ9_TGLabs_combat_stimulant_injector.webp",
+					"category": "loot"
+				}
+			}
+		},
+		"Key to the Tower": {
+			"wiki_url": "https://wikiwiki.jp/eft/Mechanic/Assessment%20-%20Part%203",
+			"items": {
+				"item1": {
+					"full_name": "Piece of plexiglass",
+					"name": "PGlass",
+					"num": 2,
+					"inRaid": true,
+					"img": "../../static/img/Mechanic/Piece_of_plexiglass.webp",
+					"category": "loot"
+				},
+				"item2": {
+					"full_name": "Insulating tape",
+					"name": "Tape",
+					"num": 1,
+					"inRaid": true,
+					"img": "../../static/img/Mechanic/Insulating_tape.webp",
+					"category": "loot"
+				},
+				"item3": {
+					"full_name": "Military circuit board",
+					"name": "MCB",
+					"num": 2,
+					"inRaid": true,
+					"img": "../../static/img/Mechanic/Military_circuit_board.webp",
+					"category": "loot"
+				},
+				"item4": {
+					"full_name": "Military COFDM Wireless Signal Transmitter",
+					"name": "SG-C10",
+					"num": 1,
+					"inRaid": true,
+					"img": "../../static/img/Mechanic/Military_COFDM_Wireless_Signal_Transmitter.webp",
+					"category": "loot"
+				},
+				"item5": {
+					"full_name": "Working LCD",
+					"name": "LCD",
+					"num": 1,
+					"inRaid": true,
+					"img": "../../static/img/Mechanic/Working_LCD.webp",
+					"category": "loot"
+				}
+			}
+		},
+		"Knock-Knock": {
+			"wiki_url": "https://wikiwiki.jp/eft/Mechanic/Knock-Knock"
+		},
+		"Getting Acquainted": {
+			"wiki_url": "https://wikiwiki.jp/eft/Mechanic/Getting%20Acquainted"
+		},
+		"Make Amends - Buyout": {
+			"wiki_url": "https://wikiwiki.jp/eft/Mechanic/Make%20Amends%20-%20Buyout"
+		},
+		"Make Amends - Equipment": {
+			"wiki_url": "https://wikiwiki.jp/eft/Mechanic/Make%20Amends%20-%20Equipment",
+			"items": {
+				"item1": {
+					"full_name": "SVDS 7.62x54R sniper rifle",
+					"name": "SVD-S",
+					"num": 4,
+					"inRaid": true,
+					"img": "../../static/img/Mechanic/SVDS_7.62x54R_sniper_rifle.webp",
+					"category": "loot"
+				}
+			}
+		},
+		"Make Amends - Security": {
+			"wiki_url": "https://wikiwiki.jp/eft/Mechanic/Make%20Amends%20-%20Security",
+			"items": {
+				"item1": {
+					"full_name": "WI-FI Camera",
+					"name": "Camera",
+					"num": 4,
+					"inRaid": false,
+					"img": "../../static/img/Mechanic/WI-FI_Camera.webp",
+					"category": "loot"
+				}
+			}
+		},
+		"Make Amends - Sweep Up": {
+			"wiki_url": "https://wikiwiki.jp/eft/Mechanic/Make%20Amends%20-%20Sweep%20Up"
+		},
+		"Make Amends": {
+			"wiki_url": "https://wikiwiki.jp/eft/Mechanic/Make%20Amends"
 		}
 	},
 	"Ragman": {
